@@ -5,5 +5,6 @@ pkgs.mkShell {
       pandas numpy scipy statsmodels plotly kaleido openpyxl xlsxwriter python-docx
     ]))
     pkgs.libreoffice
+    pkgs.poppler-utils
   ];
 }

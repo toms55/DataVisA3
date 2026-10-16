@@ -1356,7 +1356,7 @@ def build_charts(workbook):
     return CHART_SHEETS
 
 
-PAGES_URL = "Dashboard and storyboard: https://toms55.github.io/datavis-a3/"
+PAGES_URL = "Dashboard and storyboard: https://toms55.github.io/DataVisA3/"
 
 
 def main():

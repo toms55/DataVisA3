@@ -16,7 +16,7 @@ FIGDIR = ROOT / "build" / "report_figs"
 DOCX = ROOT / "out" / "24503993_A3.docx"
 PDF = ROOT / "out" / "24503993_A3.pdf"
 
-PAGES_URL = "https://toms55.github.io/datavis-a3/"
+PAGES_URL = "https://toms55.github.io/DataVisA3/"
 
 INK = RGBColor(0x0B, 0x0B, 0x0B)
 SECONDARY = RGBColor(0x52, 0x51, 0x4E)

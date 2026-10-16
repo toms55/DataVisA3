@@ -18,7 +18,7 @@ runs. Plotly is inlined into each page, so the charts, the hover values and
 the year range control all work straight from disk.
 
 The same three pages are live at:
-    https://toms55.github.io/datavis-a3/
+    https://toms55.github.io/DataVisA3/
 
 WHAT IS IN HERE
 ---------------
