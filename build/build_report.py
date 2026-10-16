@@ -785,8 +785,8 @@ def build_content(report):
         "The AI model used here is Claude Sonnet 5, model id claude-sonnet-5. It was given the ten "
         "annual petroleum import values and the unit, and nothing "
         "else. It received none of this analysis, no change point notes, no refinery history, no "
-        "export side and no target. The run was at low "
-        "effort on 16 October 2026, with no tools available. The prompt and the reply are "
+        "export side and no target. The run was on 16 October 2026, "
+        "with no tools available. The prompt and the reply are "
         "reproduced word for word in Appendix A so that the comparison can be audited."
     )
 
@@ -1032,7 +1032,7 @@ def build_content(report):
 
     report.heading("Appendix A. The Claude Sonnet 5 prompt and the reply, word for word")
     report.text(
-        "Run on 16 October 2026 using Claude Sonnet 5, model id claude-sonnet-5, at low effort "
+        "Run on 16 October 2026 using Claude Sonnet 5, model id claude-sonnet-5, "
         "with no tools available. The model was given the ten values below and no other information "
         "about this project."
     )

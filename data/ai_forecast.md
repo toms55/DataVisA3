@@ -9,7 +9,6 @@ run details are reproduced without any change.
 |---|---|
 | Date of run | 16 October 2026 |
 | Model | Claude Sonnet 5, model id `claude-sonnet-5` |
-| Effort setting | Low |
 | Tools available to the model | None. The model was told not to use tools and used none. |
 | Information given | The ten annual import values and the unit, and nothing else. |
 | Information withheld | The change point analysis, the refinery closures, the research notes, the export side, the target path and both of my forecast methods. |

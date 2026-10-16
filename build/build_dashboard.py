@@ -216,7 +216,7 @@ def main():
         "Ten years of actual petroleum import, then five forecast years. The chart carries my "
         "linear trend, my CAGR method, my target path of 3% a year lower, and a forecast from an "
         "AI model. That model is Claude Sonnet 5, model id claude-sonnet-5, run on 16 October "
-        "2026 at low effort with no tools. It received the ten annual import values and nothing "
+        "2026 with no tools. It received the ten annual import values and nothing "
         "else, so it saw no export data and no part of this analysis.",
         page.figure(charts.forecast_chart(), "outlook") + forecast_table(),
         takeaway=(
