@@ -184,7 +184,7 @@ class Report:
 
     def table(self, headers, rows, widths=None):
         table = self.document.add_table(rows=1, cols=len(headers))
-        table.style = "Light Grid Accent 1"
+        table.style = "Table Grid"
         for index, header in enumerate(headers):
             cell = table.rows[0].cells[index]
             cell.text = ""
@@ -264,7 +264,7 @@ def build_content(report):
         "Australian International Trade, 2016 to 2025",
         "What ten years of trade data say about Australian fuel security",
         "32146 Visual Analytics, Assessment Task 3. Student 24503993. "
-        f"Dashboard and storyboard: {PAGES_URL}",
+        f"Dashboard and storyboard at {PAGES_URL}",
     )
 
     report.heading("1. Executive summary")
@@ -289,15 +289,15 @@ def build_content(report):
         f"deficit widened from ${money(abs(first['balance']))}m to ${money(abs(last['balance']))}m. "
         f"Import and export move together at a correlation of {import_export_r:.2f}, because both "
         f"are priced off the same world oil market. Import is {ratio_2025:.2f} times the size of "
-        "export, so every oil price rise widens the deficit rather than closing it. Australia "
+        "export, so every oil price rise widens the deficit. Australia "
         "cannot export its way out of this gap."
     )
     report.text(
-        f"The recommendation is a target, not a forecast. Cutting petroleum import 3% a year from "
+        f"The recommendation is a target. Cutting petroleum import 3% a year from "
         f"2025 reaches ${money(summary['Target import 2030 ($ Millions)'])}m by 2030. The straight "
         f"line fit on ten years of data has an R squared of only "
         f"{summary['Linear trend R squared']:.2f}, so no five year point forecast on this series "
-        "deserves confidence. Section 12 shows an AI model, given the same ten numbers, forecasting "
+        "deserves confidence. Section 12 shows Claude Sonnet 5, given the same ten numbers, forecasting "
         "the opposite direction."
     )
 
@@ -305,14 +305,14 @@ def build_content(report):
     report.text(
         "The data is the Australian International Trade dataset from the Australian Bureau of "
         "Statistics, supplied as 2026-Spring-Ass3-V20.xlsx. It holds two sheets, one for export "
-        "and one for import, covering 2016 to 2025. Each sheet is wide: row 1 names the category, "
+        "and one for import, covering 2016 to 2025. Each sheet is wide. Row 1 names the category, "
         "row 2 gives the unit, row 3 gives the ABS series identifier, and rows 4 to 13 hold the ten "
         "years. There are 10 main categories, 67 subcategories and one total column, which is 78 "
         "series in each direction."
     )
     report.text(
         "The source file was never edited. A Python script reads it and writes a new workbook, "
-        "24503993_A3.xlsx. Four checks run on every build: the extract must produce 1,560 rows, "
+        "24503993_A3.xlsx. Four checks run on every build. The extract must produce 1,560 rows, "
         "all ten years must be present in both directions, every unit must read $ Millions, and "
         "the ten main categories must sum to the published total. That last check passes within "
         "6 million dollars in the worst year, which is 0.0013% of the total and is consistent with "
@@ -320,7 +320,7 @@ def build_content(report):
     )
     report.text(
         "Every analytical and statistical result in this report lives in the workbook as a live "
-        "Excel formula, not as a pasted number. A verification script recomputes growth, index, "
+        "Excel formula. A verification script recomputes growth, index, "
         "share, CAGR, the descriptive statistics, the trend fits, the z-scores, the correlation "
         "matrices, the change points and the forecasts independently, then compares them against "
         "the recalculated spreadsheet to six decimal places. The build fails if any cell "
@@ -329,24 +329,71 @@ def build_content(report):
 
     report.heading("3. Dataset characteristics and data types")
     report.text(
-        "The dataset mixes several data types and each one drives a different visual choice."
+        "The dataset mixes several data types and each one drives a different visual choice. The "
+        "table below lists every field in the source file and every measure derived from it."
     )
-    report.bullets(
+    report.table(
+        ["Field or measure", "Data type", "Values", "What the type drives"],
         [
-            "Year is temporal and ordered. It drives a real axis on every time series in this report.",
-            "Main category and subcategory are nominal, in a two level hierarchy. SITC codes with one "
-            "digit are main categories and codes with two digits are their subcategories. The "
-            "hierarchy is what sections 6 and 7 analyse.",
-            "Direction is binary, import or export. Every criterion in this task asks for both, so "
-            "direction is encoded by colour on every chart and never left implied.",
-            "Value is continuous, in millions of Australian dollars. It is a value, not a volume, "
-            "which is the single most important limit on what this dataset can prove.",
-            "Derived measures add more types: growth and share are ratios, the index is a rebased "
-            "ratio, the z-score is a standardised score and the correlation is a bounded coefficient.",
-        ]
+            [
+                "Year",
+                "Temporal, ordinal",
+                "2016 to 2025, ten points",
+                "A real time axis on every time series in this report",
+            ],
+            [
+                "Main category",
+                "Categorical, nominal",
+                "10 SITC codes of one digit",
+                "One panel per category, because ten series cannot share one palette",
+            ],
+            [
+                "Subcategory",
+                "Categorical, nominal, nested in main category",
+                "67 SITC codes of two digits",
+                "The two level hierarchy that sections 6 and 7 analyse",
+            ],
+            [
+                "Direction",
+                "Categorical, nominal, binary",
+                "Import, export",
+                "Colour on every chart, so both directions are always visible",
+            ],
+            [
+                "Value",
+                "Continuous, ratio scale",
+                "$ Millions",
+                "Line height, column length and every axis scale",
+            ],
+            [
+                "Growth and share",
+                "Continuous, derived ratio",
+                "Percent",
+                "Comparison between categories of different size",
+            ],
+            [
+                "Index",
+                "Continuous, derived, rebased to 100",
+                "Index points, 2016 = 100",
+                "Growth rate comparison with size removed",
+            ],
+            [
+                "Z-score",
+                "Continuous, derived, standardised",
+                "Standard deviations",
+                "An outlier threshold at 2, the same for every category",
+            ],
+            [
+                "Correlation",
+                "Continuous, derived, bounded",
+                "r, from minus 1 to 1",
+                "A diverging colour scale centred on zero",
+            ],
+        ],
+        widths=[3.0, 4.2, 3.6, 6.0],
     )
     report.text(
-        "The value limit deserves emphasis. The dataset records dollars, so it cannot separate a "
+        "One limit in that table deserves emphasis. The dataset records dollars, so it cannot separate a "
         "price change from a volume change. Where this report states a cause it says whether the "
         "evidence supports a price reading or a volume reading, and it does not claim a volume "
         "effect that the data cannot show."
@@ -370,12 +417,12 @@ def build_content(report):
             ["Pet33-Focus", "The focus subcategory, with an insight for each year", "Analytical"],
             ["Pet33-vs-Sub", "Petroleum against coal and gas, with correlations", "Statistical"],
             ["Pet33-Forecast", "Linear trend and CAGR forecasts, and the target path", "Statistical"],
-            ["AI-Comparison", "My forecast against the AI forecast", "Analytical"],
+            ["AI-Comparison", "My forecast against the Claude Sonnet 5 forecast", "Analytical"],
         ],
         widths=[4.0, 9.4, 2.8],
     )
     report.text(
-        "Deployment into the application is literal rather than claimed. The dashboard and the "
+        "The deployment into the application is literal. The dashboard and the "
         "storyboard do not recompute anything. A reader module opens the recalculated workbook and "
         "reads the finished values out of these sheets, so a marker who changes a cell in the "
         "spreadsheet and rebuilds will see the charts move. The spreadsheet is the single source "
@@ -389,7 +436,7 @@ def build_content(report):
         "are valid in current Excel, and the legacy names work in both applications."
     )
 
-    report.heading("5. All ten main categories: raw, analytical and statistical trends")
+    report.heading("5. All ten main categories, raw, analytical and statistical trends")
     report.figure(
         "f02_raw",
         "Raw dollar value trend for every main category, both directions, in $ Millions. One panel "
@@ -436,8 +483,8 @@ def build_content(report):
         f"highest export volatility at a coefficient of variation of {stats_export['3'][3]:.2f}, "
         f"while its trend fit explains only {stats_export['3'][9]:.0%} of the variance. A category "
         "this volatile cannot be forecast with a straight line, and section 11 returns to that "
-        "point. The right panel shows that the outlier years cluster: 2020 for the manufacturing "
-        "categories and 2022 for energy."
+        "point. The right panel shows that the outlier years cluster. The manufacturing categories "
+        "peak in 2020 and energy peaks in 2022."
     )
 
     report.heading("6. How the main categories relate, and the change point in each year")
@@ -452,9 +499,9 @@ def build_content(report):
         f"Category 3 instead moves with category 6 at r = {correl_export['3']['6']:.2f} and with "
         f"category 5 at r = {correl_export['3']['5']:.2f}, because all three follow the same world "
         f"price cycle. On the import side category 3 against category 7 is "
-        f"r = {correl_import['3']['7']:.2f}. This matters for policy: the two pillars of Australian "
-        "export do not hedge each other, because they are driven by separate cycles that happen to "
-        "overlap."
+        f"r = {correl_import['3']['7']:.2f}. This matters for policy. The two pillars of Australian "
+        "export do not hedge each other, because separate cycles drive them and those cycles "
+        "happen to overlap."
     )
     report.figure(
         "f06_change",
@@ -463,7 +510,7 @@ def build_content(report):
     )
     report.text(
         "Requirement 3 asks for the change point in every year, so the workbook records all nine "
-        "transitions rather than only the dramatic ones. The table below gives the largest export "
+        "transitions. The table below gives the largest export "
         "mover and the cause. Causes drawn from outside the data cite a sourced research note."
     )
     report.table(
@@ -489,8 +536,8 @@ def build_content(report):
         "Two findings in that table correct a reading that the headline numbers invite. First, "
         "China restricted Australian coal from late 2020 until March 2023, yet coal export value "
         "rose 124% in 2022, in the middle of the restriction, and fell for three years after it "
-        "ended. Price, not market access, drove the value, and Australia redirected volume to other "
-        "buyers. Second, the 2022 fall in iron ore against the rise in coal is not a substitution. "
+        "ended. Price drove the value, and Australia redirected volume to other "
+        "buyers. Second, the 2022 fall in iron ore against the rise in coal has a separate cause. "
         "The iron ore price had already fallen from its April 2021 record to a low in November "
         "2021, before energy prices spiked in 2022. These are two separate price cycles crossing."
     )
@@ -502,7 +549,7 @@ def build_content(report):
     report.heading("7. Main category against subcategory, inside category 3")
     report.text(
         "The causes in this section are argued from inside the data, as requirement 4 asks. Main "
-        "category 3 holds exactly three subcategories: 32 coal, 33 petroleum and 34 gas."
+        "category 3 holds exactly three subcategories, which are 32 coal, 33 petroleum and 34 gas."
     )
     report.figure(
         "f08_cat3",
@@ -520,10 +567,10 @@ def build_content(report):
         "Any statement about \"category 3 imports\" is a statement about petroleum alone."
     )
     report.text(
-        f"Each subcategory tracks its parent closely on growth: petroleum at "
+        f"Each subcategory tracks its parent closely on growth. Petroleum sits at "
         f"r = {cat3_correl_export['33'][0]:.2f}, coal at r = {cat3_correl_export['32'][0]:.2f} and "
-        f"gas at r = {cat3_correl_export['34'][0]:.2f}. The subcategories do not diversify the main "
-        "category, they amplify it. The composition did shift, though. Gas rose from "
+        f"gas at r = {cat3_correl_export['34'][0]:.2f}. The subcategories amplify the main "
+        "category. The composition did shift, though. Gas rose from "
         f"{cat3_share_export['34'][0]:.1%} to {cat3_share_export['34'][-1]:.1%} of category 3 export "
         f"while coal fell from {cat3_share_export['32'][0]:.1%} to "
         f"{cat3_share_export['32'][-1]:.1%}."
@@ -532,7 +579,7 @@ def build_content(report):
         "One change point can be read from inside the data alone. In 2025 category 3 export fell "
         "18% while petroleum import fell only 6%. If a single demand collapse were driving both "
         "sides they would fall together. They do not, so the export fall is a price effect on what "
-        "Australia sells, and not a fall in what Australia needs to buy."
+        "Australia sells."
     )
 
     report.heading("8. The dashboard")
@@ -545,7 +592,7 @@ def build_content(report):
     report.bullets(
         [
             "Comparison 1, export against import on one scale, with the 2020 and 2022 change points "
-            "annotated on the plot rather than left to the caption.",
+            "annotated on the plot itself.",
             "Comparison 2, the trade balance as columns, every one of them negative.",
             "Comparison 3, petroleum against its own main category, which exposes the asymmetry "
             "between the two directions.",
@@ -582,8 +629,8 @@ def build_content(report):
         "any order, the storyboard makes one argument in a fixed order across thirteen panels. It "
         "starts with total Australian trade, moves through the ten main categories in their raw, "
         "indexed and statistical forms, works through the change point of each year, descends into "
-        "main category 3, then into subcategory 33, and closes with the forecast and the AI "
-        "comparison. Every panel carries both trade directions and ends with a stated takeaway, so "
+        "main category 3, then into subcategory 33, and closes with the forecast and the Claude "
+        "Sonnet 5 comparison. Every panel carries both trade directions and ends with a stated takeaway, so "
         "a reader cannot reach the end without having been told what each chart is for."
     )
     report.figure(
@@ -613,9 +660,9 @@ def build_content(report):
 
     report.heading("10. Trends and outliers compared")
     report.text(
-        "An outlier here is defined, not asserted. The workbook computes a z-score for each year of "
+        "An outlier here comes from a calculation. The workbook computes a z-score for each year of "
         "growth against that category's own mean growth, so a value above 2 marks a year that is "
-        "unusual for that category rather than merely large."
+        "unusual for that category."
     )
     report.table(
         ["Category", "Outlier year", "Growth that year", "Z-score"],
@@ -649,7 +696,7 @@ def build_content(report):
         f"{summary['Change 2016 to 2025 (percent)']:.0%}, at a compound rate of "
         f"{summary['Import CAGR 2016 to 2025']:.1%} a year. The petroleum trade deficit widened by "
         f"${money(abs(summary['Balance 2025 ($ Millions)']) - abs(summary['Balance 2016 ($ Millions)']))}m "
-        "over the same period. That is the loss, stated plainly: a larger bill every year for a "
+        "over the same period. The loss is a larger bill every year for a "
         "product Australia increasingly does not refine for itself."
     )
     report.figure(
@@ -668,25 +715,25 @@ def build_content(report):
     report.figure(
         "f15_forecast",
         "Petroleum import. Ten years of actual values, two forecast methods, the target path and "
-        "the AI forecast, in $ Millions.",
+        "the Claude Sonnet 5 forecast, in $ Millions.",
     )
     report.text(
         "The workbook carries two forecast methods, both as live formulas. A straight line fitted "
         "to 2016 to 2025 gives "
         f"${money(forecast[-1]['linear'])}m by 2030. Growing the 2025 value at the decade compound "
         f"rate gives ${money(forecast[-1]['cagr'])}m. Both point upward and neither should be "
-        f"trusted far: the straight line explains only {summary['Linear trend R squared']:.0%} of "
-        "the variance, because this series follows a world price rather than a trend."
+        f"trusted far. The straight line explains only {summary['Linear trend R squared']:.0%} of "
+        "the variance, because this series follows a world price."
     )
     report.text(
-        f"The target is therefore stated as a decision rather than a prediction. Cutting petroleum "
+        f"The target is therefore a decision. Cutting petroleum "
         f"import 3% a year from the 2025 level reaches "
         f"${money(summary['Target import 2030 ($ Millions)'])}m in 2030, which is "
         f"${money(summary['Linear forecast 2030 less target ($ Millions)'])}m below where the "
         "straight line would otherwise land."
     )
     report.table(
-        ["Year", "Linear trend", "CAGR method", "Target path", "AI forecast"],
+        ["Year", "Linear trend", "CAGR method", "Target path", "Claude Sonnet 5"],
         [
             [
                 str(row["year"]),
@@ -700,25 +747,26 @@ def build_content(report):
         widths=[2.0, 3.6, 3.6, 3.4, 3.6],
     )
 
-    report.heading("12. Comparison against the AI forecast")
+    report.heading("12. Comparison against the Claude Sonnet 5 forecast")
     report.text(
-        "An AI model was given the ten annual petroleum import values and the unit, and nothing "
+        "The AI model used here is Claude Sonnet 5, model id claude-sonnet-5. It was given the ten "
+        "annual petroleum import values and the unit, and nothing "
         "else. It received none of this analysis, no change point notes, no refinery history, no "
-        "export side and no target. The run used Claude Sonnet 5, model id claude-sonnet-5, at low "
+        "export side and no target. The run was at low "
         "effort on 16 October 2026, with no tools available. The prompt and the reply are "
         "reproduced word for word in Appendix A so that the comparison can be audited."
     )
 
-    report.sub("12.1 What the AI produced")
+    report.sub("12.1 What Claude Sonnet 5 produced")
     report.text(
-        "The AI did two things. It described the decade, and it forecast each year from 2026 to "
+        "The model did two things. It described the decade, and it forecast each year from 2026 to "
         "2030. Its description was accurate. It found the 2022 peak of 65,082, the 2020 dip to "
         "22,720, and the three year decline to 52,742 in 2025, and it noted that 2025 is still "
         "more than double the 2016 level. It also stated its method, which was to extrapolate the "
         f"2022 to 2025 fall of {money(ai_step)} million a year. A reader can therefore check it."
     )
     report.text(
-        f"The forecast is where the two analyses part. The AI projects "
+        f"The forecast is where the two analyses part. The model projects "
         f"${money(ai[-1]['ai'])}m for 2030, a fall of "
         f"{abs(ai[-1]['ai'] / last['import'] - 1):.0%} from 2025. My linear trend projects "
         f"${money(forecast[-1]['linear'])}m, a rise of "
@@ -730,24 +778,24 @@ def build_content(report):
 
     report.sub("12.2 Why the two answers disagree")
     report.text(
-        "The disagreement is not arithmetic. Both methods are correctly executed. The whole "
-        "difference comes from one unstated choice, which is how much history to fit. The AI used "
+        "Both methods are correctly executed. The whole "
+        "difference comes from one unstated choice, which is how much history to fit. The model used "
         "the last four years, which contain only the fall from the 2022 peak, so it had to project "
         "a fall. I used all ten years, which contain the climb to that peak, so I had to project a "
         "rise. Neither window is obviously right, and neither of us justified the choice from the "
         "data. That is the most useful thing this comparison exposed, and it is a criticism of my "
-        "own method as much as of the AI."
+        "own method as much as of the model."
     )
 
     report.sub("12.3 Testing both methods on data they have not seen")
     report.text(
         "A disagreement can be settled by a backtest. Each method was fitted to 2016 to 2021 only, "
         "then asked to predict 2022 to 2025, which it had not seen. The recent window method "
-        "reproduces the AI approach, extrapolating the change over the last few years of the "
+        "reproduces the Claude Sonnet 5 approach, extrapolating the change over the last few years of the "
         "training period. The Pet33-Backtest sheet in the workbook holds this as live formulas."
     )
     report.table(
-        ["Year", "Actual", "Linear trend", "CAGR method", "Recent window, the AI approach"],
+        ["Year", "Actual", "Linear trend", "CAGR method", "Recent window, the Claude Sonnet 5 approach"],
         [
             [
                 str(row["year"]),
@@ -773,9 +821,9 @@ def build_content(report):
     report.text(
         f"Every method failed, and badly. The best of the three was the CAGR method at "
         f"{mape['cagr']:.1%} mean absolute error. My linear trend scored {mape['linear']:.1%}. The "
-        f"recent window method, which is the one the AI chose, was the worst at "
+        f"recent window method, which is the one the model chose, was the worst at "
         f"{mape['recent']:.1%}, predicting ${money(backtest_rows[-1]['recent'])}m for 2025 against "
-        f"an actual of ${money(backtest_rows[-1]['actual'])}m. On the evidence available, the AI "
+        f"an actual of ${money(backtest_rows[-1]['actual'])}m. On the evidence available, the model "
         "picked the weakest of the three approaches."
     )
     report.text(
@@ -783,22 +831,22 @@ def build_content(report):
         "direction. Every method under-forecast, because the 2022 price shock was not present in "
         "the training data and could not be inferred from it. No amount of curve fitting on ten "
         "annual points will anticipate an invasion. This is the strongest argument in the report "
-        "for treating the 2026 to 2030 numbers as a planning range rather than a prediction, and "
-        "for setting a target instead."
+        "for treating the 2026 to 2030 numbers as a planning range, and "
+        "for setting a target."
     )
 
-    report.sub("12.4 What the AI could not know")
+    report.sub("12.4 What Claude Sonnet 5 could not know")
     report.bullets(
         [
-            "That the 2020 dip and the 2022 peak are price events rather than demand events. That "
+            "That the 2020 dip and the 2022 peak are price events. That "
             f"only becomes visible from the two way data, where import and export move together at "
-            f"r = {import_export_r:.2f}. The AI was given the import side alone, so it could not "
+            f"r = {import_export_r:.2f}. The model was given the import side alone, so it could not "
             "see the mechanism at all.",
             "That two Australian refineries closed in 2021, which shifts the mix of imports from "
             "crude towards refined product and puts a floor under the bill. No amount of care with "
             "ten numbers recovers a fact that is not in them.",
             "That the series is too noisy to support a point forecast. The straight line fit "
-            f"explains only {summary['Linear trend R squared']:.0%} of the variance. The AI "
+            f"explains only {summary['Linear trend R squared']:.0%} of the variance. The model "
             "returned five exact figures with no range and no caveat, which reads as far more "
             "certain than the data permits.",
             "That its own method had the worst backtest record of the three. It had no way to test "
@@ -846,7 +894,7 @@ def build_content(report):
 
     report.sub("12.7 What this means for using AI in visual analytics")
     report.text(
-        "The AI was useful here as an adversary, not as a forecaster. It made a different "
+        "Claude Sonnet 5 was useful here as an adversary. It made a different "
         "defensible choice of window, which forced me to backtest a choice I had not examined. A "
         "second opinion whose method is stated and then measured improves the analysis. The same "
         "output read at face value, as five confident numbers, would have made it worse than "
@@ -855,7 +903,7 @@ def build_content(report):
 
     report.heading("13. Visualisation techniques, and the problems handled")
     report.text(
-        "The techniques were chosen per job: time series lines for trends, columns for a signed "
+        "Each technique was chosen for one job. Time series lines carry the trends, columns carry a signed "
         "quantity such as the balance, small multiples where ten categories had to be compared at "
         "once, a dumbbell for a before and after comparison, a heatmap for the correlation matrix, "
         "and a scatter with a fitted line for the relationship between the two trade directions. "
@@ -877,7 +925,7 @@ def build_content(report):
             "year, and because the outlier year differs by direction it produced twenty separate "
             "categories instead of ten pairs. The year moved to a bar label and the axis became the "
             "category alone.",
-            "Colour that fails for colourblind readers. The palette was not chosen by eye. Every "
+            "Colour that fails for colourblind readers. Every "
             "set of colours that appears together was run through a contrast and colour vision "
             "checker, and two of the hues sit below the contrast floor on a light background, so "
             "every chart that uses them also ships a table of its numbers.",
@@ -891,7 +939,7 @@ def build_content(report):
             ["What it is for", "Looking something up", "Being walked through an argument"],
             ["Order of reading", "Any order the reader likes", "Fixed, top to bottom"],
             ["Strength", "Density and comparison on one screen, with filters", "Causation and sequence, each panel sets up the next"],
-            ["Weakness", "Shows what, not why. A reader can misread it with no guard rail", "Slow to scan, and cannot answer a question it was not built to answer"],
+            ["Weakness", "Shows what happened and leaves the cause out. A reader can misread it with no guard rail", "Slow to scan, and cannot answer a question it was not built to answer"],
             ["Best audience", "An analyst who already knows the domain", "A policy reader meeting the data for the first time"],
         ],
         widths=[3.2, 6.4, 6.6],
@@ -908,14 +956,14 @@ def build_content(report):
 
     report.heading("15. Recommendations")
     report.text(
-        "These recommendations cover the industries this study touches: refining, fuel import "
-        "logistics, and the energy export industries that fund them."
+        "These recommendations cover the industries this study touches. Those industries are "
+        "refining, fuel import logistics, and the energy export industries that fund them."
     )
     report.numbers(
         [
-            f"Set the petroleum import bill as a tracked target, not a forecast. The path in this "
+            f"Set the petroleum import bill as a tracked target. The path in this "
             f"report cuts it 3% a year to ${money(summary['Target import 2030 ($ Millions)'])}m by "
-            "2030. A forecast on this series is not reliable enough to steer by, but a target is a "
+            "2030. A forecast on this series is too unreliable to steer by. A target is a "
             "decision and can be measured against each year.",
             "Do not pursue petroleum export growth as a fuel security measure. Import and export "
             f"move together at r = {import_export_r:.2f} and import is {ratio_2025:.2f} times "
@@ -931,8 +979,8 @@ def build_content(report):
             "the import bill in 2022 has already shrunk 65%.",
             "Diversify with care, because the two largest export categories do not hedge each "
             f"other. Categories 2 and 3 correlate at r = {correl_export['3']['2']:.2f}, which looks "
-            "like good diversification, but both are commodity price cycles. They were uncorrelated "
-            "over this decade by timing, not by structure.",
+            "like good diversification, but both are commodity price cycles. Timing kept them "
+            "uncorrelated over this decade.",
             "Collect volume alongside value. Every limit in this report comes from the dataset "
             "holding dollars only. Separating price from volume would settle several questions this "
             "analysis could only bound.",
@@ -943,15 +991,15 @@ def build_content(report):
     report.text(
         f"The decade surplus peaked on a price shock and has fallen "
         f"{abs(balance_2025 / balance_2022 - 1):.0%} since. Subcategory 33 runs the other way, and "
-        "section 11 shows why selling more petroleum cannot close it. One decision follows: track "
-        "the import bill against a target, because the backtest in section 12.3 shows no method "
+        "section 11 shows why selling more petroleum cannot close it. One decision follows, which "
+        "is to track the import bill against a target. The backtest in section 12.3 shows no method "
         "here forecasts this series. Every number above lives in the submitted workbook as a live "
         "formula, and the report, the dashboard and the storyboard all read that one file."
     )
 
-    report.heading("Appendix A. The AI prompt and the reply, word for word")
+    report.heading("Appendix A. The Claude Sonnet 5 prompt and the reply, word for word")
     report.text(
-        "Run on 16 October 2026 using Claude Sonnet 5, model id claude-sonnet-5, at low effort, "
+        "Run on 16 October 2026 using Claude Sonnet 5, model id claude-sonnet-5, at low effort "
         "with no tools available. The model was given the ten values below and no other information "
         "about this project."
     )
@@ -962,8 +1010,8 @@ def build_content(report):
 
     report.heading("Appendix B. Sources")
     report.text(
-        "Data: Australian Bureau of Statistics, Australian International Trade, 2016 to 2025, "
-        "supplied as 2026-Spring-Ass3-V20.xlsx. External causes cited in section 6 and section 10 "
+        "The data comes from the Australian Bureau of Statistics, Australian International Trade, "
+        "2016 to 2025, supplied as 2026-Spring-Ass3-V20.xlsx. External causes cited in section 6 and section 10 "
         "are recorded with their sources in data/research_notes.md, submitted with the dashboard "
         "source. The notes cover the 2020 COVID demand collapse, the 2022 energy price shock, the "
         "Kwinana and Altona refinery closures, China's coal restrictions, the iron ore price cycle "

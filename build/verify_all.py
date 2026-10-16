@@ -164,12 +164,12 @@ def check_report():
         "The storyboard",
         "Trends and outliers",
         "the target, and the forecast",
-        "Comparison against the AI forecast",
+        "Comparison against the Claude Sonnet 5 forecast",
         "Visualisation techniques",
         "The dashboard against the storyboard",
         "Recommendations",
         "Conclusion",
-        "The AI prompt and the reply",
+        "The Claude Sonnet 5 prompt and the reply",
     ):
         check(heading in text, f"the report is missing the section {heading!r}")
     print("  all 16 required sections present")

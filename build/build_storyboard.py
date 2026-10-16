@@ -320,7 +320,8 @@ def main():
 
     out += page.panel(
         "13. What the AI saw, and what it missed",
-        "An AI model received the ten annual import values and nothing else. It saw no part of "
+        "Claude Sonnet 5, model id claude-sonnet-5, received the ten annual import values and nothing "
+        "else. It saw no part of "
         "this analysis, no export data, no change point work and no target. The question was the "
         "same one this storyboard answers in panel 12. The answers point in opposite directions, "
         "so this panel tests both of them.",

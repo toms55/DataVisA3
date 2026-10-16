@@ -636,7 +636,7 @@ def forecast_chart():
         go.Scatter(
             x=[bridge_year] + FORECAST_YEARS,
             y=[bridge_value] + [ai[y] for y in FORECAST_YEARS],
-            name="AI forecast",
+            name="Claude Sonnet 5",
             mode="lines+markers",
             line={
                 "color": theme.FORECAST_COLOUR["ai"],
@@ -644,7 +644,7 @@ def forecast_chart():
                 "dash": theme.FORECAST_DASH["ai"],
             },
             marker={"size": 7},
-            hovertemplate="AI %{y:,.0f}<extra></extra>",
+            hovertemplate="Claude Sonnet 5 %{y:,.0f}<extra></extra>",
         )
     )
     apply(
@@ -804,7 +804,7 @@ def backtest_chart():
     series = [
         ("linear", f"Linear trend, {mape['linear']:.1%} average error"),
         ("cagr", f"CAGR method, {mape['cagr']:.1%} average error"),
-        ("recent", f"Recent window, the AI method, {mape['recent']:.1%} average error"),
+        ("recent", f"Recent window, the Claude Sonnet 5 method, {mape['recent']:.1%} average error"),
     ]
     for key, label in series:
         figure.add_trace(
