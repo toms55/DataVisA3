@@ -104,6 +104,9 @@ def main():
     rows = rw.focus()
     summary = rw.forecast_summary()
     pairs, import_export_r = rw.vs_pairs()
+    ratio_2025 = rows[-1]["import"] / rows[-1]["export"]
+    _, share_export = rw.cat3_share("Export")
+    _, share_import = rw.cat3_share("Import")
 
     out = page.head(
         "Petroleum dashboard, Australian trade 2016 to 2025",
@@ -117,7 +120,7 @@ def main():
     )
     out += kpis(rows, summary)
 
-    time_charts = ["cmp1", "cmp4a", "cmp3"]
+    time_charts = ["cmp1", "cmp2", "cmp3", "cmp4a"]
     out += page.year_control(time_charts, YEARS[0], YEARS[-1])
 
     out += page.panel(
@@ -148,9 +151,10 @@ def main():
         "much of the energy category the subcategory carries on each side.",
         page.figure(charts.focus_share_of_main(), "cmp3") + share_table(),
         takeaway=(
-            "<strong>The two sides are not alike.</strong> Petroleum is about a tenth of category 3 "
-            "export but nearly all of category 3 import, because Australia imports almost no coal "
-            "or gas."
+            f"<strong>The two sides are not alike.</strong> Petroleum is "
+            f"{share_export['33'][-1]:.1%} of category 3 export in 2025 and "
+            f"{share_import['33'][-1]:.1%} of category 3 import, against "
+            f"{share_import['32'][-1]:.1%} for coal and {share_import['34'][-1]:.1%} for gas."
         ),
     )
 
@@ -173,9 +177,9 @@ def main():
         page.figure(charts.focus_scatter(), "cmp5"),
         takeaway=(
             f"<strong>The two directions move together at r = {import_export_r:.2f}.</strong> "
-            "Both sides are priced off the same world oil market, so a price rise lifts import "
-            "and export at once. Because import is about three times larger, every price rise "
-            "widens the deficit."
+            f"Both sides are priced off the same world oil market, so a price rise lifts import "
+            f"and export at once. Because import is {ratio_2025:.2f} times larger, every price "
+            "rise widens the deficit."
         ),
     )
 

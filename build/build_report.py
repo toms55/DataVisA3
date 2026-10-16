@@ -570,11 +570,10 @@ def build_content(report):
         "The petroleum trade balance for each year, in $ Millions. Every column points down.",
     )
     report.text(
-        f"The deficit widened from ${money(abs(first['balance']))}m in 2016 to "
-        f"${money(abs(last['balance']))}m in 2025, and reached its worst point of "
-        f"${money(abs(worst['balance']))}m in {worst['year']}. The cover ratio in 2025 is "
-        f"{last['cover']:.2f}, which means each dollar of petroleum import is matched by "
-        f"{last['cover'] * 100:.0f} cents of petroleum export."
+        f"The deficit reached its worst point of ${money(abs(worst['balance']))}m in "
+        f"{worst['year']}, which is {abs(worst['balance']) / abs(last['balance']):.2f} times the "
+        f"2025 figure. The cover ratio in 2025 is {last['cover']:.2f}, so each dollar of petroleum "
+        f"import is matched by {last['cover'] * 100:.0f} cents of petroleum export."
     )
 
     report.heading("9. The storyboard")
@@ -594,10 +593,10 @@ def build_content(report):
     )
     report.text(
         f"This panel sets up every panel after it. Export fell "
-        f"{1 - totals_export[2025] / max(totals_export.values()):.0%} from its 2022 peak while "
-        f"import reached its decade high of ${money(totals_import[2025])}m in the same year, "
-        f"rising in {import_rises} of the nine transitions. The surplus quoted in section 1 "
-        "narrows from both ends at once, which no single series on the chart shows on its own."
+        f"{1 - totals_export[2025] / max(totals_export.values()):.0%} from its 2022 peak, while "
+        f"import rose in {import_rises} of the nine transitions and set its decade high of "
+        f"${money(totals_import[2025])}m in 2025. The surplus quoted in section 1 narrows from "
+        "both ends at once, which no single series on the chart shows on its own."
     )
     report.figure(
         "f13_vssubs",

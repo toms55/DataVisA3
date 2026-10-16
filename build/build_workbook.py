@@ -495,7 +495,7 @@ CAUSES = {
     2022: "The invasion of Ukraine. Mineral fuels import rises 31,254 million on the same price shock.",
     2023: "Energy prices retreat from the 2022 peak. Machinery import still rises 16,455 million.",
     2024: "Energy and iron ore prices both ease. Crude materials export falls 23,373 million.",
-    2025: "Category 9 rises 21,245 million, and gold alone accounts for 23,854 million of that.",
+    2025: "Energy prices keep easing for a third year. Category 9 rises 21,245 million, and gold alone accounts for 23,854 million of that.",
 }
 
 INSIGHTS = {
