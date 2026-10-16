@@ -42,20 +42,21 @@ def main():
         ]
     )
     out += page.panel(
-        "Two pages, two jobs",
+        "Start here",
         None,
         """
-<p style="margin:0 0 14px;color:var(--secondary);max-width:80ch">
-The <a href="dashboard.html"><strong>dashboard</strong></a> answers questions about one
-subcategory. It puts five comparisons and an insight for every year on a single screen, with a
-year range control so you can narrow the window. Use it to look something up.
-</p>
-<p style="margin:0 0 14px;color:var(--secondary);max-width:80ch">
-The <a href="storyboard.html"><strong>storyboard</strong></a> makes an argument in order. It runs
-from the whole of Australian trade, through the ten main categories, down into main category 3
-and then into subcategory 33. Read it top to bottom.
-</p>
-<p style="margin:0;color:var(--secondary);max-width:80ch">
+<a class="cta" href="dashboard.html">
+<span class="go">Click here to see the dashboard &rarr;</span>
+<span class="why">It covers one subcategory on a single screen, with five comparisons, an insight
+for every one of the ten years, and a year range control to narrow the window. Use it to look
+something up in any order.</span>
+</a>
+<a class="cta" href="storyboard.html">
+<span class="go">Click here to view the storyboard &rarr;</span>
+<span class="why">It runs thirteen panels in a fixed order, from total Australian trade down to
+subcategory 33. Use it to be walked through the argument. Read it top to bottom.</span>
+</a>
+<p style="margin:14px 0 0;color:var(--secondary);max-width:80ch">
 Both pages read the same Excel workbook, <code>24503993_A3.xlsx</code>. Every analytical and
 statistical pattern lives in that workbook as a live formula. These pages display those numbers
 and do not recompute them.

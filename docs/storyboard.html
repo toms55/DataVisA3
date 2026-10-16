@@ -9,13 +9,15 @@
 :root {
   color-scheme: light;
   --surface: #fcfcfb;
-  --plane: #f9f9f7;
+  --plane: #e8e6de;
+  --inset: #f1efe8;
   --text: #0b0b0b;
   --secondary: #52514e;
   --muted: #898781;
   --grid: #e1e0d9;
   --axis: #c3c2b7;
-  --border: rgba(11,11,11,0.10);
+  --border: rgba(11,11,11,0.16);
+  --card: 0 1px 2px rgba(11,11,11,0.06), 0 6px 18px rgba(11,11,11,0.07);
   --export: #2a78d6;
   --import: #eb6834;
   --petroleum: #4a3aa7;
@@ -38,14 +40,26 @@ header.page .eyebrow {
 }
 header.page h1 { font-size: 30px; line-height: 1.2; margin: 0 0 10px; font-weight: 650; }
 header.page p { margin: 0; color: var(--secondary); max-width: 80ch; }
-nav.top { margin: 0 0 24px; display: flex; gap: 14px; flex-wrap: wrap; }
-nav.top a {
-  color: var(--secondary); text-decoration: none; font-size: 14px; font-weight: 550;
-  border: 1px solid var(--border); border-radius: 999px; padding: 6px 14px; background: var(--surface);
+nav.top {
+  margin: 0 0 28px; display: flex; flex-wrap: wrap; gap: 0;
+  background: var(--surface); border: 2px solid var(--text); border-radius: 12px;
+  overflow: hidden; box-shadow: var(--card);
 }
-nav.top a:hover { border-color: var(--text); color: var(--text); }
+nav.top a {
+  flex: 1 1 200px; text-align: center; color: var(--secondary); text-decoration: none;
+  font-size: 18px; font-weight: 640; letter-spacing: -0.005em;
+  padding: 18px 20px; border-left: 1px solid var(--border); background: var(--surface);
+}
+nav.top a:first-child { border-left: 0; }
+nav.top a .step {
+  display: block; font-size: 11.5px; font-weight: 650; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 3px;
+}
+nav.top a:hover { background: var(--inset); color: var(--text); }
+nav.top a[aria-current="page"] { background: var(--text); color: #ffffff; }
+nav.top a[aria-current="page"] .step { color: rgba(255,255,255,0.72); }
 .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(176px, 1fr)); gap: 12px; margin: 0 0 28px; }
-.kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; box-shadow: var(--card); }
 .kpi .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; font-weight: 600; }
 .kpi .value { font-size: 26px; font-weight: 650; margin-top: 4px; letter-spacing: -0.01em; }
 .kpi .note { font-size: 12.5px; color: var(--secondary); margin-top: 3px; }
@@ -53,11 +67,11 @@ nav.top a:hover { border-color: var(--text); color: var(--text); }
 .kpi.import { border-left: 4px solid var(--import); }
 .kpi.focus { border-left: 4px solid var(--petroleum); }
 .kpi.negative { border-left: 4px solid var(--negative); }
-.panel { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 20px 10px; margin: 0 0 24px; }
+.panel { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 22px 22px 12px; margin: 0 0 24px; box-shadow: var(--card); }
 .panel > h2 { font-size: 19px; margin: 0 0 4px; font-weight: 640; }
 .panel > .lede { margin: 0 0 14px; color: var(--secondary); max-width: 88ch; }
 .panel > .takeaway {
-  margin: 10px 0 4px; padding: 11px 14px; background: var(--plane);
+  margin: 10px 0 4px; padding: 11px 14px; background: var(--inset);
   border-left: 3px solid var(--petroleum); border-radius: 0 6px 6px 0;
   color: var(--secondary); font-size: 15px;
 }
@@ -65,7 +79,7 @@ nav.top a:hover { border-color: var(--text); color: var(--text); }
 .controls {
   display: flex; gap: 16px; align-items: center; flex-wrap: wrap;
   background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
-  padding: 14px 18px; margin: 0 0 24px;
+  padding: 14px 18px; margin: 0 0 24px; box-shadow: var(--card);
 }
 .controls label { font-size: 13px; font-weight: 600; color: var(--secondary); }
 .controls select, .controls button {
@@ -92,17 +106,29 @@ details.table summary:hover { color: var(--text); }
 .insights li:last-child { border-bottom: 0; }
 .insights .yr { font-weight: 680; color: var(--petroleum); font-variant-numeric: tabular-nums; }
 .insights .txt { color: var(--secondary); }
+.cta {
+  display: block; text-decoration: none; color: var(--text);
+  background: var(--inset); border: 2px solid var(--text); border-radius: 10px;
+  padding: 16px 18px; margin: 0 0 14px;
+}
+.cta:hover { background: var(--text); color: #ffffff; }
+.cta .go { display: block; font-size: 19px; font-weight: 680; margin-bottom: 4px; }
+.cta .go .arrow { font-weight: 650; }
+.cta .why { display: block; font-size: 15px; color: var(--secondary); max-width: 80ch; }
+.cta:hover .why { color: rgba(255,255,255,0.86); }
 footer.page { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
 footer.page a { color: var(--secondary); }
 @media (max-width: 680px) {
   header.page h1 { font-size: 24px; }
   .kpi .value { font-size: 21px; }
+  nav.top a { flex: 1 1 100%; border-left: 0; border-top: 1px solid var(--border); font-size: 16px; padding: 14px 16px; }
+  nav.top a:first-child { border-top: 0; }
 }
 </style>
 </head>
 <body>
 <div class="wrap">
-<nav class="top"><a href="index.html">Overview</a><a href="dashboard.html">Petroleum dashboard</a><a href="storyboard.html" aria-current="page">Storyboard</a></nav>
+<nav class="top" aria-label="The three pages of this submission"><a href="index.html"><span class="step">Page 1</span>Overview</a><a href="dashboard.html"><span class="step">Page 2</span>Petroleum dashboard</a><a href="storyboard.html" aria-current="page"><span class="step">Page 3</span>Storyboard</a></nav>
 <header class="page"><p class="eyebrow">Assessment task 3, storyboard</p><h1>From ten main categories down to one subcategory</h1><p>A story told in order, from the whole of Australian trade down to one subcategory. Every panel carries both trade directions. Read it top to bottom.</p></header>
 <section class="panel"><h2>1. The surplus that peaked, then faded</h2><p class="lede">Total export, total import and the balance between them.</p><div class="plot"><div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
         <script>/**
