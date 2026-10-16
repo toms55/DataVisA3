@@ -73,6 +73,27 @@ def subcategory_table():
     )
 
 
+def forecast_table():
+    rows = rw.forecast()[len(YEARS):]
+    ai = rw.ai_comparison()
+    body = [
+        [
+            row["year"],
+            money(row["linear"]),
+            money(row["cagr"]),
+            money(row["target"]),
+            money(entry["ai"]),
+        ]
+        for row, entry in zip(rows, ai)
+    ]
+    return page.table(
+        "Petroleum import, the five forecast years. Values in $ Millions.",
+        ["Year", "My linear trend", "My CAGR method", "My target path", "Claude Sonnet 5"],
+        body,
+        summary="Show the forecast numbers behind this chart",
+    )
+
+
 def share_table():
     body = []
     for direction in DIRECTIONS:
@@ -103,6 +124,7 @@ def insights(rows):
 def main():
     rows = rw.focus()
     summary = rw.forecast_summary()
+    ai = rw.ai_comparison()
     pairs, import_export_r = rw.vs_pairs()
     ratio_2025 = rows[-1]["import"] / rows[-1]["export"]
     _, share_export = rw.cat3_share("Export")
@@ -187,6 +209,22 @@ def main():
         "What happened in each year",
         "One line for every year from 2016 to 2025, read from the workbook.",
         insights(rows),
+    )
+
+    out += page.panel(
+        "The 2030 outlook, and the Claude Sonnet 5 forecast",
+        "Ten years of actual petroleum import, then five forecast years. The chart carries my "
+        "linear trend, my CAGR method, my target path of 3% a year lower, and a forecast from an "
+        "AI model. That model is Claude Sonnet 5, model id claude-sonnet-5, run on 16 October "
+        "2026 at low effort with no tools. It received the ten annual import values and nothing "
+        "else, so it saw no export data and no part of this analysis.",
+        page.figure(charts.forecast_chart(), "outlook") + forecast_table(),
+        takeaway=(
+            "<strong>Claude Sonnet 5 forecasts a fall and my linear trend forecasts a rise.</strong> "
+            f"The two differ by ${money(abs(ai[-1]['difference']))}m in 2030, which is more than "
+            "the whole 2016 import bill. Page 3 backtests both methods against held out years and "
+            "both miss widely, so the target path is the number to steer by."
+        ),
     )
 
     out += page.footer()

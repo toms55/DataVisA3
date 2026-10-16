@@ -94,8 +94,8 @@ def ai_table():
         for r in rows
     ]
     return page.table(
-        "My two forecasts against the AI forecast. Values in $ Millions.",
-        ["Year", "My linear trend", "My CAGR method", "AI forecast", "AI less my linear", "AI less my linear, percent"],
+        "My two forecasts against the Claude Sonnet 5 forecast. Values in $ Millions.",
+        ["Year", "My linear trend", "My CAGR method", "Claude Sonnet 5", "Sonnet less my linear", "Sonnet less my linear, percent"],
         body,
         summary="Show the forecast comparison numbers",
     )
@@ -319,7 +319,7 @@ def main():
     )
 
     out += page.panel(
-        "13. What the AI saw, and what it missed",
+        "13. What Claude Sonnet 5 saw, and what it missed",
         "Claude Sonnet 5, model id claude-sonnet-5, received the ten annual import values and nothing "
         "else. It saw no part of "
         "this analysis, no export data, no change point work and no target. The question was the "
@@ -330,35 +330,35 @@ def main():
         + page.notes(
             "Why the two answers disagree",
             [
-                "The AI fitted the last four years. It took the fall from the 2022 peak and "
+                "The model fitted the last four years. It took the fall from the 2022 peak and "
                 "continued it, which gives an average fall of about $4,113m a year.",
                 "This analysis fitted all ten years. Over ten years the series rises, so the same "
                 "data read over a longer window points up instead of down.",
                 "Neither choice is wrong on its face. The window is the whole argument, and the "
-                "AI stated its window plainly, which is what made the disagreement checkable.",
+                "model stated its window plainly, which is what made the disagreement checkable.",
             ],
         )
         + page.figure(charts.backtest_chart(), "st13")
         + backtest_table()
         + page.notes(
-            "What the AI could not know",
+            "What Claude Sonnet 5 could not know",
             [
                 "The 2020 dip and the 2022 peak are price events, not demand events. Petroleum "
                 f"import and export move together at r = {import_export_r:.2f}, which only the two "
-                "way data shows. The AI received the import side alone.",
+                "way data shows. The model received the import side alone.",
                 "Two Australian refineries closed in 2020 and 2021. That cut domestic refining "
                 "capacity, raised the refined product share of imports and put a floor under the "
                 "volume. No part of that is visible in ten annual totals.",
                 "The ten year linear fit has an R squared of "
                 f"{summary['Linear trend R squared']:.2f}. The series is too noisy for a confident "
-                "five year forecast. The AI gave five exact numbers and no error range, which "
+                "five year forecast. The model gave five exact numbers and no error range, which "
                 "reads as more certain than the data allows.",
             ],
         ),
         takeaway=(
-            "<strong>The backtest says the AI method was the worst of the three, and that all "
+            "<strong>The backtest says the Claude Sonnet 5 method was the worst of the three, and that all "
             "three failed.</strong> Fitted on 2016 to 2021 and asked for 2022 to 2025, the recent "
-            f"window method the AI used was out by {backtest_mape['recent']:.1%} on average, "
+            f"window method the model used was out by {backtest_mape['recent']:.1%} on average, "
             f"against {backtest_mape['cagr']:.1%} for CAGR and "
             f"{backtest_mape['linear']:.1%} for the linear trend. Every method missed low, because "
             "the 2022 price shock cannot be inferred from the years before it. That is the real "

@@ -586,7 +586,8 @@ def build_content(report):
     report.text(
         f"The dashboard is at {PAGES_URL}dashboard.html and covers subcategory 33 in both "
         "directions on one screen. It carries a six tile summary row, five named comparisons, an "
-        "insight for each of the ten years, and a year range control that re-scales every time "
+        "insight for each of the ten years, a closing 2030 outlook panel that carries the Claude "
+        "Sonnet 5 forecast, and a year range control that re-scales every time "
         "chart at once. Each chart has a collapsible table of the numbers beneath it."
     )
     report.bullets(
