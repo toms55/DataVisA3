@@ -57,7 +57,7 @@ validator requires."""
 
 
 def axis(title):
-    return {
+    spec = {
         "title": {"text": title, "font": {"size": 13, "color": LIGHT["secondary"]}},
         "showgrid": True,
         "gridcolor": LIGHT["grid"],
@@ -70,6 +70,11 @@ def axis(title):
         "tickfont": {"size": 12, "color": LIGHT["muted"]},
         "automargin": True,
     }
+    if title == "Year":
+        spec["dtick"] = 1
+        spec["tick0"] = 0
+        spec["tickformat"] = "d"
+    return spec
 
 
 def layout(title, x_title, y_title, height=420, legend=True):

@@ -114,7 +114,9 @@ def main_small_multiples(metric):
     apply(figure, title, "Year", y_title, height=620)
     for row in (1, 2):
         for column in range(1, 6):
-            figure.update_xaxes(**theme.axis("Year" if row == 2 else ""), row=row, col=column)
+            x_spec = theme.axis("Year" if row == 2 else "")
+            x_spec["dtick"] = 2
+            figure.update_xaxes(**x_spec, row=row, col=column)
             figure.update_yaxes(
                 **theme.axis(y_title if column == 1 else ""), row=row, col=column
             )

@@ -284,8 +284,16 @@ def year_control(div_ids, first_year, last_year):
     if (a > b) {{ var t = a; a = b; b = t; }}
     ids.forEach(function (id) {{
       var el = document.getElementById(id);
-      if (el && window.Plotly) {{
-        Plotly.relayout(el, {{"xaxis.range": [a - 0.5, b + 0.5]}});
+      if (el && window.Plotly && el.layout) {{
+        var update = {{}};
+        Object.keys(el.layout).forEach(function (key) {{
+          if (key.indexOf("xaxis") !== 0) {{ return; }}
+          update[key + ".range"] = [a - 0.5, b + 0.5];
+          update[key + ".dtick"] = 1;
+          update[key + ".tick0"] = 0;
+          update[key + ".tickformat"] = "d";
+        }});
+        Plotly.relayout(el, update);
       }}
     }});
   }}

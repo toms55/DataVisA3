@@ -292,3 +292,7 @@ def backtest():
         "recent": worksheet.cell(mape_row, 8).value,
     }
     return rows, mape
+
+
+def sheet_count():
+    return len(workbook().sheetnames)

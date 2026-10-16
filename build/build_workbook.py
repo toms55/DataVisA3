@@ -487,15 +487,15 @@ def build_correlation(workbook, layout):
 
 
 CAUSES = {
-    2017: "Mineral fuels export rises 23,447 million on higher coal and LNG prices and new LNG capacity. Machinery import rises 14,601 million.",
-    2018: "Mineral fuels export rises 31,120 million as LNG output reaches full capacity. Mineral fuels import rises 10,707 million on a higher oil price.",
-    2019: "Crude materials export rises 29,536 million. Iron ore alone rises 32,099 million after a supply shock cut Brazilian output.",
-    2020: "COVID cuts mineral fuels export 37,467 million and mineral fuels import 15,686 million. Categories 6, 7 and 8 are the statistical outliers of the year.",
-    2021: "Crude materials export rises 46,211 million at the iron ore price peak. Mineral fuels export recovers 37,574 million.",
-    2022: "Mineral fuels export rises 124,939 million after the invasion of Ukraine. Mineral fuels import rises 31,254 million on the same price shock.",
-    2023: "Mineral fuels export falls 55,785 million as energy prices retreat from the 2022 peak. Machinery import still rises 16,455 million.",
-    2024: "Mineral fuels export falls 24,707 million and crude materials export falls 23,373 million as energy and iron ore prices both ease.",
-    2025: "Mineral fuels export falls 30,661 million. Category 9 rises 21,245 million, and gold alone accounts for 23,854 million of that.",
+    2017: "Higher coal and LNG prices, and new LNG capacity. Machinery import rises 14,601 million.",
+    2018: "LNG output reaches full capacity. Mineral fuels import rises 10,707 million on a higher oil price.",
+    2019: "Iron ore rises 32,099 million after a supply shock cut Brazilian output.",
+    2020: "COVID cuts demand. Mineral fuels import falls 15,686 million. Categories 6, 7 and 8 are the statistical outliers of the year.",
+    2021: "The iron ore price peaks. Mineral fuels export recovers 37,574 million.",
+    2022: "The invasion of Ukraine. Mineral fuels import rises 31,254 million on the same price shock.",
+    2023: "Energy prices retreat from the 2022 peak. Machinery import still rises 16,455 million.",
+    2024: "Energy and iron ore prices both ease. Crude materials export falls 23,373 million.",
+    2025: "Category 9 rises 21,245 million, and gold alone accounts for 23,854 million of that.",
 }
 
 INSIGHTS = {

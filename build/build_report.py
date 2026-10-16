@@ -243,6 +243,19 @@ def build_content(report):
 
     first = focus[0]
     last = focus[-1]
+    ratio_2025 = last["import"] / last["export"]
+    cat7_share = rw.main_share("Import")[1]["7"]
+    cat4_2025 = rw.main_values("Export")[1]["4"][-1]
+    cat2_2025 = rw.main_values("Export")[1]["2"][-1]
+    sheet_count = rw.sheet_count()
+    import_years = sorted(totals_import)
+    import_rises = sum(
+        1
+        for a, b in zip(import_years, import_years[1:])
+        if totals_import[b] > totals_import[a]
+    )
+    ai_rows = rw.focus()
+    ai_step = (ai_rows[-4]["import"] - ai_rows[-1]["import"]) / 3
     balance_2022 = totals_export[2022] - totals_import[2022]
     balance_2025 = totals_export[2025] - totals_import[2025]
     worst = min(focus, key=lambda r: r["balance"])
@@ -275,9 +288,9 @@ def build_content(report):
         f"across the decade and import grew {last['import'] / first['import'] - 1:.0%}, so the "
         f"deficit widened from ${money(abs(first['balance']))}m to ${money(abs(last['balance']))}m. "
         f"Import and export move together at a correlation of {import_export_r:.2f}, because both "
-        "are priced off the same world oil market. Import is about three times the size of export, "
-        "so every oil price rise widens the deficit rather than closing it. Australia cannot export "
-        "its way out of this gap."
+        f"are priced off the same world oil market. Import is {ratio_2025:.2f} times the size of "
+        "export, so every oil price rise widens the deficit rather than closing it. Australia "
+        "cannot export its way out of this gap."
     )
     report.text(
         f"The recommendation is a target, not a forecast. Cutting petroleum import 3% a year from "
@@ -341,7 +354,8 @@ def build_content(report):
 
     report.heading("4. The patterns built in Excel, and how they reach the dashboard")
     report.text(
-        "The workbook holds 23 sheets and 19 native Excel time series charts. Each chart carries a "
+        f"The workbook holds {sheet_count} sheets and 19 native Excel time series charts. Each "
+        "chart carries a "
         "title and a label on both axes. The analysis sheets are these."
     )
     report.table(
@@ -408,8 +422,9 @@ def build_content(report):
     report.text(
         f"The export mix shifted and the import mix did not. Category 2 rose to "
         f"{rw.main_share('Export')[1]['2'][-1]:.1%} of all export by 2025. On the import side "
-        f"category 7 held about {rw.main_share('Import')[1]['7'][-1]:.0%} across the whole decade. "
-        "Australia changed what it sells considerably more than it changed what it buys."
+        f"category 7 moved only from {cat7_share[0]:.1%} to {cat7_share[-1]:.1%}, inside a decade "
+        f"range of {min(cat7_share):.1%} to {max(cat7_share):.1%}. Australia changed what it sells "
+        "and did not change what it buys."
     )
     report.figure(
         "f05_stats",
@@ -501,8 +516,8 @@ def build_content(report):
         f"The export side and the import side are different categories in practice. On export, "
         f"petroleum is only {cat3_share_export['33'][-1]:.1%} of category 3 in 2025, behind both "
         f"coal and gas. On import, petroleum is {cat3_share_import['33'][-1]:.1%} of the category, "
-        "because Australia imports almost no coal and almost no gas. Any statement about "
-        "\"category 3 imports\" is in effect a statement about petroleum alone."
+        f"against {cat3_share_import['32'][-1]:.1%} for coal and {cat3_share_import['34'][-1]:.1%} for gas. "
+        "Any statement about \"category 3 imports\" is a statement about petroleum alone."
     )
     report.text(
         f"Each subcategory tracks its parent closely on growth: petroleum at "
@@ -578,10 +593,11 @@ def build_content(report):
         "$ Millions.",
     )
     report.text(
-        f"This is the panel that sets up everything after it. The balance grew from "
-        f"${money(totals_export[2016] - totals_import[2016])}m in 2016 to ${money(balance_2022)}m in "
-        f"2022, then fell to ${money(balance_2025)}m by 2025. Export retreated from its 2022 peak "
-        "while import carried on rising without a pause. The surplus is narrowing from both ends."
+        f"This panel sets up every panel after it. Export fell "
+        f"{1 - totals_export[2025] / max(totals_export.values()):.0%} from its 2022 peak while "
+        f"import reached its decade high of ${money(totals_import[2025])}m in the same year, "
+        f"rising in {import_rises} of the nine transitions. The surplus quoted in section 1 "
+        "narrows from both ends at once, which no single series on the chart shows on its own."
     )
     report.figure(
         "f13_vssubs",
@@ -644,8 +660,9 @@ def build_content(report):
     report.text(
         f"This chart carries the central finding. The two directions move together at "
         f"r = {import_export_r:.2f}. Both are priced off the same world oil market, so they rise "
-        "and fall as one. Because import is about three times the size of export, a price rise adds "
-        "roughly three dollars to the import bill for every dollar it adds to export earnings. "
+        f"and fall as one. Because import is {ratio_2025:.2f} times the size of export, a price "
+        f"rise adds ${ratio_2025:.2f} to the import bill for every dollar it adds to export "
+        "earnings. "
         "Growing petroleum export cannot close this gap. Only buying less, or refining more at "
         "home, can."
     )
@@ -699,8 +716,7 @@ def build_content(report):
         "2030. Its description was accurate. It found the 2022 peak of 65,082, the 2020 dip to "
         "22,720, and the three year decline to 52,742 in 2025, and it noted that 2025 is still "
         "more than double the 2016 level. It also stated its method, which was to extrapolate the "
-        "2022 to 2025 fall of about 4,113 million a year. A reader can therefore check it. None of "
-        "that is trivial, and it took a few seconds."
+        f"2022 to 2025 fall of {money(ai_step)} million a year. A reader can therefore check it."
     )
     report.text(
         f"The forecast is where the two analyses part. The AI projects "
@@ -795,12 +811,12 @@ def build_content(report):
     report.sub("12.5 Advantages of using AI here")
     report.numbers(
         [
-            "Speed. The analysis arrived in seconds, against roughly a day of work for the "
-            "spreadsheet and the charts.",
+            "Speed. The reply returned in seconds and needed no spreadsheet, no chart and no "
+            "build step.",
             "Independence. The model had no stake in my conclusion and had not spent hours forming "
             "an opinion. It read the series cold, which is exactly why it chose a different window "
             "and exposed that my own window was an unexamined assumption.",
-            "A stated method. It said it was extrapolating the 2022 to 2025 fall at about 4,113 a "
+            f"A stated method. It said it was extrapolating the 2022 to 2025 fall at {money(ai_step)} a "
             "year. Because it said so, the method could be backtested and found wanting. An "
             "assistant that only returned numbers would have been useless here.",
             "Pattern description. Its reading of the decade shape was correct and would be a "
@@ -831,13 +847,11 @@ def build_content(report):
 
     report.sub("12.7 What this means for using AI in visual analytics")
     report.text(
-        "The honest conclusion is that neither forecast deserves confidence, and the backtest shows "
-        "why: this series is driven by a world price and is not forecastable from its own history. "
-        "The AI was most valuable not as a forecaster but as an adversary. It made a different "
-        "defensible choice, which forced me to test a choice I had not examined. Used that way, as "
-        "a second opinion whose method is stated and then checked, it improved the analysis. Used "
-        "the way it presents itself, as five confident numbers, it would have made the analysis "
-        "worse than having no forecast at all."
+        "The AI was useful here as an adversary, not as a forecaster. It made a different "
+        "defensible choice of window, which forced me to backtest a choice I had not examined. A "
+        "second opinion whose method is stated and then measured improves the analysis. The same "
+        "output read at face value, as five confident numbers, would have made it worse than "
+        "having no forecast at all."
     )
 
     report.heading("13. Visualisation techniques, and the problems handled")
@@ -853,9 +867,10 @@ def build_content(report):
             "Ten categories, eight safe colours. Cycling hues past eight makes series "
             "indistinguishable, so the ten category charts became small multiples. Colour was then "
             "freed for the one distinction that matters everywhere, import against export.",
-            "Different magnitudes on one chart. Category 4 is about one hundredth the size of "
-            "category 2. A second y axis was rejected, because two scales on one frame invite false "
-            "comparison. Indexing to 2016 and small multiples solved it honestly.",
+            f"Different magnitudes on one chart. Category 4 export is ${money(cat4_2025)}m against "
+            f"${money(cat2_2025)}m for category 2, a ratio of 1 to {cat2_2025 / cat4_2025:.0f}. A "
+            "second y axis was rejected, because two scales on one frame invite false comparison. "
+            "Indexing to 2016 and small multiples solved it honestly.",
             "Labels colliding. The first share chart put ten end of line labels on top of each other "
             "and was unreadable. It was rebuilt as a dumbbell on a category axis, with the values in "
             "a fixed column clear of the markers.",
@@ -904,7 +919,8 @@ def build_content(report):
             "2030. A forecast on this series is not reliable enough to steer by, but a target is a "
             "decision and can be measured against each year.",
             "Do not pursue petroleum export growth as a fuel security measure. Import and export "
-            f"move together at r = {import_export_r:.2f} and import is about three times larger, so "
+            f"move together at r = {import_export_r:.2f} and import is {ratio_2025:.2f} times "
+            "larger, so "
             "a higher oil price widens the deficit no matter how much Australia sells. This is the "
             "single clearest policy finding in the data.",
             "Treat the two remaining refineries as the variable that matters. Refining capacity is "
@@ -926,13 +942,12 @@ def build_content(report):
 
     report.heading("16. Conclusion")
     report.text(
-        f"Ten years of Australian trade data show a surplus that peaked on a price shock and has "
-        f"fallen {abs(balance_2025 / balance_2022 - 1):.0%} since. Underneath it, subcategory 33 "
-        "runs the other way. Australia buys far more petroleum than it sells, the gap has more than "
-        "doubled, and the two sides of that trade move together closely enough that selling more "
-        "cannot fix it. The analysis in this report is reproducible: every number lives in the "
-        "submitted workbook as a formula, and the dashboard, the storyboard and this report all "
-        "read that one file."
+        f"The decade surplus peaked on a price shock and has fallen "
+        f"{abs(balance_2025 / balance_2022 - 1):.0%} since. Subcategory 33 runs the other way, and "
+        "section 11 shows why selling more petroleum cannot close it. One decision follows: track "
+        "the import bill against a target, because the backtest in section 12.3 shows no method "
+        "here forecasts this series. Every number above lives in the submitted workbook as a live "
+        "formula, and the report, the dashboard and the storyboard all read that one file."
     )
 
     report.heading("Appendix A. The AI prompt and the reply, word for word")
@@ -942,26 +957,9 @@ def build_content(report):
         "about this project."
     )
     report.sub("The prompt")
-    report.quote(
-        "Australian imports of SITC subcategory 33, Petroleum, petroleum products and related\n"
-        "materials. Annual values in millions of Australian dollars.\n\n"
-        + "\n".join(f"{row['year']} {int(row['actual'])}" for row in forecast[: len(YEARS)])
-        + "\n\nDo two things. Keep the whole answer under 200 words. Answer directly from the\n"
-        "numbers given. Do not use any tools.\n\n"
-        "1. Describe the trend between 2016 and 2025.\n"
-        "2. Forecast the value for each year from 2026 to 2030. Give one number per year in\n"
-        "millions of Australian dollars."
-    )
+    report.quote(logged("## The prompt, word for word"))
     report.sub("The reply")
-    report.quote(
-        "1. Imports rose overall from 2016 to 2025. Values climbed from 23315 in 2016 to a peak\n"
-        "of 65082 in 2022, with a dip in 2020 to 22720, likely due to reduced demand that year.\n"
-        "After 2022, values fell each year to 52742 in 2025, though 2025 is still more than\n"
-        "double the 2016 level.\n\n"
-        "2. Forecast for 2026 to 2030, based on the recent downward trend from 2022 to 2025 (an\n"
-        "average fall of about 4113 per year):\n\n"
-        + "\n".join(f"{entry['year']}: {int(entry['ai'])}" for entry in ai)
-    )
+    report.quote(logged("## The reply, word for word"))
 
     report.heading("Appendix B. Sources")
     report.text(
@@ -972,6 +970,11 @@ def build_content(report):
         "Kwinana and Altona refinery closures, China's coal restrictions, the iron ore price cycle "
         "and the 2025 gold price rise."
     )
+
+
+def logged(section):
+    text = (ROOT / "data" / "ai_forecast.md").read_text()
+    return text.split(section)[1].split("```")[1].strip()
 
 
 def to_pdf():
