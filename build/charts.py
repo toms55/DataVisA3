@@ -773,3 +773,72 @@ def divergence_chart():
         ],
     )
     return figure
+
+
+def backtest_chart():
+    rows, mape = rw.backtest()
+    train = [r for r in rows if r["linear"] is None]
+    test = [r for r in rows if r["linear"] is not None]
+    bridge = train[-1]
+    figure = go.Figure()
+    figure.add_vrect(
+        x0=train[0]["year"] - 0.5,
+        x1=bridge["year"] + 0.5,
+        fillcolor=theme.LIGHT["plane"],
+        line_width=0,
+        layer="below",
+    )
+    figure.add_trace(
+        go.Scatter(
+            x=[r["year"] for r in rows],
+            y=[r["actual"] for r in rows],
+            name="Actual import",
+            mode="lines+markers",
+            line={"color": theme.FORECAST_COLOUR["actual"], "width": 3},
+            marker={"size": 8},
+            hovertemplate="Actual %{y:,.0f}<extra></extra>",
+        )
+    )
+    series = [
+        ("linear", f"Linear trend, {mape['linear']:.1%} average error"),
+        ("cagr", f"CAGR method, {mape['cagr']:.1%} average error"),
+        ("recent", f"Recent window, the AI method, {mape['recent']:.1%} average error"),
+    ]
+    for key, label in series:
+        figure.add_trace(
+            go.Scatter(
+                x=[bridge["year"]] + [r["year"] for r in test],
+                y=[bridge["actual"]] + [r[key] for r in test],
+                name=label,
+                mode="lines+markers",
+                line={
+                    "color": theme.FORECAST_COLOUR[key if key != "recent" else "ai"],
+                    "width": 2,
+                    "dash": theme.FORECAST_DASH[key if key != "recent" else "ai"],
+                },
+                marker={"size": 7},
+                hovertemplate=f"{label} %{{y:,.0f}}<extra></extra>",
+            )
+        )
+    figure.add_annotation(
+        x=train[len(train) // 2]["year"],
+        y=max(r["actual"] for r in rows),
+        text="Training years<br>the methods were fitted here",
+        showarrow=False,
+        font={"size": 11, "color": theme.LIGHT["secondary"]},
+    )
+    figure.add_annotation(
+        x=test[len(test) // 2]["year"],
+        y=max(r["actual"] for r in rows),
+        text="Test years<br>every method missed low",
+        showarrow=False,
+        font={"size": 11, "color": theme.LIGHT["secondary"]},
+    )
+    apply(
+        figure,
+        "Backtest, each method fitted on 2016 to 2021 and asked to predict 2022 to 2025",
+        "Year",
+        "$ Millions",
+        height=480,
+    )
+    return figure

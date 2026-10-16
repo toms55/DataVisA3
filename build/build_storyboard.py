@@ -101,10 +101,65 @@ def ai_table():
     )
 
 
+def backtest_table():
+    rows, mape = rw.backtest()
+    body = []
+    for r in rows:
+        if r["linear"] is None:
+            continue
+        body.append(
+            [
+                r["year"],
+                money(r["actual"]),
+                money(r["linear"]),
+                money(r["cagr"]),
+                money(r["recent"]),
+                f"{r['linear_error']:.1%}",
+                f"{r['cagr_error']:.1%}",
+                f"{r['recent_error']:.1%}",
+            ]
+        )
+    body.append(
+        [
+            "Average error",
+            "",
+            "",
+            "",
+            "",
+            f"{mape['linear']:.1%}",
+            f"{mape['cagr']:.1%}",
+            f"{mape['recent']:.1%}",
+        ]
+    )
+    return page.table(
+        "Each method was fitted on 2016 to 2021 only, then asked to predict the four years it "
+        "had never seen. Values in $ Millions.",
+        [
+            "Year",
+            "Actual",
+            "Linear",
+            "CAGR",
+            "Recent window",
+            "Linear error",
+            "CAGR error",
+            "Recent window error",
+        ],
+        body,
+        summary="Show the backtest numbers",
+    )
+
+
+def ai_prompt():
+    log = (ROOT / "data" / "ai_forecast.md").read_text()
+    text = log.split("## The prompt, word for word")[1].split("```")[1].strip()
+    return page.quote("Show the exact prompt the model received", text)
+
+
 def main():
     rows = rw.focus()
     summary = rw.forecast_summary()
     pairs, import_export_r = rw.vs_pairs()
+    _, backtest_mape = rw.backtest()
     _, correl_export = rw.correlation("Export")
     _, cat3_correl = rw.cat3_correl("Export")
     _, share_export = rw.cat3_share("Export")
@@ -265,15 +320,50 @@ def main():
 
     out += page.panel(
         "13. What the AI saw, and what it missed",
-        "An AI model received the ten annual import values and nothing else. It was given none of "
-        "this analysis.",
-        ai_table(),
+        "An AI model received the ten annual import values and nothing else. It saw no part of "
+        "this analysis, no export data, no change point work and no target. The question was the "
+        "same one this storyboard answers in panel 12. The answers point in opposite directions, "
+        "so this panel tests both of them.",
+        ai_prompt()
+        + ai_table()
+        + page.notes(
+            "Why the two answers disagree",
+            [
+                "The AI fitted the last four years. It took the fall from the 2022 peak and "
+                "continued it, which gives an average fall of about $4,113m a year.",
+                "This analysis fitted all ten years. Over ten years the series rises, so the same "
+                "data read over a longer window points up instead of down.",
+                "Neither choice is wrong on its face. The window is the whole argument, and the "
+                "AI stated its window plainly, which is what made the disagreement checkable.",
+            ],
+        )
+        + page.figure(charts.backtest_chart(), "st13")
+        + backtest_table()
+        + page.notes(
+            "What the AI could not know",
+            [
+                "The 2020 dip and the 2022 peak are price events, not demand events. Petroleum "
+                f"import and export move together at r = {import_export_r:.2f}, which only the two "
+                "way data shows. The AI received the import side alone.",
+                "Two Australian refineries closed in 2020 and 2021. That cut domestic refining "
+                "capacity, raised the refined product share of imports and put a floor under the "
+                "volume. No part of that is visible in ten annual totals.",
+                "The ten year linear fit has an R squared of "
+                f"{summary['Linear trend R squared']:.2f}. The series is too noisy for a confident "
+                "five year forecast. The AI gave five exact numbers and no error range, which "
+                "reads as more certain than the data allows.",
+            ],
+        ),
         takeaway=(
-            "<strong>The AI read the shape correctly and then forecast the opposite direction.</strong> "
-            "It fitted only the 2022 to 2025 decline and projected a fall to $32,200m by 2030. The "
-            "whole decade fit projects a rise to $79,296m. The two answers differ by $47,096m, which "
-            "is more than the entire 2016 import value. Neither deserves confidence, which is the "
-            "real finding."
+            "<strong>The backtest says the AI method was the worst of the three, and that all "
+            "three failed.</strong> Fitted on 2016 to 2021 and asked for 2022 to 2025, the recent "
+            f"window method the AI used was out by {backtest_mape['recent']:.1%} on average, "
+            f"against {backtest_mape['cagr']:.1%} for CAGR and "
+            f"{backtest_mape['linear']:.1%} for the linear trend. Every method missed low, because "
+            "the 2022 price shock cannot be inferred from the years before it. That is the real "
+            "finding. A five year point forecast of a world priced commodity is a guess whoever "
+            "makes it, so the target path in panel 12 is worth more than any of these lines, "
+            "because a target is a decision and a forecast is only a guess."
         ),
     )
 

@@ -98,6 +98,17 @@ details.table summary {
   padding: 7px 0; user-select: none;
 }
 details.table summary:hover { color: var(--text); }
+pre.verbatim {
+  margin: 4px 0 10px; padding: 14px 16px; background: var(--inset);
+  border: 1px solid var(--border); border-radius: 8px;
+  font-family: ui-monospace, "Liberation Mono", monospace; font-size: 13px;
+  line-height: 1.55; color: var(--secondary); white-space: pre-wrap; overflow-x: auto;
+}
+.notes { margin: 14px 0 4px; }
+.notes h3 { margin: 0 0 8px; font-size: 15px; font-weight: 680; color: var(--text); }
+.notes ol { margin: 0; padding-left: 22px; color: var(--secondary); font-size: 15px; }
+.notes li { margin: 0 0 7px; }
+.notes li:last-child { margin-bottom: 0; }
 .insights { list-style: none; margin: 0; padding: 0; }
 .insights li { display: grid; grid-template-columns: 62px 1fr; gap: 14px; padding: 9px 0; border-bottom: 1px solid var(--grid); }
 .insights li:last-child { border-bottom: 0; }
@@ -233,6 +244,18 @@ def table(caption, headers, rows, summary="Show the numbers behind this chart"):
         f"<thead><tr>{head_cells}</tr></thead><tbody>{body}</tbody></table>"
         "</div></details>\n"
     )
+
+
+def quote(summary, text):
+    return (
+        f'<details class="table"><summary>{summary}</summary>'
+        f'<pre class="verbatim">{text}</pre></details>\n'
+    )
+
+
+def notes(title, items):
+    body = "".join(f"<li>{i}</li>" for i in items)
+    return f'<div class="notes"><h3>{title}</h3><ol>{body}</ol></div>\n'
 
 
 def year_control(div_ids, first_year, last_year):
