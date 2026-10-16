@@ -16,7 +16,7 @@ FIGDIR = ROOT / "build" / "report_figs"
 DOCX = ROOT / "out" / "24503993_A3.docx"
 PDF = ROOT / "out" / "24503993_A3.pdf"
 
-PAGES_URL = "https://REPLACE-ME.github.io/datavis-a3/"
+PAGES_URL = "https://toms55.github.io/datavis-a3/"
 
 INK = RGBColor(0x0B, 0x0B, 0x0B)
 SECONDARY = RGBColor(0x52, 0x51, 0x4E)
@@ -157,12 +157,14 @@ class Report:
                 run.font.name = SANS
 
     def numbers(self, items):
-        for item in items:
-            paragraph = self.document.add_paragraph(item, style="List Number")
-            paragraph.paragraph_format.space_after = Pt(2)
-            for run in paragraph.runs:
-                run.font.size = Pt(10.5)
-                run.font.name = SANS
+        for index, item in enumerate(items, start=1):
+            paragraph = self.document.add_paragraph()
+            run = paragraph.add_run(f"{index}.  {item}")
+            run.font.size = Pt(10.5)
+            run.font.name = SANS
+            paragraph.paragraph_format.left_indent = Cm(0.75)
+            paragraph.paragraph_format.first_line_indent = Cm(-0.75)
+            paragraph.paragraph_format.space_after = Pt(3)
 
     def figure(self, name, caption, width_cm=16.2):
         self.figure_number += 1
@@ -234,6 +236,7 @@ def build_content(report):
     change = rw.change_points()
     forecast = rw.forecast()
     ai = rw.ai_comparison()
+    backtest_rows, mape = rw.backtest()
     totals_export = rw.totals("Export")
     totals_import = rw.totals("Import")
     names, _ = rw.main_values("Export")
@@ -685,55 +688,156 @@ def build_content(report):
     report.text(
         "An AI model was given the ten annual petroleum import values and the unit, and nothing "
         "else. It received none of this analysis, no change point notes, no refinery history, no "
-        "export side and no target. The run used Claude Sonnet 5 at low effort on 16 October 2026, "
-        "with no tools. The prompt and the reply are reproduced in full in the appendix."
+        "export side and no target. The run used Claude Sonnet 5, model id claude-sonnet-5, at low "
+        "effort on 16 October 2026, with no tools available. The prompt and the reply are "
+        "reproduced word for word in Appendix A so that the comparison can be audited."
     )
-    report.sub("Where the AI did well")
-    report.numbers(
-        [
-            "It read the shape of the decade correctly, finding the 2022 peak, the 2020 dip and the "
-            "three year decline after 2022.",
-            "It noticed that 2025 is still more than double the 2016 level.",
-            "It stated its method, extrapolating the 2022 to 2025 fall of about 4,113 million a "
-            "year, so a reader can check the claim. It took a few seconds.",
-        ]
-    )
-    report.sub("Where it went wrong")
+
+    report.sub("12.1 What the AI produced")
     report.text(
-        f"The AI fitted only the last four years. This analysis fits all ten. The two choices point "
-        f"in opposite directions. The AI forecasts ${money(ai[-1]['ai'])}m for 2030, a fall of "
-        f"{abs(ai[-1]['ai'] / last['import'] - 1):.0%} from 2025. The linear trend forecasts "
-        f"${money(forecast[-1]['linear'])}m, a rise of "
-        f"{forecast[-1]['linear'] / last['import'] - 1:.0%}. The gap between the two answers in "
-        f"2030 is ${money(abs(ai[-1]['difference']))}m, which is more than the entire 2016 import "
-        "value."
+        "The AI did two things. It described the decade, and it forecast each year from 2026 to "
+        "2030. Its description was accurate. It found the 2022 peak of 65,082, the 2020 dip to "
+        "22,720, and the three year decline to 52,742 in 2025, and it noted that 2025 is still "
+        "more than double the 2016 level. It also stated its method, which was to extrapolate the "
+        "2022 to 2025 fall of about 4,113 million a year. A reader can therefore check it. None of "
+        "that is trivial, and it took a few seconds."
     )
-    report.sub("What the AI could not know")
+    report.text(
+        f"The forecast is where the two analyses part. The AI projects "
+        f"${money(ai[-1]['ai'])}m for 2030, a fall of "
+        f"{abs(ai[-1]['ai'] / last['import'] - 1):.0%} from 2025. My linear trend projects "
+        f"${money(forecast[-1]['linear'])}m, a rise of "
+        f"{forecast[-1]['linear'] / last['import'] - 1:.0%}. The difference in 2030 is "
+        f"${money(abs(ai[-1]['difference']))}m, which is more than the entire 2016 import value of "
+        f"${money(first['import'])}m. The gap widens every year of the forecast, from "
+        f"{abs(ai[0]['percent']):.0%} in 2026 to {abs(ai[-1]['percent']):.0%} in 2030."
+    )
+
+    report.sub("12.2 Why the two answers disagree")
+    report.text(
+        "The disagreement is not arithmetic. Both methods are correctly executed. The whole "
+        "difference comes from one unstated choice, which is how much history to fit. The AI used "
+        "the last four years, which contain only the fall from the 2022 peak, so it had to project "
+        "a fall. I used all ten years, which contain the climb to that peak, so I had to project a "
+        "rise. Neither window is obviously right, and neither of us justified the choice from the "
+        "data. That is the most useful thing this comparison exposed, and it is a criticism of my "
+        "own method as much as of the AI."
+    )
+
+    report.sub("12.3 Testing both methods on data they have not seen")
+    report.text(
+        "A disagreement can be settled by a backtest. Each method was fitted to 2016 to 2021 only, "
+        "then asked to predict 2022 to 2025, which it had not seen. The recent window method "
+        "reproduces the AI approach, extrapolating the change over the last few years of the "
+        "training period. The Pet33-Backtest sheet in the workbook holds this as live formulas."
+    )
+    report.table(
+        ["Year", "Actual", "Linear trend", "CAGR method", "Recent window, the AI approach"],
+        [
+            [
+                str(row["year"]),
+                money(row["actual"]),
+                money(row["linear"]),
+                money(row["cagr"]),
+                money(row["recent"]),
+            ]
+            for row in backtest_rows
+            if row["linear"] is not None
+        ]
+        + [
+            [
+                "Mean error",
+                "",
+                f"{mape['linear']:.1%}",
+                f"{mape['cagr']:.1%}",
+                f"{mape['recent']:.1%}",
+            ]
+        ],
+        widths=[2.4, 2.8, 3.2, 3.2, 4.6],
+    )
+    report.text(
+        f"Every method failed, and badly. The best of the three was the CAGR method at "
+        f"{mape['cagr']:.1%} mean absolute error. My linear trend scored {mape['linear']:.1%}. The "
+        f"recent window method, which is the one the AI chose, was the worst at "
+        f"{mape['recent']:.1%}, predicting ${money(backtest_rows[-1]['recent'])}m for 2025 against "
+        f"an actual of ${money(backtest_rows[-1]['actual'])}m. On the evidence available, the AI "
+        "picked the weakest of the three approaches."
+    )
+    report.text(
+        "The more important reading is that all three were wrong by a wide margin in the same "
+        "direction. Every method under-forecast, because the 2022 price shock was not present in "
+        "the training data and could not be inferred from it. No amount of curve fitting on ten "
+        "annual points will anticipate an invasion. This is the strongest argument in the report "
+        "for treating the 2026 to 2030 numbers as a planning range rather than a prediction, and "
+        "for setting a target instead."
+    )
+
+    report.sub("12.4 What the AI could not know")
     report.bullets(
         [
             "That the 2020 dip and the 2022 peak are price events rather than demand events. That "
             f"only becomes visible from the two way data, where import and export move together at "
-            f"r = {import_export_r:.2f}. The AI was given the import side alone.",
+            f"r = {import_export_r:.2f}. The AI was given the import side alone, so it could not "
+            "see the mechanism at all.",
             "That two Australian refineries closed in 2021, which shifts the mix of imports from "
-            "crude towards refined product and puts a floor under the bill.",
-            "That the series is too noisy for a point forecast. The AI gave five exact numbers with "
-            "no error range, which reads as far more certain than the data allows.",
+            "crude towards refined product and puts a floor under the bill. No amount of care with "
+            "ten numbers recovers a fact that is not in them.",
+            "That the series is too noisy to support a point forecast. The straight line fit "
+            f"explains only {summary['Linear trend R squared']:.0%} of the variance. The AI "
+            "returned five exact figures with no range and no caveat, which reads as far more "
+            "certain than the data permits.",
+            "That its own method had the worst backtest record of the three. It had no way to test "
+            "itself, because testing needs a held out period and a second method to compare "
+            "against, and it was given neither.",
         ]
     )
-    report.sub("Advantages and disadvantages of using AI here")
-    report.text(
-        "The advantages are real. The AI was fast, it was free of the anchoring that comes from "
-        "having already built an opinion, and it stated a method that could be checked. Used as a "
-        "second opinion it did something useful: it exposed that my own whole decade fit is itself "
-        "an arbitrary choice of window."
+
+    report.sub("12.5 Advantages of using AI here")
+    report.numbers(
+        [
+            "Speed. The analysis arrived in seconds, against roughly a day of work for the "
+            "spreadsheet and the charts.",
+            "Independence. The model had no stake in my conclusion and had not spent hours forming "
+            "an opinion. It read the series cold, which is exactly why it chose a different window "
+            "and exposed that my own window was an unexamined assumption.",
+            "A stated method. It said it was extrapolating the 2022 to 2025 fall at about 4,113 a "
+            "year. Because it said so, the method could be backtested and found wanting. An "
+            "assistant that only returned numbers would have been useless here.",
+            "Pattern description. Its reading of the decade shape was correct and would be a "
+            "reasonable first summary for a reader meeting the series for the first time.",
+        ]
     )
+
+    report.sub("12.6 Disadvantages of using AI here")
+    report.numbers(
+        [
+            "No causal knowledge. It could not know why 2022 happened, so it could not judge "
+            "whether to carry that movement forward. Every useful cause in this report came from "
+            "outside the dataset.",
+            "Confidence without uncertainty. Five exact numbers, no error band, no warning that "
+            "the series resists forecasting. A policy reader would take those figures at face "
+            "value.",
+            "It answers only the question asked. Given the import column, it analysed the import "
+            "column. It did not ask for the export side, which is where the actual finding of this "
+            "report lives. A human analyst would have asked.",
+            "It cannot check itself against reality. It had no held out period, no second method "
+            "and no way to measure its own error, so its weakest-performing method was presented "
+            "with the same assurance as its strongest observation.",
+            "One run is not evidence. This comparison rests on a single response. A different "
+            "phrasing, or the same prompt run again, could give different numbers, and nothing in "
+            "the output would signal that.",
+        ]
+    )
+
+    report.sub("12.7 What this means for using AI in visual analytics")
     report.text(
-        "The disadvantages are larger for this task. The AI had no causal knowledge and no way to "
-        "acquire any, so it could not know why 2022 happened and therefore could not judge whether "
-        "to extrapolate it. It gave confident point numbers with no uncertainty attached. It could "
-        "not see the second trade direction, which is where the actual finding lives. The honest "
-        "conclusion is that neither forecast deserves confidence, and that is the most useful thing "
-        "the comparison produced."
+        "The honest conclusion is that neither forecast deserves confidence, and the backtest shows "
+        "why: this series is driven by a world price and is not forecastable from its own history. "
+        "The AI was most valuable not as a forecaster but as an adversary. It made a different "
+        "defensible choice, which forced me to test a choice I had not examined. Used that way, as "
+        "a second opinion whose method is stated and then checked, it improved the analysis. Used "
+        "the way it presents itself, as five confident numbers, it would have made the analysis "
+        "worse than having no forecast at all."
     )
 
     report.heading("13. Visualisation techniques, and the problems handled")

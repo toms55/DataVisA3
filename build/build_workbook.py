@@ -994,6 +994,88 @@ def build_forecast(workbook, layout):
     return worksheet
 
 
+def build_backtest(workbook, layout):
+    worksheet = workbook.create_sheet("Pet33-Backtest")
+    worksheet.cell(1, 1, "Backtest of the forecast methods on subcategory 33 import").font = TITLE
+    worksheet.cell(
+        2,
+        1,
+        "Each method is fitted on 2016 to 2021 only, then asked to predict 2022 to 2025, "
+        "which it has not seen. The recent window method copies the approach the AI chose.",
+    )
+    headers = [
+        "Year",
+        "Actual ($ Millions)",
+        "Linear trend fitted to 2016-2021",
+        "CAGR method fitted to 2016-2021",
+        "Recent window method, the AI approach",
+        "Linear error",
+        "CAGR error",
+        "Recent window error",
+    ]
+    row = 4
+    for offset, header in enumerate(headers, start=1):
+        cell = worksheet.cell(row, offset, header)
+        cell.font = HEAD
+        cell.fill = HEAD_FILL
+        cell.alignment = Alignment(wrap_text=True, vertical="top")
+    row += 1
+    first = row
+    train_last_year = 2021
+    for year in YEARS:
+        worksheet.cell(row, 1, year)
+        cell = worksheet.cell(row, 2, f"={source_ref('Import', FOCUS_SUB, year, layout)}")
+        cell.number_format = MONEY
+        row += 1
+    train_rows = (first, first + (train_last_year - YEARS[0]))
+    train_band = f"$B${train_rows[0]}:$B${train_rows[1]}"
+    train_years = f"'Keys'!$B$3:$B${3 + (train_last_year - YEARS[0])}"
+    base = f"$B${train_rows[0]}"
+    final = f"$B${train_rows[1]}"
+    span = train_last_year - YEARS[0]
+    window_start = f"$B${train_rows[1] - 3}"
+    for offset, year in enumerate(YEARS):
+        if year <= train_last_year:
+            continue
+        target = first + offset
+        step = year - train_last_year
+        linear = worksheet.cell(
+            target, 3, f"=FORECAST(A{target},{train_band},{train_years})"
+        )
+        linear.number_format = MONEY
+        cagr = worksheet.cell(
+            target,
+            4,
+            f"={final}*POWER(POWER({final}/{base},1/{span}),{step})",
+        )
+        cagr.number_format = MONEY
+        recent = worksheet.cell(
+            target, 5, f"={final}+(({final}-{window_start})/3)*{step}"
+        )
+        recent.number_format = MONEY
+        for column, source in ((6, "C"), (7, "D"), (8, "E")):
+            error = worksheet.cell(
+                target, column, f"=ABS({source}{target}-B{target})/B{target}"
+            )
+            error.number_format = PCT
+    last = first + len(YEARS) - 1
+    row = last + 2
+    worksheet.cell(row, 1, "Mean absolute percentage error, 2022 to 2025").font = BOLD
+    for column, letter in ((6, "F"), (7, "G"), (8, "H")):
+        cell = worksheet.cell(
+            row, column, f"=AVERAGE({letter}{train_rows[1] + 1}:{letter}{last})"
+        )
+        cell.number_format = PCT
+        cell.font = BOLD
+    REG["backtest"] = (first, YEARS)
+    REG["backtest-mape"] = (row, ["linear", "cagr", "recent"])
+    set_widths(
+        worksheet,
+        {"A": 8, "B": 16, "C": 20, "D": 20, "E": 22, "F": 14, "G": 14, "H": 18},
+    )
+    return worksheet
+
+
 def read_ai_forecast():
     path = ROOT / "data" / "ai_forecast.csv"
     if not path.exists():
@@ -1060,6 +1142,7 @@ SHEET_NOTES = [
     ("Pet33-Focus", "The focus subcategory, one row per year, with an insight for each year."),
     ("Pet33-vs-Sub", "Subcategory 33 against coal and gas, on index, growth and correlation."),
     ("Pet33-Forecast", "The ten year trend and the five year forecast, with the target path."),
+    ("Pet33-Backtest", "Each forecast method fitted to 2016 to 2021, then tested against 2022 to 2025."),
     ("AI-Comparison", "My forecast against the AI forecast."),
 ]
 
@@ -1273,7 +1356,7 @@ def build_charts(workbook):
     return CHART_SHEETS
 
 
-PAGES_URL = "The live dashboard and storyboard URL is printed on the report title page."
+PAGES_URL = "Dashboard and storyboard: https://toms55.github.io/datavis-a3/"
 
 
 def main():
@@ -1292,6 +1375,7 @@ def main():
     build_focus(workbook, layout)
     build_focus_vs_sub(workbook, layout)
     build_forecast(workbook, layout)
+    build_backtest(workbook, layout)
     build_ai_comparison(workbook)
     chart_notes = build_charts(workbook)
     build_readme(workbook, list(chart_notes), PAGES_URL)

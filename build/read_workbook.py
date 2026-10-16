@@ -261,3 +261,34 @@ def totals(direction):
     return {
         YEARS[i]: worksheet.cell(4 + i, column).value for i in range(len(YEARS))
     }
+
+
+def backtest():
+    worksheet = workbook()["Pet33-Backtest"]
+    first = None
+    for row in worksheet.iter_rows(min_col=1, max_col=1):
+        if row[0].value == YEARS[0]:
+            first = row[0].row
+            break
+    rows = []
+    for offset, year in enumerate(YEARS):
+        row = first + offset
+        rows.append(
+            {
+                "year": year,
+                "actual": worksheet.cell(row, 2).value,
+                "linear": worksheet.cell(row, 3).value,
+                "cagr": worksheet.cell(row, 4).value,
+                "recent": worksheet.cell(row, 5).value,
+                "linear_error": worksheet.cell(row, 6).value,
+                "cagr_error": worksheet.cell(row, 7).value,
+                "recent_error": worksheet.cell(row, 8).value,
+            }
+        )
+    mape_row = first + len(YEARS) + 1
+    mape = {
+        "linear": worksheet.cell(mape_row, 6).value,
+        "cagr": worksheet.cell(mape_row, 7).value,
+        "recent": worksheet.cell(mape_row, 8).value,
+    }
+    return rows, mape

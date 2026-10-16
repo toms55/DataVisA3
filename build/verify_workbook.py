@@ -387,6 +387,52 @@ def check_forecast(workbook, table):
                 fail(f"Pet33-Forecast {year} {label}: {worksheet.cell(row, column).value} vs {expected}")
 
 
+def check_backtest(workbook, table):
+    worksheet = workbook["Pet33-Backtest"]
+    first = None
+    for row in worksheet.iter_rows(min_col=1, max_col=1):
+        if row[0].value == YEARS[0]:
+            first = row[0].row
+            break
+    if first is None:
+        fail("Pet33-Backtest: no year rows")
+        return
+    series = table[("Import", FOCUS_SUB)]
+    cut = 2021
+    train_years = [y for y in YEARS if y <= cut]
+    train = [series[y] for y in train_years]
+    slope, intercept, _ = linear_fit(train_years, train)
+    rate = (train[-1] / train[0]) ** (1 / (len(train_years) - 1))
+    step = (train[-1] - train[-4]) / 3
+    errors = {"linear": [], "cagr": [], "recent": []}
+    for offset, year in enumerate(YEARS):
+        if year <= cut:
+            continue
+        row = first + offset
+        ahead = year - cut
+        expected = {
+            3: slope * year + intercept,
+            4: train[-1] * rate ** ahead,
+            5: train[-1] + step * ahead,
+        }
+        for column, want in expected.items():
+            got = worksheet.cell(row, column).value
+            if not close(got, want, 1e-5):
+                fail(f"Pet33-Backtest {year} column {column}: {got} vs {want}")
+        for column, key in ((6, "linear"), (7, "cagr"), (8, "recent")):
+            want = abs(expected[column - 3] - series[year]) / series[year]
+            got = worksheet.cell(row, column).value
+            if not close(got, want, 1e-5):
+                fail(f"Pet33-Backtest {year} error column {column}: {got} vs {want}")
+            errors[key].append(want)
+    mape_row = first + len(YEARS) + 1
+    for column, key in ((6, "linear"), (7, "cagr"), (8, "recent")):
+        want = sum(errors[key]) / len(errors[key])
+        got = worksheet.cell(mape_row, column).value
+        if not close(got, want, 1e-5):
+            fail(f"Pet33-Backtest mean error {key}: {got} vs {want}")
+
+
 def check_charts(workbook):
     total = 0
     for name in workbook.sheetnames:
@@ -455,6 +501,7 @@ def main():
     check_cat3(workbook, table)
     check_vs_sub(workbook, table)
     check_forecast(workbook, table)
+    check_backtest(workbook, table)
     check_both_directions(workbook)
     charts = openpyxl.load_workbook(TARGET)
     count = check_charts(charts)
