@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Australian International Trade 2016 to 2025</title>
+<meta name="description" content="Dashboard and storyboard for Australian International Trade, 2016 to 2025, focused on petroleum.">
+<style>
+:root {
+  color-scheme: light;
+  --surface: #fcfcfb;
+  --plane: #f9f9f7;
+  --text: #0b0b0b;
+  --secondary: #52514e;
+  --muted: #898781;
+  --grid: #e1e0d9;
+  --axis: #c3c2b7;
+  --border: rgba(11,11,11,0.10);
+  --export: #2a78d6;
+  --import: #eb6834;
+  --petroleum: #4a3aa7;
+  --negative: #e34948;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--plane);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding: 32px 20px 80px; }
+header.page { border-bottom: 2px solid var(--text); padding-bottom: 20px; margin-bottom: 28px; }
+header.page .eyebrow {
+  text-transform: uppercase; letter-spacing: .09em; font-size: 12px;
+  color: var(--muted); font-weight: 600; margin: 0 0 8px;
+}
+header.page h1 { font-size: 30px; line-height: 1.2; margin: 0 0 10px; font-weight: 650; }
+header.page p { margin: 0; color: var(--secondary); max-width: 80ch; }
+nav.top { margin: 0 0 24px; display: flex; gap: 14px; flex-wrap: wrap; }
+nav.top a {
+  color: var(--secondary); text-decoration: none; font-size: 14px; font-weight: 550;
+  border: 1px solid var(--border); border-radius: 999px; padding: 6px 14px; background: var(--surface);
+}
+nav.top a:hover { border-color: var(--text); color: var(--text); }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(176px, 1fr)); gap: 12px; margin: 0 0 28px; }
+.kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.kpi .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; font-weight: 600; }
+.kpi .value { font-size: 26px; font-weight: 650; margin-top: 4px; letter-spacing: -0.01em; }
+.kpi .note { font-size: 12.5px; color: var(--secondary); margin-top: 3px; }
+.kpi.export { border-left: 4px solid var(--export); }
+.kpi.import { border-left: 4px solid var(--import); }
+.kpi.focus { border-left: 4px solid var(--petroleum); }
+.kpi.negative { border-left: 4px solid var(--negative); }
+.panel { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 20px 10px; margin: 0 0 24px; }
+.panel > h2 { font-size: 19px; margin: 0 0 4px; font-weight: 640; }
+.panel > .lede { margin: 0 0 14px; color: var(--secondary); max-width: 88ch; }
+.panel > .takeaway {
+  margin: 10px 0 4px; padding: 11px 14px; background: var(--plane);
+  border-left: 3px solid var(--petroleum); border-radius: 0 6px 6px 0;
+  color: var(--secondary); font-size: 15px;
+}
+.panel > .takeaway strong { color: var(--text); }
+.controls {
+  display: flex; gap: 16px; align-items: center; flex-wrap: wrap;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  padding: 14px 18px; margin: 0 0 24px;
+}
+.controls label { font-size: 13px; font-weight: 600; color: var(--secondary); }
+.controls select, .controls button {
+  font: inherit; font-size: 14px; padding: 6px 12px; border-radius: 7px;
+  border: 1px solid var(--axis); background: var(--surface); color: var(--text); cursor: pointer;
+}
+.controls button:hover, .controls select:hover { border-color: var(--text); }
+.plot { width: 100%; overflow-x: auto; }
+table.data { border-collapse: collapse; width: 100%; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+table.data caption { text-align: left; font-size: 13px; color: var(--muted); padding: 6px 0 10px; }
+table.data th, table.data td { padding: 7px 10px; border-bottom: 1px solid var(--grid); text-align: right; }
+table.data th:first-child, table.data td:first-child { text-align: left; font-variant-numeric: normal; }
+table.data thead th { border-bottom: 2px solid var(--axis); color: var(--secondary); font-weight: 650; }
+table.data td.text { text-align: left; font-variant-numeric: normal; color: var(--secondary); }
+.scroll { overflow-x: auto; }
+details.table { margin: 6px 0 12px; }
+details.table summary {
+  cursor: pointer; font-size: 13.5px; color: var(--secondary); font-weight: 600;
+  padding: 7px 0; user-select: none;
+}
+details.table summary:hover { color: var(--text); }
+.insights { list-style: none; margin: 0; padding: 0; }
+.insights li { display: grid; grid-template-columns: 62px 1fr; gap: 14px; padding: 9px 0; border-bottom: 1px solid var(--grid); }
+.insights li:last-child { border-bottom: 0; }
+.insights .yr { font-weight: 680; color: var(--petroleum); font-variant-numeric: tabular-nums; }
+.insights .txt { color: var(--secondary); }
+footer.page { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+footer.page a { color: var(--secondary); }
+@media (max-width: 680px) {
+  header.page h1 { font-size: 24px; }
+  .kpi .value { font-size: 21px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="top"><a href="index.html" aria-current="page">Overview</a><a href="dashboard.html">Petroleum dashboard</a><a href="storyboard.html">Storyboard</a></nav>
+<header class="page"><p class="eyebrow">32146 Visual Analytics, assessment task 3</p><h1>Australian International Trade, 2016 to 2025</h1><p>Australian International Trade from 2016 to 2025, built for readers in public policy and government. Ten main categories, 67 subcategories, import and export, in millions of Australian dollars.</p></header>
+<div class="kpis"><div class="kpi export"><div class="label">Total export 2025</div><div class="value">$523,098m</div><div class="note">Peaked at $593,865m in 2022</div></div><div class="kpi import"><div class="label">Total import 2025</div><div class="value">$460,866m</div><div class="note">Rose every year after 2020</div></div><div class="kpi focus"><div class="label">Trade balance 2025</div><div class="value">$62,232m</div><div class="note">Down 65% from $176,863m in 2022</div></div><div class="kpi negative"><div class="label">Petroleum balance 2025</div><div class="value">-$38,555m</div><div class="note">Negative in all ten years</div></div></div>
+<section class="panel"><h2>Two pages, two jobs</h2>
+<p style="margin:0 0 14px;color:var(--secondary);max-width:80ch">
+The <a href="dashboard.html"><strong>dashboard</strong></a> answers questions about one
+subcategory. It puts five comparisons and an insight for every year on a single screen, with a
+year range control so you can narrow the window. Use it to look something up.
+</p>
+<p style="margin:0 0 14px;color:var(--secondary);max-width:80ch">
+The <a href="storyboard.html"><strong>storyboard</strong></a> makes an argument in order. It runs
+from the whole of Australian trade, through the ten main categories, down into main category 3
+and then into subcategory 33. Read it top to bottom.
+</p>
+<p style="margin:0;color:var(--secondary);max-width:80ch">
+Both pages read the same Excel workbook, <code>24503993_A3.xlsx</code>. Every analytical and
+statistical pattern lives in that workbook as a live formula. These pages display those numbers
+and do not recompute them.
+</p>
+</section>
+<section class="panel"><h2>The focus of this study</h2>
+<p style="margin:0 0 14px;color:var(--secondary);max-width:80ch">
+<strong>Main category 3</strong>, mineral fuels, lubricants and related materials, is the largest
+mover in seven of the nine year transitions in the dataset. It sets the direction of the decade.
+</p>
+<p style="margin:0 0 14px;color:var(--secondary);max-width:80ch">
+<strong>Subcategory 33</strong>, petroleum, petroleum products and related materials, is the focus.
+It is the only large part of Australian trade where the country buys far more than it sells. Export
+doubled across the decade and import more than doubled, so the gap between them widened from
+$16,369m to $38,555m.
+</p>
+<p style="margin:0;color:var(--secondary);max-width:80ch">
+Reading the charts: <strong style="color:var(--export)">blue marks export</strong> and
+<strong style="color:var(--import)">orange marks import</strong> on every chart on both pages.
+Hover any chart for exact values. Each chart has a "Show the numbers" panel underneath with the
+table behind it.
+</p>
+</section>
+<footer class="page">Built from <code>24503993_A3.xlsx</code>. Every number on this page is read from that workbook, so the spreadsheet and these charts cannot disagree. Values are in millions of Australian dollars. Source: ABS Australian International Trade, 2016 to 2025.</footer>
+</div>
+</body>
+</html>
