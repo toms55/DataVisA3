@@ -70,7 +70,7 @@ def total_trade():
     return figure
 
 
-def main_small_multiples(metric):
+def main_small_multiples(metric, label_chars=26, tick_step=2, h_space=0.05):
     if metric == "value":
         reader = rw.main_values
         y_title = "$ Millions"
@@ -89,8 +89,8 @@ def main_small_multiples(metric):
         cols=5,
         shared_xaxes=True,
         vertical_spacing=0.17,
-        horizontal_spacing=0.05,
-        subplot_titles=[f"{c} {short_name(names[c], 26)}" for c in codes],
+        horizontal_spacing=h_space,
+        subplot_titles=[f"{c} {short_name(names[c], label_chars)}" for c in codes],
     )
     for position, code in enumerate(codes):
         row = position // 5 + 1
@@ -115,7 +115,7 @@ def main_small_multiples(metric):
     for row in (1, 2):
         for column in range(1, 6):
             x_spec = theme.axis("Year" if row == 2 else "")
-            x_spec["dtick"] = 2
+            x_spec["dtick"] = tick_step
             figure.update_xaxes(**x_spec, row=row, col=column)
             figure.update_yaxes(
                 **theme.axis(y_title if column == 1 else ""), row=row, col=column
@@ -208,17 +208,17 @@ def main_statistical():
     return figure
 
 
-def share_slope():
+def share_slope(label_chars=28, h_space=0.22):
     figure = make_subplots(
         rows=1,
         cols=2,
-        horizontal_spacing=0.22,
+        horizontal_spacing=h_space,
         subplot_titles=("Export share of total", "Import share of total"),
     )
     for column, direction in enumerate(DIRECTIONS, start=1):
         names, share = rw.main_share(direction)
         codes = sorted(share, key=lambda c: share[c][-1])
-        labels = [f"{c} {short_name(names[c], 28)}" for c in codes]
+        labels = [f"{c} {short_name(names[c], label_chars)}" for c in codes]
         colour = theme.DIRECTION_COLOUR[direction]
         for position, code in enumerate(codes):
             figure.add_trace(

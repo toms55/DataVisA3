@@ -3,9 +3,9 @@ LIGHT = {
     "plane": "#f9f9f7",
     "text": "#0b0b0b",
     "secondary": "#52514e",
-    "muted": "#898781",
-    "grid": "#e1e0d9",
-    "axis": "#c3c2b7",
+    "muted": "#6b6a65",
+    "grid": "#cbcac1",
+    "axis": "#8a8880",
     "border": "rgba(11,11,11,0.10)",
 }
 
@@ -14,7 +14,7 @@ IMPORT = "#eb6834"
 COAL = "#1baf7a"
 PETROLEUM = "#4a3aa7"
 GAS = "#eda100"
-CONTEXT = "#898781"
+CONTEXT = "#6b6a65"
 FORECAST_LINEAR = "#2a78d6"
 FORECAST_CAGR = "#1baf7a"
 FORECAST_TARGET = "#4a3aa7"
@@ -61,13 +61,13 @@ def axis(title):
         "title": {"text": title, "font": {"size": 13, "color": LIGHT["secondary"]}},
         "showgrid": True,
         "gridcolor": LIGHT["grid"],
-        "gridwidth": 1,
+        "gridwidth": 1.1,
         "zeroline": False,
         "linecolor": LIGHT["axis"],
         "showline": True,
         "ticks": "outside",
         "tickcolor": LIGHT["axis"],
-        "tickfont": {"size": 12, "color": LIGHT["muted"]},
+        "tickfont": {"size": 12, "color": LIGHT["secondary"]},
         "automargin": True,
     }
     if title == "Year":

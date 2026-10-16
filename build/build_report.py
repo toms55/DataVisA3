@@ -4,6 +4,7 @@ import tempfile
 from pathlib import Path
 
 import charts
+import plotly.graph_objects as go
 import read_workbook as rw
 from docx import Document
 from docx.enum.section import WD_SECTION
@@ -50,29 +51,60 @@ SANS = "Liberation Sans"
 MONO = "Liberation Mono"
 
 FIGURES = {
-    "f01_total": (lambda: charts.total_trade(), 1200, 700),
-    "f02_raw": (lambda: charts.main_small_multiples("value"), 1450, 780),
-    "f03_index": (lambda: charts.main_small_multiples("index"), 1450, 780),
-    "f04_share": (lambda: charts.share_slope(), 1500, 640),
-    "f05_stats": (lambda: charts.main_statistical(), 1500, 470),
-    "f06_change": (lambda: charts.change_point_chart(), 1400, 480),
-    "f07_correl": (lambda: charts.correlation_heatmap("Export"), 1100, 520),
-    "f08_cat3": (lambda: charts.cat3_subcategories("value"), 1400, 480),
-    "f09_cat3share": (lambda: charts.cat3_subcategories("share"), 1400, 480),
-    "f10_diverge": (lambda: charts.divergence_chart(), 1200, 450),
-    "f11_focus": (lambda: charts.focus_export_import(), 1200, 460),
-    "f12_balance": (lambda: charts.focus_balance(), 1200, 440),
-    "f13_vssubs": (lambda: charts.focus_vs_subcategories(), 1400, 480),
-    "f14_scatter": (lambda: charts.focus_scatter(), 1100, 470),
-    "f15_forecast": (lambda: charts.forecast_chart(), 1300, 520),
+    "f01_total": (lambda: charts.total_trade(), 1200, 760, 1.45),
+    "f02_raw": (lambda: charts.main_small_multiples("value", 16, 4, 0.085), 1300, 760, 1.7),
+    "f03_index": (lambda: charts.main_small_multiples("index", 16, 4, 0.085), 1300, 760, 1.7),
+    "f04_share": (lambda: charts.share_slope(20, 0.33), 1450, 700, 1.45),
+    "f05_stats": (lambda: charts.main_statistical(), 1400, 520, 1.5),
+    "f06_change": (lambda: charts.change_point_chart(), 1300, 520, 1.45),
+    "f07_correl": (lambda: charts.correlation_heatmap("Export"), 1050, 540, 1.3),
+    "f08_cat3": (lambda: charts.cat3_subcategories("value"), 1300, 520, 1.45),
+    "f09_cat3share": (lambda: charts.cat3_subcategories("share"), 1300, 520, 1.45),
+    "f10_diverge": (lambda: charts.divergence_chart(), 1150, 480, 1.35),
+    "f11_focus": (lambda: charts.focus_export_import(), 1150, 500, 1.35),
+    "f12_balance": (lambda: charts.focus_balance(), 1150, 470, 1.35),
+    "f13_vssubs": (lambda: charts.focus_vs_subcategories(), 1300, 520, 1.45),
+    "f14_scatter": (lambda: charts.focus_scatter(), 1050, 500, 1.3),
+    "f15_forecast": (lambda: charts.forecast_chart(), 1250, 560, 1.4),
 }
+
+FONT_KEYS = ("font", "tickfont", "titlefont", "insidetextfont", "outsidetextfont", "textfont")
+
+
+def scale_fonts(node, factor):
+    if isinstance(node, dict):
+        for key, value in node.items():
+            if key in FONT_KEYS and isinstance(value, dict) and value.get("size"):
+                value["size"] = round(value["size"] * factor, 1)
+            else:
+                scale_fonts(value, factor)
+    elif isinstance(node, list):
+        for item in node:
+            scale_fonts(item, factor)
+    return node
+
+
+def enlarge(figure, factor):
+    spec = figure.to_dict()
+    scale_fonts(spec.get("data", []), factor)
+    layout = scale_fonts(spec["layout"], factor)
+    base = layout.setdefault("font", {})
+    base["size"] = round(base.get("size", 12) * factor, 1)
+    legend = layout.get("legend", {})
+    if isinstance(legend.get("y"), (int, float)) and legend["y"] < 0:
+        legend["y"] = round(legend["y"] * factor, 3)
+    margin = layout.get("margin", {})
+    for side in ("l", "r", "t", "b"):
+        if side in margin:
+            margin[side] = round(margin[side] * factor)
+    return go.Figure(spec)
 
 
 def render_figures():
     FIGDIR.mkdir(parents=True, exist_ok=True)
-    for name, (build, width, height) in FIGURES.items():
+    for name, (build, width, height, factor) in FIGURES.items():
         path = FIGDIR / f"{name}.png"
-        figure = build()
+        figure = enlarge(build(), factor)
         figure.write_image(path, width=width, height=height, scale=2)
     return FIGDIR
 
@@ -166,7 +198,7 @@ class Report:
             paragraph.paragraph_format.first_line_indent = Cm(-0.75)
             paragraph.paragraph_format.space_after = Pt(3)
 
-    def figure(self, name, caption, width_cm=16.2):
+    def figure(self, name, caption, width_cm=16.8):
         self.figure_number += 1
         paragraph = self.document.add_paragraph()
         paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -1035,7 +1067,9 @@ def to_pdf():
                 "--nolockcheck",
                 f"-env:UserInstallation=file://{PROFILE}",
                 "--convert-to",
-                "pdf",
+                "pdf:writer_pdf_Export:"
+                '{"UseLosslessCompression":{"type":"boolean","value":"true"},'
+                '"ReduceImageResolution":{"type":"boolean","value":"false"}}',
                 "--outdir",
                 workdir,
                 str(DOCX),
