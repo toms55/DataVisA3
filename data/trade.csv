@@ -1,0 +1,1561 @@
+direction,year,code,level,name,unit,series_id,value
+Export,2016,0,main,Food and live animals,$ Millions,A1827804K,32621.0
+Export,2016,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1827805L,1874.0
+Export,2016,01,sub,Meat and meat preparations,$ Millions,A1827806R,11088.0
+Export,2016,02,sub,Dairy products and birds’ eggs,$ Millions,A1827807T,2208.0
+Export,2016,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1827808V,1379.0
+Export,2016,04,sub,Cereals and cereal preparations,$ Millions,A1827809W,7580.0
+Export,2016,05,sub,Vegetables and fruit,$ Millions,A1827810F,4153.0
+Export,2016,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1827811J,319.0
+Export,2016,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1827812K,363.0
+Export,2016,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1827813L,1174.0
+Export,2016,09,sub,Miscellaneous edible products and preparations,$ Millions,A1827814R,2478.0
+Export,2016,1,main,Beverages and tobacco,$ Millions,A1827815T,2679.0
+Export,2016,11,sub,Beverages,$ Millions,A1827816V,2610.0
+Export,2016,12,sub,Tobacco and tobacco manufactures,$ Millions,A1827817W,68.0
+Export,2016,2,main,"Crude materials, inedible, except fuels",$ Millions,A1827818X,83621.0
+Export,2016,21,sub,"Hides, skins and furskins, raw",$ Millions,A1827819A,827.0
+Export,2016,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1827820K,1415.0
+Export,2016,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1827821L,7.0
+Export,2016,24,sub,Cork and wood,$ Millions,A1827822R,1769.0
+Export,2016,25,sub,Pulp and waste paper,$ Millions,A1827823T,242.0
+Export,2016,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1827824V,4722.0
+Export,2016,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1827825W,665.0
+Export,2016,28,sub,Metalliferous ores and metal scrap,$ Millions,A1827826X,73494.0
+Export,2016,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1827827A,476.0
+Export,2016,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1827828C,67702.0
+Export,2016,32,sub,"Coal, coke and briquettes",$ Millions,A1827829F,42273.0
+Export,2016,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1827830R,6946.0
+Export,2016,34,sub,"Gas, natural and manufactured",$ Millions,A1827831T,18480.0
+Export,2016,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1827832V,675.0
+Export,2016,41,sub,Animal oils and fats,$ Millions,A1827833W,422.0
+Export,2016,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1827834X,217.0
+Export,2016,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1827835A,37.0
+Export,2016,5,main,"Chemicals and related products, nes",$ Millions,A1827836C,8367.0
+Export,2016,51,sub,Organic chemicals,$ Millions,A1827837F,227.0
+Export,2016,52,sub,Inorganic chemicals,$ Millions,A1827838J,657.0
+Export,2016,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1827839K,847.0
+Export,2016,54,sub,Medicinal and pharmaceutical products,$ Millions,A1827840V,3486.0
+Export,2016,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1827841W,985.0
+Export,2016,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1827842X,369.0
+Export,2016,57,sub,Plastics in primary forms,$ Millions,A1827843A,315.0
+Export,2016,58,sub,Plastics in non-primary forms,$ Millions,A1827844C,418.0
+Export,2016,59,sub,"Chemical materials and products, nes",$ Millions,A1827845F,1065.0
+Export,2016,6,main,Manufactured goods classified chiefly by material,$ Millions,A1827846J,13406.0
+Export,2016,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1827847K,184.0
+Export,2016,62,sub,"Rubber manufactures, nes",$ Millions,A1827848L,246.0
+Export,2016,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1827849R,111.0
+Export,2016,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1827850X,984.0
+Export,2016,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1827851A,268.0
+Export,2016,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1827852C,1060.0
+Export,2016,67,sub,Iron and steel,$ Millions,A1827853F,602.0
+Export,2016,68,sub,Non-ferrous metals,$ Millions,A1827854J,8842.0
+Export,2016,69,sub,"Manufactures of metals, nes",$ Millions,A1827855K,1107.0
+Export,2016,7,main,Machinery and transport equipment,$ Millions,A1827856L,15387.0
+Export,2016,71,sub,Power generating machinery and equipment,$ Millions,A1827857R,872.0
+Export,2016,72,sub,Machinery specialized for particular industries,$ Millions,A1827858T,1872.0
+Export,2016,73,sub,Metalworking machinery,$ Millions,A1827859V,161.0
+Export,2016,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1827860C,2269.0
+Export,2016,75,sub,Office machines and automatic data processing machines,$ Millions,A1827861F,1542.0
+Export,2016,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1827862J,1752.0
+Export,2016,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1827863K,1691.0
+Export,2016,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1827864L,2940.0
+Export,2016,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1827865R,2290.0
+Export,2016,8,main,Miscellaneous manufactured articles,$ Millions,A1827866T,6558.0
+Export,2016,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1827867V,136.0
+Export,2016,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1827868W,133.0
+Export,2016,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1827869X,64.0
+Export,2016,84,sub,Articles of apparel and clothing accessories,$ Millions,A1827870J,328.0
+Export,2016,85,sub,Footwear,$ Millions,A1827871K,92.0
+Export,2016,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1827872L,2532.0
+Export,2016,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1827873R,409.0
+Export,2016,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1827874T,2862.0
+Export,2016,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1827875V,27452.0
+Export,2016,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1827876W,1563.0
+Export,2016,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1827877X,989.0
+Export,2016,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1827878A,1.0
+Export,2016,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1827879C,18857.0
+Export,2016,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1827880L,6043.0
+Export,2016,-1,total,TOTAL,$ Millions,A1827881R,258469.0
+Export,2017,0,main,Food and live animals,$ Millions,A1827804K,36596.0
+Export,2017,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1827805L,1618.0
+Export,2017,01,sub,Meat and meat preparations,$ Millions,A1827806R,11834.0
+Export,2017,02,sub,Dairy products and birds’ eggs,$ Millions,A1827807T,2345.0
+Export,2017,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1827808V,1424.0
+Export,2017,04,sub,Cereals and cereal preparations,$ Millions,A1827809W,9336.0
+Export,2017,05,sub,Vegetables and fruit,$ Millions,A1827810F,5099.0
+Export,2017,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1827811J,330.0
+Export,2017,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1827812K,369.0
+Export,2017,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1827813L,1230.0
+Export,2017,09,sub,Miscellaneous edible products and preparations,$ Millions,A1827814R,3011.0
+Export,2017,1,main,Beverages and tobacco,$ Millions,A1827815T,3031.0
+Export,2017,11,sub,Beverages,$ Millions,A1827816V,2962.0
+Export,2017,12,sub,Tobacco and tobacco manufactures,$ Millions,A1827817W,67.0
+Export,2017,2,main,"Crude materials, inedible, except fuels",$ Millions,A1827818X,99473.0
+Export,2017,21,sub,"Hides, skins and furskins, raw",$ Millions,A1827819A,808.0
+Export,2017,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1827820K,1906.0
+Export,2017,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1827821L,0.0
+Export,2017,24,sub,Cork and wood,$ Millions,A1827822R,1975.0
+Export,2017,25,sub,Pulp and waste paper,$ Millions,A1827823T,277.0
+Export,2017,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1827824V,5852.0
+Export,2017,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1827825W,1575.0
+Export,2017,28,sub,Metalliferous ores and metal scrap,$ Millions,A1827826X,86583.0
+Export,2017,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1827827A,496.0
+Export,2017,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1827828C,91149.0
+Export,2017,32,sub,"Coal, coke and briquettes",$ Millions,A1827829F,57133.0
+Export,2017,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1827830R,7662.0
+Export,2017,34,sub,"Gas, natural and manufactured",$ Millions,A1827831T,26355.0
+Export,2017,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1827832V,680.0
+Export,2017,41,sub,Animal oils and fats,$ Millions,A1827833W,390.0
+Export,2017,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1827834X,241.0
+Export,2017,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1827835A,49.0
+Export,2017,5,main,"Chemicals and related products, nes",$ Millions,A1827836C,8643.0
+Export,2017,51,sub,Organic chemicals,$ Millions,A1827837F,199.0
+Export,2017,52,sub,Inorganic chemicals,$ Millions,A1827838J,702.0
+Export,2017,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1827839K,959.0
+Export,2017,54,sub,Medicinal and pharmaceutical products,$ Millions,A1827840V,3478.0
+Export,2017,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1827841W,1180.0
+Export,2017,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1827842X,265.0
+Export,2017,57,sub,Plastics in primary forms,$ Millions,A1827843A,339.0
+Export,2017,58,sub,Plastics in non-primary forms,$ Millions,A1827844C,443.0
+Export,2017,59,sub,"Chemical materials and products, nes",$ Millions,A1827845F,1072.0
+Export,2017,6,main,Manufactured goods classified chiefly by material,$ Millions,A1827846J,14749.0
+Export,2017,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1827847K,166.0
+Export,2017,62,sub,"Rubber manufactures, nes",$ Millions,A1827848L,294.0
+Export,2017,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1827849R,115.0
+Export,2017,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1827850X,1013.0
+Export,2017,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1827851A,274.0
+Export,2017,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1827852C,902.0
+Export,2017,67,sub,Iron and steel,$ Millions,A1827853F,917.0
+Export,2017,68,sub,Non-ferrous metals,$ Millions,A1827854J,9957.0
+Export,2017,69,sub,"Manufactures of metals, nes",$ Millions,A1827855K,1114.0
+Export,2017,7,main,Machinery and transport equipment,$ Millions,A1827856L,14638.0
+Export,2017,71,sub,Power generating machinery and equipment,$ Millions,A1827857R,742.0
+Export,2017,72,sub,Machinery specialized for particular industries,$ Millions,A1827858T,1886.0
+Export,2017,73,sub,Metalworking machinery,$ Millions,A1827859V,188.0
+Export,2017,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1827860C,2191.0
+Export,2017,75,sub,Office machines and automatic data processing machines,$ Millions,A1827861F,1226.0
+Export,2017,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1827862J,2012.0
+Export,2017,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1827863K,1847.0
+Export,2017,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1827864L,2264.0
+Export,2017,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1827865R,2283.0
+Export,2017,8,main,Miscellaneous manufactured articles,$ Millions,A1827866T,6857.0
+Export,2017,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1827867V,144.0
+Export,2017,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1827868W,141.0
+Export,2017,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1827869X,70.0
+Export,2017,84,sub,Articles of apparel and clothing accessories,$ Millions,A1827870J,328.0
+Export,2017,85,sub,Footwear,$ Millions,A1827871K,115.0
+Export,2017,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1827872L,2619.0
+Export,2017,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1827873R,427.0
+Export,2017,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1827874T,3017.0
+Export,2017,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1827875V,25523.0
+Export,2017,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1827876W,1474.0
+Export,2017,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1827877X,677.0
+Export,2017,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1827878A,1.0
+Export,2017,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1827879C,17620.0
+Export,2017,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1827880L,5749.0
+Export,2017,-1,total,TOTAL,$ Millions,A1827881R,301334.0
+Export,2018,0,main,Food and live animals,$ Millions,A1827804K,35271.0
+Export,2018,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1827805L,1825.0
+Export,2018,01,sub,Meat and meat preparations,$ Millions,A1827806R,13605.0
+Export,2018,02,sub,Dairy products and birds’ eggs,$ Millions,A1827807T,2481.0
+Export,2018,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1827808V,1469.0
+Export,2018,04,sub,Cereals and cereal preparations,$ Millions,A1827809W,7326.0
+Export,2018,05,sub,Vegetables and fruit,$ Millions,A1827810F,3567.0
+Export,2018,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1827811J,300.0
+Export,2018,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1827812K,393.0
+Export,2018,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1827813L,1359.0
+Export,2018,09,sub,Miscellaneous edible products and preparations,$ Millions,A1827814R,2946.0
+Export,2018,1,main,Beverages and tobacco,$ Millions,A1827815T,3377.0
+Export,2018,11,sub,Beverages,$ Millions,A1827816V,3318.0
+Export,2018,12,sub,Tobacco and tobacco manufactures,$ Millions,A1827817W,59.0
+Export,2018,2,main,"Crude materials, inedible, except fuels",$ Millions,A1827818X,106879.0
+Export,2018,21,sub,"Hides, skins and furskins, raw",$ Millions,A1827819A,731.0
+Export,2018,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1827820K,1398.0
+Export,2018,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1827821L,15.0
+Export,2018,24,sub,Cork and wood,$ Millions,A1827822R,2218.0
+Export,2018,25,sub,Pulp and waste paper,$ Millions,A1827823T,238.0
+Export,2018,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1827824V,6474.0
+Export,2018,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1827825W,2110.0
+Export,2018,28,sub,Metalliferous ores and metal scrap,$ Millions,A1827826X,93112.0
+Export,2018,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1827827A,584.0
+Export,2018,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1827828C,122269.0
+Export,2018,32,sub,"Coal, coke and briquettes",$ Millions,A1827829F,66848.0
+Export,2018,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1827830R,11191.0
+Export,2018,34,sub,"Gas, natural and manufactured",$ Millions,A1827831T,44229.0
+Export,2018,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1827832V,663.0
+Export,2018,41,sub,Animal oils and fats,$ Millions,A1827833W,368.0
+Export,2018,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1827834X,240.0
+Export,2018,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1827835A,55.0
+Export,2018,5,main,"Chemicals and related products, nes",$ Millions,A1827836C,10510.0
+Export,2018,51,sub,Organic chemicals,$ Millions,A1827837F,201.0
+Export,2018,52,sub,Inorganic chemicals,$ Millions,A1827838J,937.0
+Export,2018,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1827839K,1029.0
+Export,2018,54,sub,Medicinal and pharmaceutical products,$ Millions,A1827840V,4750.0
+Export,2018,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1827841W,1346.0
+Export,2018,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1827842X,320.0
+Export,2018,57,sub,Plastics in primary forms,$ Millions,A1827843A,298.0
+Export,2018,58,sub,Plastics in non-primary forms,$ Millions,A1827844C,443.0
+Export,2018,59,sub,"Chemical materials and products, nes",$ Millions,A1827845F,1185.0
+Export,2018,6,main,Manufactured goods classified chiefly by material,$ Millions,A1827846J,17031.0
+Export,2018,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1827847K,166.0
+Export,2018,62,sub,"Rubber manufactures, nes",$ Millions,A1827848L,307.0
+Export,2018,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1827849R,97.0
+Export,2018,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1827850X,1145.0
+Export,2018,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1827851A,273.0
+Export,2018,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1827852C,927.0
+Export,2018,67,sub,Iron and steel,$ Millions,A1827853F,1029.0
+Export,2018,68,sub,Non-ferrous metals,$ Millions,A1827854J,11823.0
+Export,2018,69,sub,"Manufactures of metals, nes",$ Millions,A1827855K,1265.0
+Export,2018,7,main,Machinery and transport equipment,$ Millions,A1827856L,15352.0
+Export,2018,71,sub,Power generating machinery and equipment,$ Millions,A1827857R,939.0
+Export,2018,72,sub,Machinery specialized for particular industries,$ Millions,A1827858T,1833.0
+Export,2018,73,sub,Metalworking machinery,$ Millions,A1827859V,275.0
+Export,2018,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1827860C,2296.0
+Export,2018,75,sub,Office machines and automatic data processing machines,$ Millions,A1827861F,1284.0
+Export,2018,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1827862J,2008.0
+Export,2018,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1827863K,2078.0
+Export,2018,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1827864L,1693.0
+Export,2018,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1827865R,2945.0
+Export,2018,8,main,Miscellaneous manufactured articles,$ Millions,A1827866T,7288.0
+Export,2018,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1827867V,162.0
+Export,2018,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1827868W,152.0
+Export,2018,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1827869X,80.0
+Export,2018,84,sub,Articles of apparel and clothing accessories,$ Millions,A1827870J,336.0
+Export,2018,85,sub,Footwear,$ Millions,A1827871K,124.0
+Export,2018,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1827872L,2765.0
+Export,2018,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1827873R,440.0
+Export,2018,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1827874T,3231.0
+Export,2018,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1827875V,25975.0
+Export,2018,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1827876W,1371.0
+Export,2018,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1827877X,814.0
+Export,2018,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1827878A,0.0
+Export,2018,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1827879C,19136.0
+Export,2018,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1827880L,4651.0
+Export,2018,-1,total,TOTAL,$ Millions,A1827881R,344615.0
+Export,2019,0,main,Food and live animals,$ Millions,A1827804K,37649.0
+Export,2019,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1827805L,2126.0
+Export,2019,01,sub,Meat and meat preparations,$ Millions,A1827806R,16462.0
+Export,2019,02,sub,Dairy products and birds’ eggs,$ Millions,A1827807T,2488.0
+Export,2019,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1827808V,1529.0
+Export,2019,04,sub,Cereals and cereal preparations,$ Millions,A1827809W,5891.0
+Export,2019,05,sub,Vegetables and fruit,$ Millions,A1827810F,4112.0
+Export,2019,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1827811J,268.0
+Export,2019,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1827812K,425.0
+Export,2019,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1827813L,1374.0
+Export,2019,09,sub,Miscellaneous edible products and preparations,$ Millions,A1827814R,2977.0
+Export,2019,1,main,Beverages and tobacco,$ Millions,A1827815T,3582.0
+Export,2019,11,sub,Beverages,$ Millions,A1827816V,3523.0
+Export,2019,12,sub,Tobacco and tobacco manufactures,$ Millions,A1827817W,59.0
+Export,2019,2,main,"Crude materials, inedible, except fuels",$ Millions,A1827818X,136415.0
+Export,2019,21,sub,"Hides, skins and furskins, raw",$ Millions,A1827819A,579.0
+Export,2019,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1827820K,1051.0
+Export,2019,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1827821L,20.0
+Export,2019,24,sub,Cork and wood,$ Millions,A1827822R,2225.0
+Export,2019,25,sub,Pulp and waste paper,$ Millions,A1827823T,183.0
+Export,2019,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1827824V,4844.0
+Export,2019,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1827825W,1717.0
+Export,2019,28,sub,Metalliferous ores and metal scrap,$ Millions,A1827826X,125211.0
+Export,2019,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1827827A,584.0
+Export,2019,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1827828C,126288.0
+Export,2019,32,sub,"Coal, coke and briquettes",$ Millions,A1827829F,63941.0
+Export,2019,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1827830R,12224.0
+Export,2019,34,sub,"Gas, natural and manufactured",$ Millions,A1827831T,50124.0
+Export,2019,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1827832V,647.0
+Export,2019,41,sub,Animal oils and fats,$ Millions,A1827833W,359.0
+Export,2019,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1827834X,243.0
+Export,2019,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1827835A,47.0
+Export,2019,5,main,"Chemicals and related products, nes",$ Millions,A1827836C,11971.0
+Export,2019,51,sub,Organic chemicals,$ Millions,A1827837F,212.0
+Export,2019,52,sub,Inorganic chemicals,$ Millions,A1827838J,754.0
+Export,2019,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1827839K,1008.0
+Export,2019,54,sub,Medicinal and pharmaceutical products,$ Millions,A1827840V,6249.0
+Export,2019,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1827841W,1532.0
+Export,2019,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1827842X,262.0
+Export,2019,57,sub,Plastics in primary forms,$ Millions,A1827843A,328.0
+Export,2019,58,sub,Plastics in non-primary forms,$ Millions,A1827844C,397.0
+Export,2019,59,sub,"Chemical materials and products, nes",$ Millions,A1827845F,1225.0
+Export,2019,6,main,Manufactured goods classified chiefly by material,$ Millions,A1827846J,17567.0
+Export,2019,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1827847K,141.0
+Export,2019,62,sub,"Rubber manufactures, nes",$ Millions,A1827848L,325.0
+Export,2019,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1827849R,108.0
+Export,2019,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1827850X,1094.0
+Export,2019,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1827851A,305.0
+Export,2019,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1827852C,1005.0
+Export,2019,67,sub,Iron and steel,$ Millions,A1827853F,1217.0
+Export,2019,68,sub,Non-ferrous metals,$ Millions,A1827854J,11999.0
+Export,2019,69,sub,"Manufactures of metals, nes",$ Millions,A1827855K,1372.0
+Export,2019,7,main,Machinery and transport equipment,$ Millions,A1827856L,16992.0
+Export,2019,71,sub,Power generating machinery and equipment,$ Millions,A1827857R,1064.0
+Export,2019,72,sub,Machinery specialized for particular industries,$ Millions,A1827858T,1961.0
+Export,2019,73,sub,Metalworking machinery,$ Millions,A1827859V,192.0
+Export,2019,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1827860C,2456.0
+Export,2019,75,sub,Office machines and automatic data processing machines,$ Millions,A1827861F,1410.0
+Export,2019,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1827862J,2657.0
+Export,2019,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1827863K,2131.0
+Export,2019,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1827864L,1919.0
+Export,2019,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1827865R,3208.0
+Export,2019,8,main,Miscellaneous manufactured articles,$ Millions,A1827866T,8208.0
+Export,2019,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1827867V,157.0
+Export,2019,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1827868W,182.0
+Export,2019,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1827869X,94.0
+Export,2019,84,sub,Articles of apparel and clothing accessories,$ Millions,A1827870J,377.0
+Export,2019,85,sub,Footwear,$ Millions,A1827871K,122.0
+Export,2019,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1827872L,3906.0
+Export,2019,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1827873R,466.0
+Export,2019,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1827874T,2901.0
+Export,2019,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1827875V,30661.0
+Export,2019,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1827876W,1239.0
+Export,2019,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1827877X,861.0
+Export,2019,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1827878A,0.0
+Export,2019,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1827879C,23372.0
+Export,2019,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1827880L,5188.0
+Export,2019,-1,total,TOTAL,$ Millions,A1827881R,389981.0
+Export,2020,0,main,Food and live animals,$ Millions,A1827804K,35628.0
+Export,2020,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1827805L,1949.0
+Export,2020,01,sub,Meat and meat preparations,$ Millions,A1827806R,14705.0
+Export,2020,02,sub,Dairy products and birds’ eggs,$ Millions,A1827807T,2544.0
+Export,2020,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1827808V,1229.0
+Export,2020,04,sub,Cereals and cereal preparations,$ Millions,A1827809W,6440.0
+Export,2020,05,sub,Vegetables and fruit,$ Millions,A1827810F,4127.0
+Export,2020,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1827811J,283.0
+Export,2020,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1827812K,447.0
+Export,2020,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1827813L,1310.0
+Export,2020,09,sub,Miscellaneous edible products and preparations,$ Millions,A1827814R,2591.0
+Export,2020,1,main,Beverages and tobacco,$ Millions,A1827815T,3283.0
+Export,2020,11,sub,Beverages,$ Millions,A1827816V,3246.0
+Export,2020,12,sub,Tobacco and tobacco manufactures,$ Millions,A1827817W,37.0
+Export,2020,2,main,"Crude materials, inedible, except fuels",$ Millions,A1827818X,151968.0
+Export,2020,21,sub,"Hides, skins and furskins, raw",$ Millions,A1827819A,414.0
+Export,2020,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1827820K,1183.0
+Export,2020,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1827821L,10.0
+Export,2020,24,sub,Cork and wood,$ Millions,A1827822R,1669.0
+Export,2020,25,sub,Pulp and waste paper,$ Millions,A1827823T,172.0
+Export,2020,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1827824V,2739.0
+Export,2020,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1827825W,1163.0
+Export,2020,28,sub,Metalliferous ores and metal scrap,$ Millions,A1827826X,144068.0
+Export,2020,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1827827A,551.0
+Export,2020,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1827828C,88821.0
+Export,2020,32,sub,"Coal, coke and briquettes",$ Millions,A1827829F,43367.0
+Export,2020,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1827830R,7755.0
+Export,2020,34,sub,"Gas, natural and manufactured",$ Millions,A1827831T,37699.0
+Export,2020,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1827832V,761.0
+Export,2020,41,sub,Animal oils and fats,$ Millions,A1827833W,444.0
+Export,2020,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1827834X,282.0
+Export,2020,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1827835A,33.0
+Export,2020,5,main,"Chemicals and related products, nes",$ Millions,A1827836C,11092.0
+Export,2020,51,sub,Organic chemicals,$ Millions,A1827837F,227.0
+Export,2020,52,sub,Inorganic chemicals,$ Millions,A1827838J,641.0
+Export,2020,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1827839K,894.0
+Export,2020,54,sub,Medicinal and pharmaceutical products,$ Millions,A1827840V,5547.0
+Export,2020,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1827841W,1590.0
+Export,2020,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1827842X,330.0
+Export,2020,57,sub,Plastics in primary forms,$ Millions,A1827843A,232.0
+Export,2020,58,sub,Plastics in non-primary forms,$ Millions,A1827844C,311.0
+Export,2020,59,sub,"Chemical materials and products, nes",$ Millions,A1827845F,1325.0
+Export,2020,6,main,Manufactured goods classified chiefly by material,$ Millions,A1827846J,14708.0
+Export,2020,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1827847K,112.0
+Export,2020,62,sub,"Rubber manufactures, nes",$ Millions,A1827848L,260.0
+Export,2020,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1827849R,103.0
+Export,2020,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1827850X,934.0
+Export,2020,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1827851A,276.0
+Export,2020,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1827852C,736.0
+Export,2020,67,sub,Iron and steel,$ Millions,A1827853F,920.0
+Export,2020,68,sub,Non-ferrous metals,$ Millions,A1827854J,10215.0
+Export,2020,69,sub,"Manufactures of metals, nes",$ Millions,A1827855K,1154.0
+Export,2020,7,main,Machinery and transport equipment,$ Millions,A1827856L,14678.0
+Export,2020,71,sub,Power generating machinery and equipment,$ Millions,A1827857R,1068.0
+Export,2020,72,sub,Machinery specialized for particular industries,$ Millions,A1827858T,1769.0
+Export,2020,73,sub,Metalworking machinery,$ Millions,A1827859V,138.0
+Export,2020,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1827860C,2164.0
+Export,2020,75,sub,Office machines and automatic data processing machines,$ Millions,A1827861F,1300.0
+Export,2020,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1827862J,2251.0
+Export,2020,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1827863K,2006.0
+Export,2020,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1827864L,1598.0
+Export,2020,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1827865R,2387.0
+Export,2020,8,main,Miscellaneous manufactured articles,$ Millions,A1827866T,7376.0
+Export,2020,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1827867V,161.0
+Export,2020,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1827868W,136.0
+Export,2020,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1827869X,112.0
+Export,2020,84,sub,Articles of apparel and clothing accessories,$ Millions,A1827870J,387.0
+Export,2020,85,sub,Footwear,$ Millions,A1827871K,129.0
+Export,2020,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1827872L,3526.0
+Export,2020,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1827873R,432.0
+Export,2020,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1827874T,2494.0
+Export,2020,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1827875V,34408.0
+Export,2020,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1827876W,1063.0
+Export,2020,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1827877X,1303.0
+Export,2020,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1827878A,2.0
+Export,2020,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1827879C,25492.0
+Export,2020,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1827880L,6551.0
+Export,2020,-1,total,TOTAL,$ Millions,A1827881R,362728.0
+Export,2021,0,main,Food and live animals,$ Millions,A1827804K,43540.0
+Export,2021,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1827805L,1646.0
+Export,2021,01,sub,Meat and meat preparations,$ Millions,A1827806R,14801.0
+Export,2021,02,sub,Dairy products and birds’ eggs,$ Millions,A1827807T,2947.0
+Export,2021,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1827808V,1207.0
+Export,2021,04,sub,Cereals and cereal preparations,$ Millions,A1827809W,14105.0
+Export,2021,05,sub,Vegetables and fruit,$ Millions,A1827810F,4512.0
+Export,2021,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1827811J,318.0
+Export,2021,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1827812K,476.0
+Export,2021,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1827813L,1424.0
+Export,2021,09,sub,Miscellaneous edible products and preparations,$ Millions,A1827814R,2105.0
+Export,2021,1,main,Beverages and tobacco,$ Millions,A1827815T,2523.0
+Export,2021,11,sub,Beverages,$ Millions,A1827816V,2503.0
+Export,2021,12,sub,Tobacco and tobacco manufactures,$ Millions,A1827817W,21.0
+Export,2021,2,main,"Crude materials, inedible, except fuels",$ Millions,A1827818X,198179.0
+Export,2021,21,sub,"Hides, skins and furskins, raw",$ Millions,A1827819A,504.0
+Export,2021,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1827820K,3166.0
+Export,2021,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1827821L,11.0
+Export,2021,24,sub,Cork and wood,$ Millions,A1827822R,1338.0
+Export,2021,25,sub,Pulp and waste paper,$ Millions,A1827823T,266.0
+Export,2021,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1827824V,5081.0
+Export,2021,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1827825W,1948.0
+Export,2021,28,sub,Metalliferous ores and metal scrap,$ Millions,A1827826X,185259.0
+Export,2021,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1827827A,613.0
+Export,2021,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1827828C,126395.0
+Export,2021,32,sub,"Coal, coke and briquettes",$ Millions,A1827829F,63504.0
+Export,2021,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1827830R,11715.0
+Export,2021,34,sub,"Gas, natural and manufactured",$ Millions,A1827831T,51179.0
+Export,2021,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1827832V,1085.0
+Export,2021,41,sub,Animal oils and fats,$ Millions,A1827833W,669.0
+Export,2021,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1827834X,360.0
+Export,2021,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1827835A,54.0
+Export,2021,5,main,"Chemicals and related products, nes",$ Millions,A1827836C,10052.0
+Export,2021,51,sub,Organic chemicals,$ Millions,A1827837F,239.0
+Export,2021,52,sub,Inorganic chemicals,$ Millions,A1827838J,808.0
+Export,2021,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1827839K,1036.0
+Export,2021,54,sub,Medicinal and pharmaceutical products,$ Millions,A1827840V,3630.0
+Export,2021,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1827841W,1663.0
+Export,2021,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1827842X,490.0
+Export,2021,57,sub,Plastics in primary forms,$ Millions,A1827843A,368.0
+Export,2021,58,sub,Plastics in non-primary forms,$ Millions,A1827844C,345.0
+Export,2021,59,sub,"Chemical materials and products, nes",$ Millions,A1827845F,1474.0
+Export,2021,6,main,Manufactured goods classified chiefly by material,$ Millions,A1827846J,16703.0
+Export,2021,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1827847K,160.0
+Export,2021,62,sub,"Rubber manufactures, nes",$ Millions,A1827848L,257.0
+Export,2021,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1827849R,96.0
+Export,2021,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1827850X,948.0
+Export,2021,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1827851A,333.0
+Export,2021,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1827852C,570.0
+Export,2021,67,sub,Iron and steel,$ Millions,A1827853F,793.0
+Export,2021,68,sub,Non-ferrous metals,$ Millions,A1827854J,12328.0
+Export,2021,69,sub,"Manufactures of metals, nes",$ Millions,A1827855K,1220.0
+Export,2021,7,main,Machinery and transport equipment,$ Millions,A1827856L,14728.0
+Export,2021,71,sub,Power generating machinery and equipment,$ Millions,A1827857R,872.0
+Export,2021,72,sub,Machinery specialized for particular industries,$ Millions,A1827858T,1678.0
+Export,2021,73,sub,Metalworking machinery,$ Millions,A1827859V,175.0
+Export,2021,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1827860C,2230.0
+Export,2021,75,sub,Office machines and automatic data processing machines,$ Millions,A1827861F,1376.0
+Export,2021,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1827862J,2331.0
+Export,2021,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1827863K,2227.0
+Export,2021,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1827864L,1853.0
+Export,2021,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1827865R,1988.0
+Export,2021,8,main,Miscellaneous manufactured articles,$ Millions,A1827866T,8036.0
+Export,2021,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1827867V,203.0
+Export,2021,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1827868W,145.0
+Export,2021,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1827869X,116.0
+Export,2021,84,sub,Articles of apparel and clothing accessories,$ Millions,A1827870J,480.0
+Export,2021,85,sub,Footwear,$ Millions,A1827871K,119.0
+Export,2021,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1827872L,3875.0
+Export,2021,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1827873R,453.0
+Export,2021,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1827874T,2646.0
+Export,2021,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1827875V,36933.0
+Export,2021,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1827876W,1789.0
+Export,2021,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1827877X,2576.0
+Export,2021,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1827878A,2.0
+Export,2021,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1827879C,23281.0
+Export,2021,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1827880L,9283.0
+Export,2021,-1,total,TOTAL,$ Millions,A1827881R,458168.0
+Export,2022,0,main,Food and live animals,$ Millions,A1827804K,53122.0
+Export,2022,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1827805L,1518.0
+Export,2022,01,sub,Meat and meat preparations,$ Millions,A1827806R,16600.0
+Export,2022,02,sub,Dairy products and birds’ eggs,$ Millions,A1827807T,3385.0
+Export,2022,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1827808V,1205.0
+Export,2022,04,sub,Cereals and cereal preparations,$ Millions,A1827809W,20672.0
+Export,2022,05,sub,Vegetables and fruit,$ Millions,A1827810F,5027.0
+Export,2022,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1827811J,321.0
+Export,2022,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1827812K,517.0
+Export,2022,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1827813L,1719.0
+Export,2022,09,sub,Miscellaneous edible products and preparations,$ Millions,A1827814R,2160.0
+Export,2022,1,main,Beverages and tobacco,$ Millions,A1827815T,2572.0
+Export,2022,11,sub,Beverages,$ Millions,A1827816V,2553.0
+Export,2022,12,sub,Tobacco and tobacco manufactures,$ Millions,A1827817W,19.0
+Export,2022,2,main,"Crude materials, inedible, except fuels",$ Millions,A1827818X,188296.0
+Export,2022,21,sub,"Hides, skins and furskins, raw",$ Millions,A1827819A,454.0
+Export,2022,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1827820K,7762.0
+Export,2022,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1827821L,9.0
+Export,2022,24,sub,Cork and wood,$ Millions,A1827822R,1523.0
+Export,2022,25,sub,Pulp and waste paper,$ Millions,A1827823T,307.0
+Export,2022,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1827824V,7710.0
+Export,2022,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1827825W,12384.0
+Export,2022,28,sub,Metalliferous ores and metal scrap,$ Millions,A1827826X,157451.0
+Export,2022,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1827827A,692.0
+Export,2022,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1827828C,251334.0
+Export,2022,32,sub,"Coal, coke and briquettes",$ Millions,A1827829F,142345.0
+Export,2022,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1827830R,17341.0
+Export,2022,34,sub,"Gas, natural and manufactured",$ Millions,A1827831T,91648.0
+Export,2022,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1827832V,1682.0
+Export,2022,41,sub,Animal oils and fats,$ Millions,A1827833W,1080.0
+Export,2022,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1827834X,538.0
+Export,2022,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1827835A,64.0
+Export,2022,5,main,"Chemicals and related products, nes",$ Millions,A1827836C,12575.0
+Export,2022,51,sub,Organic chemicals,$ Millions,A1827837F,245.0
+Export,2022,52,sub,Inorganic chemicals,$ Millions,A1827838J,1675.0
+Export,2022,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1827839K,1068.0
+Export,2022,54,sub,Medicinal and pharmaceutical products,$ Millions,A1827840V,4328.0
+Export,2022,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1827841W,1768.0
+Export,2022,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1827842X,731.0
+Export,2022,57,sub,Plastics in primary forms,$ Millions,A1827843A,303.0
+Export,2022,58,sub,Plastics in non-primary forms,$ Millions,A1827844C,451.0
+Export,2022,59,sub,"Chemical materials and products, nes",$ Millions,A1827845F,2007.0
+Export,2022,6,main,Manufactured goods classified chiefly by material,$ Millions,A1827846J,19431.0
+Export,2022,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1827847K,148.0
+Export,2022,62,sub,"Rubber manufactures, nes",$ Millions,A1827848L,363.0
+Export,2022,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1827849R,96.0
+Export,2022,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1827850X,1014.0
+Export,2022,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1827851A,356.0
+Export,2022,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1827852C,604.0
+Export,2022,67,sub,Iron and steel,$ Millions,A1827853F,1340.0
+Export,2022,68,sub,Non-ferrous metals,$ Millions,A1827854J,14078.0
+Export,2022,69,sub,"Manufactures of metals, nes",$ Millions,A1827855K,1430.0
+Export,2022,7,main,Machinery and transport equipment,$ Millions,A1827856L,16516.0
+Export,2022,71,sub,Power generating machinery and equipment,$ Millions,A1827857R,1027.0
+Export,2022,72,sub,Machinery specialized for particular industries,$ Millions,A1827858T,1911.0
+Export,2022,73,sub,Metalworking machinery,$ Millions,A1827859V,260.0
+Export,2022,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1827860C,2489.0
+Export,2022,75,sub,Office machines and automatic data processing machines,$ Millions,A1827861F,1545.0
+Export,2022,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1827862J,2337.0
+Export,2022,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1827863K,2692.0
+Export,2022,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1827864L,2013.0
+Export,2022,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1827865R,2245.0
+Export,2022,8,main,Miscellaneous manufactured articles,$ Millions,A1827866T,9077.0
+Export,2022,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1827867V,175.0
+Export,2022,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1827868W,166.0
+Export,2022,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1827869X,201.0
+Export,2022,84,sub,Articles of apparel and clothing accessories,$ Millions,A1827870J,649.0
+Export,2022,85,sub,Footwear,$ Millions,A1827871K,141.0
+Export,2022,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1827872L,4409.0
+Export,2022,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1827873R,506.0
+Export,2022,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1827874T,2834.0
+Export,2022,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1827875V,39255.0
+Export,2022,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1827876W,764.0
+Export,2022,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1827877X,3046.0
+Export,2022,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1827878A,9.0
+Export,2022,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1827879C,23514.0
+Export,2022,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1827880L,11921.0
+Export,2022,-1,total,TOTAL,$ Millions,A1827881R,593865.0
+Export,2023,0,main,Food and live animals,$ Millions,A1827804K,54749.0
+Export,2023,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1827805L,1236.0
+Export,2023,01,sub,Meat and meat preparations,$ Millions,A1827806R,17798.0
+Export,2023,02,sub,Dairy products and birds’ eggs,$ Millions,A1827807T,3000.0
+Export,2023,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1827808V,1346.0
+Export,2023,04,sub,Cereals and cereal preparations,$ Millions,A1827809W,20628.0
+Export,2023,05,sub,Vegetables and fruit,$ Millions,A1827810F,5891.0
+Export,2023,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1827811J,297.0
+Export,2023,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1827812K,509.0
+Export,2023,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1827813L,1737.0
+Export,2023,09,sub,Miscellaneous edible products and preparations,$ Millions,A1827814R,2314.0
+Export,2023,1,main,Beverages and tobacco,$ Millions,A1827815T,2548.0
+Export,2023,11,sub,Beverages,$ Millions,A1827816V,2524.0
+Export,2023,12,sub,Tobacco and tobacco manufactures,$ Millions,A1827817W,24.0
+Export,2023,2,main,"Crude materials, inedible, except fuels",$ Millions,A1827818X,202961.0
+Export,2023,21,sub,"Hides, skins and furskins, raw",$ Millions,A1827819A,451.0
+Export,2023,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1827820K,5508.0
+Export,2023,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1827821L,14.0
+Export,2023,24,sub,Cork and wood,$ Millions,A1827822R,1435.0
+Export,2023,25,sub,Pulp and waste paper,$ Millions,A1827823T,203.0
+Export,2023,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1827824V,7407.0
+Export,2023,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1827825W,19055.0
+Export,2023,28,sub,Metalliferous ores and metal scrap,$ Millions,A1827826X,168243.0
+Export,2023,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1827827A,650.0
+Export,2023,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1827828C,195549.0
+Export,2023,32,sub,"Coal, coke and briquettes",$ Millions,A1827829F,103331.0
+Export,2023,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1827830R,15760.0
+Export,2023,34,sub,"Gas, natural and manufactured",$ Millions,A1827831T,76456.0
+Export,2023,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1827832V,1609.0
+Export,2023,41,sub,Animal oils and fats,$ Millions,A1827833W,1053.0
+Export,2023,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1827834X,420.0
+Export,2023,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1827835A,136.0
+Export,2023,5,main,"Chemicals and related products, nes",$ Millions,A1827836C,11484.0
+Export,2023,51,sub,Organic chemicals,$ Millions,A1827837F,221.0
+Export,2023,52,sub,Inorganic chemicals,$ Millions,A1827838J,1264.0
+Export,2023,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1827839K,920.0
+Export,2023,54,sub,Medicinal and pharmaceutical products,$ Millions,A1827840V,4754.0
+Export,2023,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1827841W,1686.0
+Export,2023,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1827842X,338.0
+Export,2023,57,sub,Plastics in primary forms,$ Millions,A1827843A,277.0
+Export,2023,58,sub,Plastics in non-primary forms,$ Millions,A1827844C,385.0
+Export,2023,59,sub,"Chemical materials and products, nes",$ Millions,A1827845F,1643.0
+Export,2023,6,main,Manufactured goods classified chiefly by material,$ Millions,A1827846J,19357.0
+Export,2023,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1827847K,109.0
+Export,2023,62,sub,"Rubber manufactures, nes",$ Millions,A1827848L,397.0
+Export,2023,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1827849R,98.0
+Export,2023,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1827850X,888.0
+Export,2023,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1827851A,364.0
+Export,2023,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1827852C,854.0
+Export,2023,67,sub,Iron and steel,$ Millions,A1827853F,1256.0
+Export,2023,68,sub,Non-ferrous metals,$ Millions,A1827854J,13950.0
+Export,2023,69,sub,"Manufactures of metals, nes",$ Millions,A1827855K,1442.0
+Export,2023,7,main,Machinery and transport equipment,$ Millions,A1827856L,18604.0
+Export,2023,71,sub,Power generating machinery and equipment,$ Millions,A1827857R,1303.0
+Export,2023,72,sub,Machinery specialized for particular industries,$ Millions,A1827858T,2113.0
+Export,2023,73,sub,Metalworking machinery,$ Millions,A1827859V,272.0
+Export,2023,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1827860C,3044.0
+Export,2023,75,sub,Office machines and automatic data processing machines,$ Millions,A1827861F,1489.0
+Export,2023,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1827862J,2677.0
+Export,2023,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1827863K,2954.0
+Export,2023,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1827864L,2180.0
+Export,2023,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1827865R,2574.0
+Export,2023,8,main,Miscellaneous manufactured articles,$ Millions,A1827866T,10517.0
+Export,2023,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1827867V,170.0
+Export,2023,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1827868W,188.0
+Export,2023,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1827869X,188.0
+Export,2023,84,sub,Articles of apparel and clothing accessories,$ Millions,A1827870J,706.0
+Export,2023,85,sub,Footwear,$ Millions,A1827871K,181.0
+Export,2023,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1827872L,4871.0
+Export,2023,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1827873R,576.0
+Export,2023,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1827874T,3636.0
+Export,2023,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1827875V,41247.0
+Export,2023,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1827876W,612.0
+Export,2023,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1827877X,2011.0
+Export,2023,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1827878A,11.0
+Export,2023,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1827879C,28352.0
+Export,2023,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1827880L,10257.0
+Export,2023,-1,total,TOTAL,$ Millions,A1827881R,558623.0
+Export,2024,0,main,Food and live animals,$ Millions,A1827804K,52562.0
+Export,2024,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1827805L,1117.0
+Export,2024,01,sub,Meat and meat preparations,$ Millions,A1827806R,21317.0
+Export,2024,02,sub,Dairy products and birds’ eggs,$ Millions,A1827807T,3425.0
+Export,2024,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1827808V,1219.0
+Export,2024,04,sub,Cereals and cereal preparations,$ Millions,A1827809W,13747.0
+Export,2024,05,sub,Vegetables and fruit,$ Millions,A1827810F,7067.0
+Export,2024,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1827811J,298.0
+Export,2024,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1827812K,549.0
+Export,2024,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1827813L,1573.0
+Export,2024,09,sub,Miscellaneous edible products and preparations,$ Millions,A1827814R,2253.0
+Export,2024,1,main,Beverages and tobacco,$ Millions,A1827815T,3179.0
+Export,2024,11,sub,Beverages,$ Millions,A1827816V,3159.0
+Export,2024,12,sub,Tobacco and tobacco manufactures,$ Millions,A1827817W,20.0
+Export,2024,2,main,"Crude materials, inedible, except fuels",$ Millions,A1827818X,179588.0
+Export,2024,21,sub,"Hides, skins and furskins, raw",$ Millions,A1827819A,532.0
+Export,2024,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1827820K,5005.0
+Export,2024,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1827821L,20.0
+Export,2024,24,sub,Cork and wood,$ Millions,A1827822R,1424.0
+Export,2024,25,sub,Pulp and waste paper,$ Millions,A1827823T,242.0
+Export,2024,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1827824V,6498.0
+Export,2024,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1827825W,5137.0
+Export,2024,28,sub,Metalliferous ores and metal scrap,$ Millions,A1827826X,160100.0
+Export,2024,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1827827A,635.0
+Export,2024,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1827828C,170842.0
+Export,2024,32,sub,"Coal, coke and briquettes",$ Millions,A1827829F,85445.0
+Export,2024,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1827830R,15713.0
+Export,2024,34,sub,"Gas, natural and manufactured",$ Millions,A1827831T,69682.0
+Export,2024,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1827832V,1397.0
+Export,2024,41,sub,Animal oils and fats,$ Millions,A1827833W,865.0
+Export,2024,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1827834X,416.0
+Export,2024,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1827835A,118.0
+Export,2024,5,main,"Chemicals and related products, nes",$ Millions,A1827836C,12272.0
+Export,2024,51,sub,Organic chemicals,$ Millions,A1827837F,215.0
+Export,2024,52,sub,Inorganic chemicals,$ Millions,A1827838J,946.0
+Export,2024,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1827839K,1162.0
+Export,2024,54,sub,Medicinal and pharmaceutical products,$ Millions,A1827840V,5387.0
+Export,2024,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1827841W,1705.0
+Export,2024,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1827842X,437.0
+Export,2024,57,sub,Plastics in primary forms,$ Millions,A1827843A,294.0
+Export,2024,58,sub,Plastics in non-primary forms,$ Millions,A1827844C,412.0
+Export,2024,59,sub,"Chemical materials and products, nes",$ Millions,A1827845F,1718.0
+Export,2024,6,main,Manufactured goods classified chiefly by material,$ Millions,A1827846J,20515.0
+Export,2024,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1827847K,112.0
+Export,2024,62,sub,"Rubber manufactures, nes",$ Millions,A1827848L,331.0
+Export,2024,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1827849R,97.0
+Export,2024,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1827850X,891.0
+Export,2024,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1827851A,392.0
+Export,2024,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1827852C,590.0
+Export,2024,67,sub,Iron and steel,$ Millions,A1827853F,1332.0
+Export,2024,68,sub,Non-ferrous metals,$ Millions,A1827854J,15294.0
+Export,2024,69,sub,"Manufactures of metals, nes",$ Millions,A1827855K,1476.0
+Export,2024,7,main,Machinery and transport equipment,$ Millions,A1827856L,20484.0
+Export,2024,71,sub,Power generating machinery and equipment,$ Millions,A1827857R,1377.0
+Export,2024,72,sub,Machinery specialized for particular industries,$ Millions,A1827858T,2346.0
+Export,2024,73,sub,Metalworking machinery,$ Millions,A1827859V,286.0
+Export,2024,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1827860C,3125.0
+Export,2024,75,sub,Office machines and automatic data processing machines,$ Millions,A1827861F,1580.0
+Export,2024,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1827862J,2923.0
+Export,2024,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1827863K,3219.0
+Export,2024,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1827864L,2259.0
+Export,2024,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1827865R,3377.0
+Export,2024,8,main,Miscellaneous manufactured articles,$ Millions,A1827866T,10974.0
+Export,2024,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1827867V,191.0
+Export,2024,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1827868W,169.0
+Export,2024,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1827869X,178.0
+Export,2024,84,sub,Articles of apparel and clothing accessories,$ Millions,A1827870J,773.0
+Export,2024,85,sub,Footwear,$ Millions,A1827871K,191.0
+Export,2024,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1827872L,4081.0
+Export,2024,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1827873R,611.0
+Export,2024,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1827874T,4777.0
+Export,2024,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1827875V,45169.0
+Export,2024,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1827876W,565.0
+Export,2024,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1827877X,1340.0
+Export,2024,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1827878A,23.0
+Export,2024,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1827879C,35703.0
+Export,2024,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1827880L,7536.0
+Export,2024,-1,total,TOTAL,$ Millions,A1827881R,516983.0
+Export,2025,0,main,Food and live animals,$ Millions,A1827804K,62043.0
+Export,2025,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1827805L,1299.0
+Export,2025,01,sub,Meat and meat preparations,$ Millions,A1827806R,27217.0
+Export,2025,02,sub,Dairy products and birds’ eggs,$ Millions,A1827807T,3562.0
+Export,2025,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1827808V,1588.0
+Export,2025,04,sub,Cereals and cereal preparations,$ Millions,A1827809W,16169.0
+Export,2025,05,sub,Vegetables and fruit,$ Millions,A1827810F,7282.0
+Export,2025,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1827811J,263.0
+Export,2025,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1827812K,632.0
+Export,2025,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1827813L,1582.0
+Export,2025,09,sub,Miscellaneous edible products and preparations,$ Millions,A1827814R,2448.0
+Export,2025,1,main,Beverages and tobacco,$ Millions,A1827815T,3066.0
+Export,2025,11,sub,Beverages,$ Millions,A1827816V,3009.0
+Export,2025,12,sub,Tobacco and tobacco manufactures,$ Millions,A1827817W,58.0
+Export,2025,2,main,"Crude materials, inedible, except fuels",$ Millions,A1827818X,180651.0
+Export,2025,21,sub,"Hides, skins and furskins, raw",$ Millions,A1827819A,546.0
+Export,2025,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1827820K,4616.0
+Export,2025,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1827821L,30.0
+Export,2025,24,sub,Cork and wood,$ Millions,A1827822R,1521.0
+Export,2025,25,sub,Pulp and waste paper,$ Millions,A1827823T,274.0
+Export,2025,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1827824V,6053.0
+Export,2025,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1827825W,4863.0
+Export,2025,28,sub,Metalliferous ores and metal scrap,$ Millions,A1827826X,162034.0
+Export,2025,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1827827A,711.0
+Export,2025,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1827828C,140181.0
+Export,2025,32,sub,"Coal, coke and briquettes",$ Millions,A1827829F,64478.0
+Export,2025,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1827830R,14187.0
+Export,2025,34,sub,"Gas, natural and manufactured",$ Millions,A1827831T,61513.0
+Export,2025,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1827832V,1806.0
+Export,2025,41,sub,Animal oils and fats,$ Millions,A1827833W,823.0
+Export,2025,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1827834X,529.0
+Export,2025,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1827835A,455.0
+Export,2025,5,main,"Chemicals and related products, nes",$ Millions,A1827836C,12141.0
+Export,2025,51,sub,Organic chemicals,$ Millions,A1827837F,251.0
+Export,2025,52,sub,Inorganic chemicals,$ Millions,A1827838J,1050.0
+Export,2025,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1827839K,1053.0
+Export,2025,54,sub,Medicinal and pharmaceutical products,$ Millions,A1827840V,5138.0
+Export,2025,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1827841W,1615.0
+Export,2025,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1827842X,666.0
+Export,2025,57,sub,Plastics in primary forms,$ Millions,A1827843A,281.0
+Export,2025,58,sub,Plastics in non-primary forms,$ Millions,A1827844C,423.0
+Export,2025,59,sub,"Chemical materials and products, nes",$ Millions,A1827845F,1661.0
+Export,2025,6,main,Manufactured goods classified chiefly by material,$ Millions,A1827846J,22719.0
+Export,2025,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1827847K,108.0
+Export,2025,62,sub,"Rubber manufactures, nes",$ Millions,A1827848L,345.0
+Export,2025,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1827849R,77.0
+Export,2025,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1827850X,871.0
+Export,2025,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1827851A,375.0
+Export,2025,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1827852C,480.0
+Export,2025,67,sub,Iron and steel,$ Millions,A1827853F,1054.0
+Export,2025,68,sub,Non-ferrous metals,$ Millions,A1827854J,17943.0
+Export,2025,69,sub,"Manufactures of metals, nes",$ Millions,A1827855K,1465.0
+Export,2025,7,main,Machinery and transport equipment,$ Millions,A1827856L,22210.0
+Export,2025,71,sub,Power generating machinery and equipment,$ Millions,A1827857R,1598.0
+Export,2025,72,sub,Machinery specialized for particular industries,$ Millions,A1827858T,2416.0
+Export,2025,73,sub,Metalworking machinery,$ Millions,A1827859V,248.0
+Export,2025,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1827860C,3253.0
+Export,2025,75,sub,Office machines and automatic data processing machines,$ Millions,A1827861F,1888.0
+Export,2025,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1827862J,3236.0
+Export,2025,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1827863K,3266.0
+Export,2025,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1827864L,2624.0
+Export,2025,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1827865R,3685.0
+Export,2025,8,main,Miscellaneous manufactured articles,$ Millions,A1827866T,11863.0
+Export,2025,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1827867V,190.0
+Export,2025,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1827868W,173.0
+Export,2025,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1827869X,183.0
+Export,2025,84,sub,Articles of apparel and clothing accessories,$ Millions,A1827870J,774.0
+Export,2025,85,sub,Footwear,$ Millions,A1827871K,187.0
+Export,2025,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1827872L,4293.0
+Export,2025,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1827873R,659.0
+Export,2025,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1827874T,5399.0
+Export,2025,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1827875V,66414.0
+Export,2025,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1827876W,439.0
+Export,2025,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1827877X,1873.0
+Export,2025,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1827878A,17.0
+Export,2025,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1827879C,59557.0
+Export,2025,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1827880L,4530.0
+Export,2025,-1,total,TOTAL,$ Millions,A1827881R,523098.0
+Import,2016,0,main,Food and live animals,$ Millions,A1828644C,13977.0
+Import,2016,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1828645F,121.0
+Import,2016,01,sub,Meat and meat preparations,$ Millions,A1828646J,780.0
+Import,2016,02,sub,Dairy products and birds’ eggs,$ Millions,A1828647K,1075.0
+Import,2016,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1828648L,1852.0
+Import,2016,04,sub,Cereals and cereal preparations,$ Millions,A1828649R,1265.0
+Import,2016,05,sub,Vegetables and fruit,$ Millions,A1828650X,2601.0
+Import,2016,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1828651A,483.0
+Import,2016,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1828652C,1975.0
+Import,2016,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1828653F,919.0
+Import,2016,09,sub,Miscellaneous edible products and preparations,$ Millions,A1828654J,2908.0
+Import,2016,1,main,Beverages and tobacco,$ Millions,A1828655K,3271.0
+Import,2016,11,sub,Beverages,$ Millions,A1828656L,2241.0
+Import,2016,12,sub,Tobacco and tobacco manufactures,$ Millions,A1828657R,1027.0
+Import,2016,2,main,"Crude materials, inedible, except fuels",$ Millions,A1828658T,3206.0
+Import,2016,21,sub,"Hides, skins and furskins, raw",$ Millions,A1828659V,5.0
+Import,2016,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1828660C,88.0
+Import,2016,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1828661F,102.0
+Import,2016,24,sub,Cork and wood,$ Millions,A1828662J,816.0
+Import,2016,25,sub,Pulp and waste paper,$ Millions,A1828663K,212.0
+Import,2016,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1828664L,99.0
+Import,2016,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1828665R,311.0
+Import,2016,28,sub,Metalliferous ores and metal scrap,$ Millions,A1828666T,1017.0
+Import,2016,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1828667V,551.0
+Import,2016,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1828668W,23604.0
+Import,2016,32,sub,"Coal, coke and briquettes",$ Millions,A1828669X,51.0
+Import,2016,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1828670J,23315.0
+Import,2016,34,sub,"Gas, natural and manufactured",$ Millions,A1828671K,238.0
+Import,2016,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1828672L,700.0
+Import,2016,41,sub,Animal oils and fats,$ Millions,A1828673R,61.0
+Import,2016,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1828674T,596.0
+Import,2016,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1828675V,44.0
+Import,2016,5,main,"Chemicals and related products, nes",$ Millions,A1828676W,27705.0
+Import,2016,51,sub,Organic chemicals,$ Millions,A1828677X,2410.0
+Import,2016,52,sub,Inorganic chemicals,$ Millions,A1828678A,1567.0
+Import,2016,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1828679C,997.0
+Import,2016,54,sub,Medicinal and pharmaceutical products,$ Millions,A1828680L,11226.0
+Import,2016,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1828681R,2938.0
+Import,2016,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1828682T,1682.0
+Import,2016,57,sub,Plastics in primary forms,$ Millions,A1828683V,1958.0
+Import,2016,58,sub,Plastics in non-primary forms,$ Millions,A1828684W,1947.0
+Import,2016,59,sub,"Chemical materials and products, nes",$ Millions,A1828685X,2978.0
+Import,2016,6,main,Manufactured goods classified chiefly by material,$ Millions,A1828686A,28223.0
+Import,2016,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1828687C,164.0
+Import,2016,62,sub,"Rubber manufactures, nes",$ Millions,A1828688F,3399.0
+Import,2016,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1828689J,1305.0
+Import,2016,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1828690T,2999.0
+Import,2016,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1828691V,3577.0
+Import,2016,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1828692W,3847.0
+Import,2016,67,sub,Iron and steel,$ Millions,A1828693X,2532.0
+Import,2016,68,sub,Non-ferrous metals,$ Millions,A1828694A,2691.0
+Import,2016,69,sub,"Manufactures of metals, nes",$ Millions,A1828695C,7710.0
+Import,2016,7,main,Machinery and transport equipment,$ Millions,A1828696F,103332.0
+Import,2016,71,sub,Power generating machinery and equipment,$ Millions,A1828697J,4429.0
+Import,2016,72,sub,Machinery specialized for particular industries,$ Millions,A1828698K,7665.0
+Import,2016,73,sub,Metalworking machinery,$ Millions,A1828699L,595.0
+Import,2016,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1828700K,14478.0
+Import,2016,75,sub,Office machines and automatic data processing machines,$ Millions,A1828701L,9773.0
+Import,2016,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1828702R,14598.0
+Import,2016,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1828703T,13089.0
+Import,2016,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1828704V,34412.0
+Import,2016,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1828705W,4295.0
+Import,2016,8,main,Miscellaneous manufactured articles,$ Millions,A1828706X,40365.0
+Import,2016,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1828707A,1661.0
+Import,2016,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1828708C,4276.0
+Import,2016,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1828709F,1462.0
+Import,2016,84,sub,Articles of apparel and clothing accessories,$ Millions,A1828710R,8611.0
+Import,2016,85,sub,Footwear,$ Millions,A1828711T,2202.0
+Import,2016,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1828712V,6756.0
+Import,2016,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1828713W,1853.0
+Import,2016,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1828714X,13547.0
+Import,2016,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1828715A,9962.0
+Import,2016,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1828716C,4.0
+Import,2016,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1828717F,41.0
+Import,2016,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1828718J,7.0
+Import,2016,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1828719K,7468.0
+Import,2016,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1828720V,2440.0
+Import,2016,-1,total,TOTAL,$ Millions,A1828721W,254345.0
+Import,2017,0,main,Food and live animals,$ Millions,A1828644C,14304.0
+Import,2017,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1828645F,155.0
+Import,2017,01,sub,Meat and meat preparations,$ Millions,A1828646J,833.0
+Import,2017,02,sub,Dairy products and birds’ eggs,$ Millions,A1828647K,1321.0
+Import,2017,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1828648L,1950.0
+Import,2017,04,sub,Cereals and cereal preparations,$ Millions,A1828649R,1309.0
+Import,2017,05,sub,Vegetables and fruit,$ Millions,A1828650X,2684.0
+Import,2017,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1828651A,460.0
+Import,2017,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1828652C,2057.0
+Import,2017,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1828653F,939.0
+Import,2017,09,sub,Miscellaneous edible products and preparations,$ Millions,A1828654J,2593.0
+Import,2017,1,main,Beverages and tobacco,$ Millions,A1828655K,3285.0
+Import,2017,11,sub,Beverages,$ Millions,A1828656L,2280.0
+Import,2017,12,sub,Tobacco and tobacco manufactures,$ Millions,A1828657R,1006.0
+Import,2017,2,main,"Crude materials, inedible, except fuels",$ Millions,A1828658T,3544.0
+Import,2017,21,sub,"Hides, skins and furskins, raw",$ Millions,A1828659V,3.0
+Import,2017,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1828660C,111.0
+Import,2017,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1828661F,165.0
+Import,2017,24,sub,Cork and wood,$ Millions,A1828662J,836.0
+Import,2017,25,sub,Pulp and waste paper,$ Millions,A1828663K,232.0
+Import,2017,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1828664L,91.0
+Import,2017,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1828665R,286.0
+Import,2017,28,sub,Metalliferous ores and metal scrap,$ Millions,A1828666T,1221.0
+Import,2017,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1828667V,597.0
+Import,2017,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1828668W,29805.0
+Import,2017,32,sub,"Coal, coke and briquettes",$ Millions,A1828669X,139.0
+Import,2017,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1828670J,29365.0
+Import,2017,34,sub,"Gas, natural and manufactured",$ Millions,A1828671K,303.0
+Import,2017,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1828672L,702.0
+Import,2017,41,sub,Animal oils and fats,$ Millions,A1828673R,56.0
+Import,2017,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1828674T,591.0
+Import,2017,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1828675V,53.0
+Import,2017,5,main,"Chemicals and related products, nes",$ Millions,A1828676W,28054.0
+Import,2017,51,sub,Organic chemicals,$ Millions,A1828677X,2363.0
+Import,2017,52,sub,Inorganic chemicals,$ Millions,A1828678A,1578.0
+Import,2017,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1828679C,1019.0
+Import,2017,54,sub,Medicinal and pharmaceutical products,$ Millions,A1828680L,11138.0
+Import,2017,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1828681R,3084.0
+Import,2017,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1828682T,1640.0
+Import,2017,57,sub,Plastics in primary forms,$ Millions,A1828683V,2109.0
+Import,2017,58,sub,Plastics in non-primary forms,$ Millions,A1828684W,1994.0
+Import,2017,59,sub,"Chemical materials and products, nes",$ Millions,A1828685X,3131.0
+Import,2017,6,main,Manufactured goods classified chiefly by material,$ Millions,A1828686A,28701.0
+Import,2017,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1828687C,160.0
+Import,2017,62,sub,"Rubber manufactures, nes",$ Millions,A1828688F,3580.0
+Import,2017,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1828689J,1408.0
+Import,2017,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1828690T,2935.0
+Import,2017,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1828691V,3604.0
+Import,2017,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1828692W,3794.0
+Import,2017,67,sub,Iron and steel,$ Millions,A1828693X,3059.0
+Import,2017,68,sub,Non-ferrous metals,$ Millions,A1828694A,2479.0
+Import,2017,69,sub,"Manufactures of metals, nes",$ Millions,A1828695C,7685.0
+Import,2017,7,main,Machinery and transport equipment,$ Millions,A1828696F,117933.0
+Import,2017,71,sub,Power generating machinery and equipment,$ Millions,A1828697J,4763.0
+Import,2017,72,sub,Machinery specialized for particular industries,$ Millions,A1828698K,8870.0
+Import,2017,73,sub,Metalworking machinery,$ Millions,A1828699L,639.0
+Import,2017,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1828700K,13380.0
+Import,2017,75,sub,Office machines and automatic data processing machines,$ Millions,A1828701L,10489.0
+Import,2017,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1828702R,15584.0
+Import,2017,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1828703T,14637.0
+Import,2017,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1828704V,37308.0
+Import,2017,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1828705W,12266.0
+Import,2017,8,main,Miscellaneous manufactured articles,$ Millions,A1828706X,40571.0
+Import,2017,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1828707A,1629.0
+Import,2017,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1828708C,4256.0
+Import,2017,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1828709F,1537.0
+Import,2017,84,sub,Articles of apparel and clothing accessories,$ Millions,A1828710R,8736.0
+Import,2017,85,sub,Footwear,$ Millions,A1828711T,2177.0
+Import,2017,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1828712V,6544.0
+Import,2017,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1828713W,1821.0
+Import,2017,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1828714X,13867.0
+Import,2017,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1828715A,21397.0
+Import,2017,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1828716C,12.0
+Import,2017,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1828717F,21.0
+Import,2017,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1828718J,3.0
+Import,2017,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1828719K,6220.0
+Import,2017,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1828720V,15140.0
+Import,2017,-1,total,TOTAL,$ Millions,A1828721W,288291.0
+Import,2018,0,main,Food and live animals,$ Millions,A1828644C,15132.0
+Import,2018,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1828645F,168.0
+Import,2018,01,sub,Meat and meat preparations,$ Millions,A1828646J,822.0
+Import,2018,02,sub,Dairy products and birds’ eggs,$ Millions,A1828647K,1420.0
+Import,2018,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1828648L,2013.0
+Import,2018,04,sub,Cereals and cereal preparations,$ Millions,A1828649R,1479.0
+Import,2018,05,sub,Vegetables and fruit,$ Millions,A1828650X,2647.0
+Import,2018,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1828651A,483.0
+Import,2018,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1828652C,2031.0
+Import,2018,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1828653F,1100.0
+Import,2018,09,sub,Miscellaneous edible products and preparations,$ Millions,A1828654J,2970.0
+Import,2018,1,main,Beverages and tobacco,$ Millions,A1828655K,3541.0
+Import,2018,11,sub,Beverages,$ Millions,A1828656L,2480.0
+Import,2018,12,sub,Tobacco and tobacco manufactures,$ Millions,A1828657R,1063.0
+Import,2018,2,main,"Crude materials, inedible, except fuels",$ Millions,A1828658T,3985.0
+Import,2018,21,sub,"Hides, skins and furskins, raw",$ Millions,A1828659V,2.0
+Import,2018,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1828660C,115.0
+Import,2018,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1828661F,160.0
+Import,2018,24,sub,Cork and wood,$ Millions,A1828662J,1041.0
+Import,2018,25,sub,Pulp and waste paper,$ Millions,A1828663K,284.0
+Import,2018,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1828664L,99.0
+Import,2018,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1828665R,316.0
+Import,2018,28,sub,Metalliferous ores and metal scrap,$ Millions,A1828666T,1306.0
+Import,2018,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1828667V,662.0
+Import,2018,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1828668W,40512.0
+Import,2018,32,sub,"Coal, coke and briquettes",$ Millions,A1828669X,178.0
+Import,2018,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1828670J,39947.0
+Import,2018,34,sub,"Gas, natural and manufactured",$ Millions,A1828671K,390.0
+Import,2018,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1828672L,756.0
+Import,2018,41,sub,Animal oils and fats,$ Millions,A1828673R,70.0
+Import,2018,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1828674T,627.0
+Import,2018,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1828675V,54.0
+Import,2018,5,main,"Chemicals and related products, nes",$ Millions,A1828676W,29837.0
+Import,2018,51,sub,Organic chemicals,$ Millions,A1828677X,2507.0
+Import,2018,52,sub,Inorganic chemicals,$ Millions,A1828678A,1107.0
+Import,2018,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1828679C,1111.0
+Import,2018,54,sub,Medicinal and pharmaceutical products,$ Millions,A1828680L,11782.0
+Import,2018,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1828681R,3595.0
+Import,2018,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1828682T,1915.0
+Import,2018,57,sub,Plastics in primary forms,$ Millions,A1828683V,2460.0
+Import,2018,58,sub,Plastics in non-primary forms,$ Millions,A1828684W,2196.0
+Import,2018,59,sub,"Chemical materials and products, nes",$ Millions,A1828685X,3161.0
+Import,2018,6,main,Manufactured goods classified chiefly by material,$ Millions,A1828686A,32443.0
+Import,2018,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1828687C,154.0
+Import,2018,62,sub,"Rubber manufactures, nes",$ Millions,A1828688F,3966.0
+Import,2018,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1828689J,1596.0
+Import,2018,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1828690T,3163.0
+Import,2018,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1828691V,3816.0
+Import,2018,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1828692W,4038.0
+Import,2018,67,sub,Iron and steel,$ Millions,A1828693X,3901.0
+Import,2018,68,sub,Non-ferrous metals,$ Millions,A1828694A,2775.0
+Import,2018,69,sub,"Manufactures of metals, nes",$ Millions,A1828695C,9039.0
+Import,2018,7,main,Machinery and transport equipment,$ Millions,A1828696F,121404.0
+Import,2018,71,sub,Power generating machinery and equipment,$ Millions,A1828697J,5936.0
+Import,2018,72,sub,Machinery specialized for particular industries,$ Millions,A1828698K,10484.0
+Import,2018,73,sub,Metalworking machinery,$ Millions,A1828699L,751.0
+Import,2018,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1828700K,14952.0
+Import,2018,75,sub,Office machines and automatic data processing machines,$ Millions,A1828701L,11907.0
+Import,2018,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1828702R,17166.0
+Import,2018,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1828703T,16823.0
+Import,2018,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1828704V,39091.0
+Import,2018,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1828705W,4294.0
+Import,2018,8,main,Miscellaneous manufactured articles,$ Millions,A1828706X,44299.0
+Import,2018,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1828707A,1789.0
+Import,2018,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1828708C,4874.0
+Import,2018,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1828709F,1843.0
+Import,2018,84,sub,Articles of apparel and clothing accessories,$ Millions,A1828710R,9479.0
+Import,2018,85,sub,Footwear,$ Millions,A1828711T,2324.0
+Import,2018,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1828712V,7364.0
+Import,2018,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1828713W,1934.0
+Import,2018,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1828714X,14691.0
+Import,2018,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1828715A,12140.0
+Import,2018,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1828716C,5.0
+Import,2018,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1828717F,30.0
+Import,2018,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1828718J,7.0
+Import,2018,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1828719K,6385.0
+Import,2018,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1828720V,5711.0
+Import,2018,-1,total,TOTAL,$ Millions,A1828721W,304050.0
+Import,2019,0,main,Food and live animals,$ Millions,A1828644C,16938.0
+Import,2019,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1828645F,145.0
+Import,2019,01,sub,Meat and meat preparations,$ Millions,A1828646J,1029.0
+Import,2019,02,sub,Dairy products and birds’ eggs,$ Millions,A1828647K,1477.0
+Import,2019,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1828648L,2034.0
+Import,2019,04,sub,Cereals and cereal preparations,$ Millions,A1828649R,1916.0
+Import,2019,05,sub,Vegetables and fruit,$ Millions,A1828650X,2806.0
+Import,2019,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1828651A,485.0
+Import,2019,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1828652C,2131.0
+Import,2019,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1828653F,1238.0
+Import,2019,09,sub,Miscellaneous edible products and preparations,$ Millions,A1828654J,3678.0
+Import,2019,1,main,Beverages and tobacco,$ Millions,A1828655K,3798.0
+Import,2019,11,sub,Beverages,$ Millions,A1828656L,2688.0
+Import,2019,12,sub,Tobacco and tobacco manufactures,$ Millions,A1828657R,1113.0
+Import,2019,2,main,"Crude materials, inedible, except fuels",$ Millions,A1828658T,3138.0
+Import,2019,21,sub,"Hides, skins and furskins, raw",$ Millions,A1828659V,7.0
+Import,2019,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1828660C,127.0
+Import,2019,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1828661F,147.0
+Import,2019,24,sub,Cork and wood,$ Millions,A1828662J,801.0
+Import,2019,25,sub,Pulp and waste paper,$ Millions,A1828663K,260.0
+Import,2019,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1828664L,98.0
+Import,2019,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1828665R,286.0
+Import,2019,28,sub,Metalliferous ores and metal scrap,$ Millions,A1828666T,744.0
+Import,2019,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1828667V,665.0
+Import,2019,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1828668W,38794.0
+Import,2019,32,sub,"Coal, coke and briquettes",$ Millions,A1828669X,203.0
+Import,2019,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1828670J,38357.0
+Import,2019,34,sub,"Gas, natural and manufactured",$ Millions,A1828671K,236.0
+Import,2019,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1828672L,725.0
+Import,2019,41,sub,Animal oils and fats,$ Millions,A1828673R,83.0
+Import,2019,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1828674T,579.0
+Import,2019,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1828675V,64.0
+Import,2019,5,main,"Chemicals and related products, nes",$ Millions,A1828676W,31024.0
+Import,2019,51,sub,Organic chemicals,$ Millions,A1828677X,2260.0
+Import,2019,52,sub,Inorganic chemicals,$ Millions,A1828678A,1031.0
+Import,2019,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1828679C,1084.0
+Import,2019,54,sub,Medicinal and pharmaceutical products,$ Millions,A1828680L,13112.0
+Import,2019,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1828681R,3865.0
+Import,2019,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1828682T,2150.0
+Import,2019,57,sub,Plastics in primary forms,$ Millions,A1828683V,2211.0
+Import,2019,58,sub,Plastics in non-primary forms,$ Millions,A1828684W,2226.0
+Import,2019,59,sub,"Chemical materials and products, nes",$ Millions,A1828685X,3090.0
+Import,2019,6,main,Manufactured goods classified chiefly by material,$ Millions,A1828686A,32286.0
+Import,2019,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1828687C,143.0
+Import,2019,62,sub,"Rubber manufactures, nes",$ Millions,A1828688F,4242.0
+Import,2019,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1828689J,1517.0
+Import,2019,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1828690T,3336.0
+Import,2019,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1828691V,3834.0
+Import,2019,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1828692W,4110.0
+Import,2019,67,sub,Iron and steel,$ Millions,A1828693X,3271.0
+Import,2019,68,sub,Non-ferrous metals,$ Millions,A1828694A,2874.0
+Import,2019,69,sub,"Manufactures of metals, nes",$ Millions,A1828695C,8957.0
+Import,2019,7,main,Machinery and transport equipment,$ Millions,A1828696F,123286.0
+Import,2019,71,sub,Power generating machinery and equipment,$ Millions,A1828697J,6310.0
+Import,2019,72,sub,Machinery specialized for particular industries,$ Millions,A1828698K,10688.0
+Import,2019,73,sub,Metalworking machinery,$ Millions,A1828699L,864.0
+Import,2019,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1828700K,15646.0
+Import,2019,75,sub,Office machines and automatic data processing machines,$ Millions,A1828701L,11737.0
+Import,2019,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1828702R,17648.0
+Import,2019,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1828703T,17451.0
+Import,2019,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1828704V,37286.0
+Import,2019,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1828705W,5660.0
+Import,2019,8,main,Miscellaneous manufactured articles,$ Millions,A1828706X,46308.0
+Import,2019,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1828707A,1742.0
+Import,2019,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1828708C,4983.0
+Import,2019,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1828709F,1886.0
+Import,2019,84,sub,Articles of apparel and clothing accessories,$ Millions,A1828710R,10205.0
+Import,2019,85,sub,Footwear,$ Millions,A1828711T,2564.0
+Import,2019,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1828712V,7726.0
+Import,2019,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1828713W,2078.0
+Import,2019,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1828714X,15133.0
+Import,2019,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1828715A,11251.0
+Import,2019,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1828716C,5.0
+Import,2019,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1828717F,33.0
+Import,2019,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1828718J,2.0
+Import,2019,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1828719K,6772.0
+Import,2019,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1828720V,4434.0
+Import,2019,-1,total,TOTAL,$ Millions,A1828721W,307549.0
+Import,2020,0,main,Food and live animals,$ Millions,A1828644C,17607.0
+Import,2020,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1828645F,157.0
+Import,2020,01,sub,Meat and meat preparations,$ Millions,A1828646J,905.0
+Import,2020,02,sub,Dairy products and birds’ eggs,$ Millions,A1828647K,1589.0
+Import,2020,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1828648L,1882.0
+Import,2020,04,sub,Cereals and cereal preparations,$ Millions,A1828649R,2088.0
+Import,2020,05,sub,Vegetables and fruit,$ Millions,A1828650X,3107.0
+Import,2020,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1828651A,489.0
+Import,2020,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1828652C,2208.0
+Import,2020,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1828653F,1355.0
+Import,2020,09,sub,Miscellaneous edible products and preparations,$ Millions,A1828654J,3824.0
+Import,2020,1,main,Beverages and tobacco,$ Millions,A1828655K,3475.0
+Import,2020,11,sub,Beverages,$ Millions,A1828656L,2585.0
+Import,2020,12,sub,Tobacco and tobacco manufactures,$ Millions,A1828657R,891.0
+Import,2020,2,main,"Crude materials, inedible, except fuels",$ Millions,A1828658T,3257.0
+Import,2020,21,sub,"Hides, skins and furskins, raw",$ Millions,A1828659V,7.0
+Import,2020,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1828660C,141.0
+Import,2020,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1828661F,122.0
+Import,2020,24,sub,Cork and wood,$ Millions,A1828662J,801.0
+Import,2020,25,sub,Pulp and waste paper,$ Millions,A1828663K,240.0
+Import,2020,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1828664L,97.0
+Import,2020,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1828665R,298.0
+Import,2020,28,sub,Metalliferous ores and metal scrap,$ Millions,A1828666T,870.0
+Import,2020,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1828667V,686.0
+Import,2020,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1828668W,23108.0
+Import,2020,32,sub,"Coal, coke and briquettes",$ Millions,A1828669X,148.0
+Import,2020,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1828670J,22720.0
+Import,2020,34,sub,"Gas, natural and manufactured",$ Millions,A1828671K,242.0
+Import,2020,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1828672L,766.0
+Import,2020,41,sub,Animal oils and fats,$ Millions,A1828673R,85.0
+Import,2020,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1828674T,627.0
+Import,2020,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1828675V,55.0
+Import,2020,5,main,"Chemicals and related products, nes",$ Millions,A1828676W,33291.0
+Import,2020,51,sub,Organic chemicals,$ Millions,A1828677X,2668.0
+Import,2020,52,sub,Inorganic chemicals,$ Millions,A1828678A,1043.0
+Import,2020,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1828679C,1084.0
+Import,2020,54,sub,Medicinal and pharmaceutical products,$ Millions,A1828680L,13802.0
+Import,2020,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1828681R,3970.0
+Import,2020,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1828682T,2122.0
+Import,2020,57,sub,Plastics in primary forms,$ Millions,A1828683V,2138.0
+Import,2020,58,sub,Plastics in non-primary forms,$ Millions,A1828684W,2294.0
+Import,2020,59,sub,"Chemical materials and products, nes",$ Millions,A1828685X,4167.0
+Import,2020,6,main,Manufactured goods classified chiefly by material,$ Millions,A1828686A,34399.0
+Import,2020,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1828687C,135.0
+Import,2020,62,sub,"Rubber manufactures, nes",$ Millions,A1828688F,4089.0
+Import,2020,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1828689J,1419.0
+Import,2020,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1828690T,3274.0
+Import,2020,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1828691V,5896.0
+Import,2020,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1828692W,3869.0
+Import,2020,67,sub,Iron and steel,$ Millions,A1828693X,3134.0
+Import,2020,68,sub,Non-ferrous metals,$ Millions,A1828694A,3596.0
+Import,2020,69,sub,"Manufactures of metals, nes",$ Millions,A1828695C,8988.0
+Import,2020,7,main,Machinery and transport equipment,$ Millions,A1828696F,119746.0
+Import,2020,71,sub,Power generating machinery and equipment,$ Millions,A1828697J,5691.0
+Import,2020,72,sub,Machinery specialized for particular industries,$ Millions,A1828698K,10600.0
+Import,2020,73,sub,Metalworking machinery,$ Millions,A1828699L,751.0
+Import,2020,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1828700K,15673.0
+Import,2020,75,sub,Office machines and automatic data processing machines,$ Millions,A1828701L,12455.0
+Import,2020,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1828702R,17588.0
+Import,2020,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1828703T,17885.0
+Import,2020,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1828704V,33502.0
+Import,2020,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1828705W,5595.0
+Import,2020,8,main,Miscellaneous manufactured articles,$ Millions,A1828706X,46038.0
+Import,2020,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1828707A,1726.0
+Import,2020,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1828708C,5224.0
+Import,2020,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1828709F,1512.0
+Import,2020,84,sub,Articles of apparel and clothing accessories,$ Millions,A1828710R,10186.0
+Import,2020,85,sub,Footwear,$ Millions,A1828711T,2107.0
+Import,2020,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1828712V,7758.0
+Import,2020,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1828713W,1879.0
+Import,2020,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1828714X,15649.0
+Import,2020,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1828715A,11914.0
+Import,2020,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1828716C,2.0
+Import,2020,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1828717F,60.0
+Import,2020,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1828718J,12.0
+Import,2020,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1828719K,9208.0
+Import,2020,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1828720V,2632.0
+Import,2020,-1,total,TOTAL,$ Millions,A1828721W,293603.0
+Import,2021,0,main,Food and live animals,$ Millions,A1828644C,16410.0
+Import,2021,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1828645F,156.0
+Import,2021,01,sub,Meat and meat preparations,$ Millions,A1828646J,966.0
+Import,2021,02,sub,Dairy products and birds’ eggs,$ Millions,A1828647K,1438.0
+Import,2021,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1828648L,1874.0
+Import,2021,04,sub,Cereals and cereal preparations,$ Millions,A1828649R,1727.0
+Import,2021,05,sub,Vegetables and fruit,$ Millions,A1828650X,2837.0
+Import,2021,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1828651A,491.0
+Import,2021,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1828652C,2164.0
+Import,2021,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1828653F,1220.0
+Import,2021,09,sub,Miscellaneous edible products and preparations,$ Millions,A1828654J,3535.0
+Import,2021,1,main,Beverages and tobacco,$ Millions,A1828655K,3449.0
+Import,2021,11,sub,Beverages,$ Millions,A1828656L,2744.0
+Import,2021,12,sub,Tobacco and tobacco manufactures,$ Millions,A1828657R,704.0
+Import,2021,2,main,"Crude materials, inedible, except fuels",$ Millions,A1828658T,4247.0
+Import,2021,21,sub,"Hides, skins and furskins, raw",$ Millions,A1828659V,2.0
+Import,2021,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1828660C,102.0
+Import,2021,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1828661F,134.0
+Import,2021,24,sub,Cork and wood,$ Millions,A1828662J,1051.0
+Import,2021,25,sub,Pulp and waste paper,$ Millions,A1828663K,281.0
+Import,2021,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1828664L,115.0
+Import,2021,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1828665R,426.0
+Import,2021,28,sub,Metalliferous ores and metal scrap,$ Millions,A1828666T,1425.0
+Import,2021,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1828667V,712.0
+Import,2021,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1828668W,34552.0
+Import,2021,32,sub,"Coal, coke and briquettes",$ Millions,A1828669X,200.0
+Import,2021,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1828670J,34044.0
+Import,2021,34,sub,"Gas, natural and manufactured",$ Millions,A1828671K,310.0
+Import,2021,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1828672L,831.0
+Import,2021,41,sub,Animal oils and fats,$ Millions,A1828673R,90.0
+Import,2021,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1828674T,680.0
+Import,2021,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1828675V,61.0
+Import,2021,5,main,"Chemicals and related products, nes",$ Millions,A1828676W,37021.0
+Import,2021,51,sub,Organic chemicals,$ Millions,A1828677X,3051.0
+Import,2021,52,sub,Inorganic chemicals,$ Millions,A1828678A,1286.0
+Import,2021,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1828679C,1152.0
+Import,2021,54,sub,Medicinal and pharmaceutical products,$ Millions,A1828680L,14770.0
+Import,2021,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1828681R,3861.0
+Import,2021,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1828682T,3289.0
+Import,2021,57,sub,Plastics in primary forms,$ Millions,A1828683V,2677.0
+Import,2021,58,sub,Plastics in non-primary forms,$ Millions,A1828684W,2448.0
+Import,2021,59,sub,"Chemical materials and products, nes",$ Millions,A1828685X,4490.0
+Import,2021,6,main,Manufactured goods classified chiefly by material,$ Millions,A1828686A,36977.0
+Import,2021,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1828687C,174.0
+Import,2021,62,sub,"Rubber manufactures, nes",$ Millions,A1828688F,4349.0
+Import,2021,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1828689J,1678.0
+Import,2021,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1828690T,3217.0
+Import,2021,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1828691V,4692.0
+Import,2021,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1828692W,4281.0
+Import,2021,67,sub,Iron and steel,$ Millions,A1828693X,4050.0
+Import,2021,68,sub,Non-ferrous metals,$ Millions,A1828694A,4056.0
+Import,2021,69,sub,"Manufactures of metals, nes",$ Millions,A1828695C,10479.0
+Import,2021,7,main,Machinery and transport equipment,$ Millions,A1828696F,135405.0
+Import,2021,71,sub,Power generating machinery and equipment,$ Millions,A1828697J,5352.0
+Import,2021,72,sub,Machinery specialized for particular industries,$ Millions,A1828698K,12971.0
+Import,2021,73,sub,Metalworking machinery,$ Millions,A1828699L,971.0
+Import,2021,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1828700K,16935.0
+Import,2021,75,sub,Office machines and automatic data processing machines,$ Millions,A1828701L,13204.0
+Import,2021,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1828702R,17682.0
+Import,2021,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1828703T,19654.0
+Import,2021,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1828704V,42876.0
+Import,2021,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1828705W,5759.0
+Import,2021,8,main,Miscellaneous manufactured articles,$ Millions,A1828706X,50131.0
+Import,2021,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1828707A,1958.0
+Import,2021,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1828708C,5647.0
+Import,2021,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1828709F,1632.0
+Import,2021,84,sub,Articles of apparel and clothing accessories,$ Millions,A1828710R,10984.0
+Import,2021,85,sub,Footwear,$ Millions,A1828711T,2411.0
+Import,2021,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1828712V,8175.0
+Import,2021,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1828713W,2067.0
+Import,2021,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1828714X,17260.0
+Import,2021,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1828715A,11211.0
+Import,2021,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1828716C,4.0
+Import,2021,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1828717F,56.0
+Import,2021,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1828718J,11.0
+Import,2021,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1828719K,6525.0
+Import,2021,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1828720V,4615.0
+Import,2021,-1,total,TOTAL,$ Millions,A1828721W,330234.0
+Import,2022,0,main,Food and live animals,$ Millions,A1828644C,19518.0
+Import,2022,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1828645F,167.0
+Import,2022,01,sub,Meat and meat preparations,$ Millions,A1828646J,1070.0
+Import,2022,02,sub,Dairy products and birds’ eggs,$ Millions,A1828647K,1809.0
+Import,2022,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1828648L,2449.0
+Import,2022,04,sub,Cereals and cereal preparations,$ Millions,A1828649R,2011.0
+Import,2022,05,sub,Vegetables and fruit,$ Millions,A1828650X,3163.0
+Import,2022,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1828651A,565.0
+Import,2022,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1828652C,2566.0
+Import,2022,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1828653F,1660.0
+Import,2022,09,sub,Miscellaneous edible products and preparations,$ Millions,A1828654J,4063.0
+Import,2022,1,main,Beverages and tobacco,$ Millions,A1828655K,3850.0
+Import,2022,11,sub,Beverages,$ Millions,A1828656L,3170.0
+Import,2022,12,sub,Tobacco and tobacco manufactures,$ Millions,A1828657R,682.0
+Import,2022,2,main,"Crude materials, inedible, except fuels",$ Millions,A1828658T,4653.0
+Import,2022,21,sub,"Hides, skins and furskins, raw",$ Millions,A1828659V,4.0
+Import,2022,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1828660C,135.0
+Import,2022,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1828661F,148.0
+Import,2022,24,sub,Cork and wood,$ Millions,A1828662J,1444.0
+Import,2022,25,sub,Pulp and waste paper,$ Millions,A1828663K,365.0
+Import,2022,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1828664L,125.0
+Import,2022,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1828665R,604.0
+Import,2022,28,sub,Metalliferous ores and metal scrap,$ Millions,A1828666T,945.0
+Import,2022,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1828667V,881.0
+Import,2022,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1828668W,65806.0
+Import,2022,32,sub,"Coal, coke and briquettes",$ Millions,A1828669X,375.0
+Import,2022,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1828670J,65082.0
+Import,2022,34,sub,"Gas, natural and manufactured",$ Millions,A1828671K,352.0
+Import,2022,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1828672L,1094.0
+Import,2022,41,sub,Animal oils and fats,$ Millions,A1828673R,128.0
+Import,2022,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1828674T,888.0
+Import,2022,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1828675V,76.0
+Import,2022,5,main,"Chemicals and related products, nes",$ Millions,A1828676W,51393.0
+Import,2022,51,sub,Organic chemicals,$ Millions,A1828677X,3755.0
+Import,2022,52,sub,Inorganic chemicals,$ Millions,A1828678A,3401.0
+Import,2022,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1828679C,1267.0
+Import,2022,54,sub,Medicinal and pharmaceutical products,$ Millions,A1828680L,19106.0
+Import,2022,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1828681R,4657.0
+Import,2022,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1828682T,5706.0
+Import,2022,57,sub,Plastics in primary forms,$ Millions,A1828683V,3148.0
+Import,2022,58,sub,Plastics in non-primary forms,$ Millions,A1828684W,2866.0
+Import,2022,59,sub,"Chemical materials and products, nes",$ Millions,A1828685X,7484.0
+Import,2022,6,main,Manufactured goods classified chiefly by material,$ Millions,A1828686A,44021.0
+Import,2022,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1828687C,202.0
+Import,2022,62,sub,"Rubber manufactures, nes",$ Millions,A1828688F,5123.0
+Import,2022,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1828689J,2045.0
+Import,2022,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1828690T,3802.0
+Import,2022,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1828691V,5323.0
+Import,2022,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1828692W,4835.0
+Import,2022,67,sub,Iron and steel,$ Millions,A1828693X,5214.0
+Import,2022,68,sub,Non-ferrous metals,$ Millions,A1828694A,5023.0
+Import,2022,69,sub,"Manufactures of metals, nes",$ Millions,A1828695C,12450.0
+Import,2022,7,main,Machinery and transport equipment,$ Millions,A1828696F,156900.0
+Import,2022,71,sub,Power generating machinery and equipment,$ Millions,A1828697J,6250.0
+Import,2022,72,sub,Machinery specialized for particular industries,$ Millions,A1828698K,15810.0
+Import,2022,73,sub,Metalworking machinery,$ Millions,A1828699L,1095.0
+Import,2022,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1828700K,19875.0
+Import,2022,75,sub,Office machines and automatic data processing machines,$ Millions,A1828701L,14727.0
+Import,2022,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1828702R,20341.0
+Import,2022,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1828703T,23299.0
+Import,2022,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1828704V,50050.0
+Import,2022,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1828705W,5454.0
+Import,2022,8,main,Miscellaneous manufactured articles,$ Millions,A1828706X,57476.0
+Import,2022,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1828707A,2136.0
+Import,2022,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1828708C,6266.0
+Import,2022,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1828709F,2203.0
+Import,2022,84,sub,Articles of apparel and clothing accessories,$ Millions,A1828710R,12829.0
+Import,2022,85,sub,Footwear,$ Millions,A1828711T,3104.0
+Import,2022,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1828712V,9104.0
+Import,2022,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1828713W,2481.0
+Import,2022,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1828714X,19352.0
+Import,2022,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1828715A,12292.0
+Import,2022,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1828716C,3.0
+Import,2022,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1828717F,80.0
+Import,2022,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1828718J,17.0
+Import,2022,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1828719K,6959.0
+Import,2022,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1828720V,5229.0
+Import,2022,-1,total,TOTAL,$ Millions,A1828721W,417002.0
+Import,2023,0,main,Food and live animals,$ Millions,A1828644C,19684.0
+Import,2023,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1828645F,212.0
+Import,2023,01,sub,Meat and meat preparations,$ Millions,A1828646J,1035.0
+Import,2023,02,sub,Dairy products and birds’ eggs,$ Millions,A1828647K,2034.0
+Import,2023,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1828648L,2230.0
+Import,2023,04,sub,Cereals and cereal preparations,$ Millions,A1828649R,2136.0
+Import,2023,05,sub,Vegetables and fruit,$ Millions,A1828650X,3366.0
+Import,2023,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1828651A,611.0
+Import,2023,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1828652C,2582.0
+Import,2023,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1828653F,1438.0
+Import,2023,09,sub,Miscellaneous edible products and preparations,$ Millions,A1828654J,4035.0
+Import,2023,1,main,Beverages and tobacco,$ Millions,A1828655K,3518.0
+Import,2023,11,sub,Beverages,$ Millions,A1828656L,2928.0
+Import,2023,12,sub,Tobacco and tobacco manufactures,$ Millions,A1828657R,588.0
+Import,2023,2,main,"Crude materials, inedible, except fuels",$ Millions,A1828658T,3931.0
+Import,2023,21,sub,"Hides, skins and furskins, raw",$ Millions,A1828659V,2.0
+Import,2023,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1828660C,120.0
+Import,2023,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1828661F,130.0
+Import,2023,24,sub,Cork and wood,$ Millions,A1828662J,841.0
+Import,2023,25,sub,Pulp and waste paper,$ Millions,A1828663K,280.0
+Import,2023,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1828664L,119.0
+Import,2023,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1828665R,478.0
+Import,2023,28,sub,Metalliferous ores and metal scrap,$ Millions,A1828666T,1019.0
+Import,2023,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1828667V,942.0
+Import,2023,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1828668W,60651.0
+Import,2023,32,sub,"Coal, coke and briquettes",$ Millions,A1828669X,306.0
+Import,2023,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1828670J,60057.0
+Import,2023,34,sub,"Gas, natural and manufactured",$ Millions,A1828671K,293.0
+Import,2023,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1828672L,988.0
+Import,2023,41,sub,Animal oils and fats,$ Millions,A1828673R,161.0
+Import,2023,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1828674T,750.0
+Import,2023,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1828675V,78.0
+Import,2023,5,main,"Chemicals and related products, nes",$ Millions,A1828676W,42831.0
+Import,2023,51,sub,Organic chemicals,$ Millions,A1828677X,2720.0
+Import,2023,52,sub,Inorganic chemicals,$ Millions,A1828678A,2830.0
+Import,2023,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1828679C,1148.0
+Import,2023,54,sub,Medicinal and pharmaceutical products,$ Millions,A1828680L,17000.0
+Import,2023,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1828681R,5168.0
+Import,2023,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1828682T,3561.0
+Import,2023,57,sub,Plastics in primary forms,$ Millions,A1828683V,2728.0
+Import,2023,58,sub,Plastics in non-primary forms,$ Millions,A1828684W,2703.0
+Import,2023,59,sub,"Chemical materials and products, nes",$ Millions,A1828685X,4973.0
+Import,2023,6,main,Manufactured goods classified chiefly by material,$ Millions,A1828686A,40640.0
+Import,2023,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1828687C,176.0
+Import,2023,62,sub,"Rubber manufactures, nes",$ Millions,A1828688F,5189.0
+Import,2023,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1828689J,1733.0
+Import,2023,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1828690T,3827.0
+Import,2023,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1828691V,4277.0
+Import,2023,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1828692W,4605.0
+Import,2023,67,sub,Iron and steel,$ Millions,A1828693X,4746.0
+Import,2023,68,sub,Non-ferrous metals,$ Millions,A1828694A,4174.0
+Import,2023,69,sub,"Manufactures of metals, nes",$ Millions,A1828695C,11917.0
+Import,2023,7,main,Machinery and transport equipment,$ Millions,A1828696F,173355.0
+Import,2023,71,sub,Power generating machinery and equipment,$ Millions,A1828697J,7368.0
+Import,2023,72,sub,Machinery specialized for particular industries,$ Millions,A1828698K,18321.0
+Import,2023,73,sub,Metalworking machinery,$ Millions,A1828699L,1171.0
+Import,2023,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1828700K,20852.0
+Import,2023,75,sub,Office machines and automatic data processing machines,$ Millions,A1828701L,12531.0
+Import,2023,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1828702R,20204.0
+Import,2023,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1828703T,23989.0
+Import,2023,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1828704V,62922.0
+Import,2023,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1828705W,5995.0
+Import,2023,8,main,Miscellaneous manufactured articles,$ Millions,A1828706X,55698.0
+Import,2023,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1828707A,1960.0
+Import,2023,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1828708C,5336.0
+Import,2023,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1828709F,2249.0
+Import,2023,84,sub,Articles of apparel and clothing accessories,$ Millions,A1828710R,12165.0
+Import,2023,85,sub,Footwear,$ Millions,A1828711T,2886.0
+Import,2023,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1828712V,10010.0
+Import,2023,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1828713W,2601.0
+Import,2023,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1828714X,18494.0
+Import,2023,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1828715A,12575.0
+Import,2023,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1828716C,6.0
+Import,2023,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1828717F,66.0
+Import,2023,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1828718J,19.0
+Import,2023,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1828719K,8565.0
+Import,2023,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1828720V,3917.0
+Import,2023,-1,total,TOTAL,$ Millions,A1828721W,413869.0
+Import,2024,0,main,Food and live animals,$ Millions,A1828644C,22293.0
+Import,2024,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1828645F,201.0
+Import,2024,01,sub,Meat and meat preparations,$ Millions,A1828646J,1251.0
+Import,2024,02,sub,Dairy products and birds’ eggs,$ Millions,A1828647K,1935.0
+Import,2024,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1828648L,2405.0
+Import,2024,04,sub,Cereals and cereal preparations,$ Millions,A1828649R,2526.0
+Import,2024,05,sub,Vegetables and fruit,$ Millions,A1828650X,3913.0
+Import,2024,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1828651A,688.0
+Import,2024,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1828652C,3250.0
+Import,2024,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1828653F,1647.0
+Import,2024,09,sub,Miscellaneous edible products and preparations,$ Millions,A1828654J,4477.0
+Import,2024,1,main,Beverages and tobacco,$ Millions,A1828655K,3349.0
+Import,2024,11,sub,Beverages,$ Millions,A1828656L,2906.0
+Import,2024,12,sub,Tobacco and tobacco manufactures,$ Millions,A1828657R,441.0
+Import,2024,2,main,"Crude materials, inedible, except fuels",$ Millions,A1828658T,4119.0
+Import,2024,21,sub,"Hides, skins and furskins, raw",$ Millions,A1828659V,6.0
+Import,2024,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1828660C,151.0
+Import,2024,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1828661F,141.0
+Import,2024,24,sub,Cork and wood,$ Millions,A1828662J,917.0
+Import,2024,25,sub,Pulp and waste paper,$ Millions,A1828663K,276.0
+Import,2024,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1828664L,121.0
+Import,2024,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1828665R,362.0
+Import,2024,28,sub,Metalliferous ores and metal scrap,$ Millions,A1828666T,1143.0
+Import,2024,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1828667V,1006.0
+Import,2024,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1828668W,56749.0
+Import,2024,32,sub,"Coal, coke and briquettes",$ Millions,A1828669X,260.0
+Import,2024,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1828670J,56183.0
+Import,2024,34,sub,"Gas, natural and manufactured",$ Millions,A1828671K,306.0
+Import,2024,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1828672L,1257.0
+Import,2024,41,sub,Animal oils and fats,$ Millions,A1828673R,204.0
+Import,2024,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1828674T,973.0
+Import,2024,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1828675V,78.0
+Import,2024,5,main,"Chemicals and related products, nes",$ Millions,A1828676W,45032.0
+Import,2024,51,sub,Organic chemicals,$ Millions,A1828677X,2723.0
+Import,2024,52,sub,Inorganic chemicals,$ Millions,A1828678A,2683.0
+Import,2024,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1828679C,1265.0
+Import,2024,54,sub,Medicinal and pharmaceutical products,$ Millions,A1828680L,17012.0
+Import,2024,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1828681R,5568.0
+Import,2024,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1828682T,4652.0
+Import,2024,57,sub,Plastics in primary forms,$ Millions,A1828683V,2957.0
+Import,2024,58,sub,Plastics in non-primary forms,$ Millions,A1828684W,2840.0
+Import,2024,59,sub,"Chemical materials and products, nes",$ Millions,A1828685X,5337.0
+Import,2024,6,main,Manufactured goods classified chiefly by material,$ Millions,A1828686A,43611.0
+Import,2024,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1828687C,151.0
+Import,2024,62,sub,"Rubber manufactures, nes",$ Millions,A1828688F,5553.0
+Import,2024,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1828689J,1776.0
+Import,2024,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1828690T,4210.0
+Import,2024,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1828691V,4547.0
+Import,2024,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1828692W,4461.0
+Import,2024,67,sub,Iron and steel,$ Millions,A1828693X,5952.0
+Import,2024,68,sub,Non-ferrous metals,$ Millions,A1828694A,4285.0
+Import,2024,69,sub,"Manufactures of metals, nes",$ Millions,A1828695C,12677.0
+Import,2024,7,main,Machinery and transport equipment,$ Millions,A1828696F,180686.0
+Import,2024,71,sub,Power generating machinery and equipment,$ Millions,A1828697J,7929.0
+Import,2024,72,sub,Machinery specialized for particular industries,$ Millions,A1828698K,15321.0
+Import,2024,73,sub,Metalworking machinery,$ Millions,A1828699L,1101.0
+Import,2024,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1828700K,23737.0
+Import,2024,75,sub,Office machines and automatic data processing machines,$ Millions,A1828701L,14902.0
+Import,2024,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1828702R,20144.0
+Import,2024,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1828703T,28336.0
+Import,2024,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1828704V,62025.0
+Import,2024,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1828705W,7195.0
+Import,2024,8,main,Miscellaneous manufactured articles,$ Millions,A1828706X,59310.0
+Import,2024,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1828707A,1973.0
+Import,2024,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1828708C,5994.0
+Import,2024,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1828709F,2216.0
+Import,2024,84,sub,Articles of apparel and clothing accessories,$ Millions,A1828710R,12814.0
+Import,2024,85,sub,Footwear,$ Millions,A1828711T,2948.0
+Import,2024,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1828712V,10288.0
+Import,2024,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1828713W,2713.0
+Import,2024,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1828714X,20362.0
+Import,2024,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1828715A,13470.0
+Import,2024,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1828716C,1.0
+Import,2024,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1828717F,57.0
+Import,2024,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1828718J,18.0
+Import,2024,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1828719K,9876.0
+Import,2024,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1828720V,3513.0
+Import,2024,-1,total,TOTAL,$ Millions,A1828721W,429873.0
+Import,2025,0,main,Food and live animals,$ Millions,A1828644C,24515.0
+Import,2025,00,sub,"Live animals (excl. fish (not marine mammals) crustaceans, molluscs and aquatic invertebrates of SITC Division 03)",$ Millions,A1828645F,190.0
+Import,2025,01,sub,Meat and meat preparations,$ Millions,A1828646J,1252.0
+Import,2025,02,sub,Dairy products and birds’ eggs,$ Millions,A1828647K,2295.0
+Import,2025,03,sub,"Fish (excl. marine mammals) crustaceans, molluscs and aquatic invertebrates, and preparations thereof (excl. extracts and juices of fish, crustaceans, molluscs or other aquatic invertebrates, prepared or preserved of SITC 01710)",$ Millions,A1828648L,2548.0
+Import,2025,04,sub,Cereals and cereal preparations,$ Millions,A1828649R,2618.0
+Import,2025,05,sub,Vegetables and fruit,$ Millions,A1828650X,4138.0
+Import,2025,06,sub,"Sugars, sugar preparations and honey",$ Millions,A1828651A,715.0
+Import,2025,07,sub,"Coffee, tea, cocoa, spices, and manufactures thereof",$ Millions,A1828652C,4510.0
+Import,2025,08,sub,Feeding stuff for animals (excl. unmilled cereals),$ Millions,A1828653F,1518.0
+Import,2025,09,sub,Miscellaneous edible products and preparations,$ Millions,A1828654J,4731.0
+Import,2025,1,main,Beverages and tobacco,$ Millions,A1828655K,3378.0
+Import,2025,11,sub,Beverages,$ Millions,A1828656L,2913.0
+Import,2025,12,sub,Tobacco and tobacco manufactures,$ Millions,A1828657R,463.0
+Import,2025,2,main,"Crude materials, inedible, except fuels",$ Millions,A1828658T,5285.0
+Import,2025,21,sub,"Hides, skins and furskins, raw",$ Millions,A1828659V,7.0
+Import,2025,22,sub,Oil-seeds and oleaginous fruits,$ Millions,A1828660C,145.0
+Import,2025,23,sub,Crude rubber (incl. synthetic and reclaimed),$ Millions,A1828661F,142.0
+Import,2025,24,sub,Cork and wood,$ Millions,A1828662J,953.0
+Import,2025,25,sub,Pulp and waste paper,$ Millions,A1828663K,270.0
+Import,2025,26,sub,"Textile fibres (excl. wool tops and other combed wool) and their wastes, not manufactured into yarn or fabric",$ Millions,A1828664L,127.0
+Import,2025,27,sub,"Crude fertilizers (excl. those of Division 56) and crude minerals (excl. coal, petroleum and precious stones)",$ Millions,A1828665R,481.0
+Import,2025,28,sub,Metalliferous ores and metal scrap,$ Millions,A1828666T,2129.0
+Import,2025,29,sub,"Crude animal and vegetable materials, nes",$ Millions,A1828667V,1030.0
+Import,2025,3,main,"Mineral fuels, lubricants and related materials",$ Millions,A1828668W,53258.0
+Import,2025,32,sub,"Coal, coke and briquettes",$ Millions,A1828669X,197.0
+Import,2025,33,sub,"Petroleum, petroleum products and related materials",$ Millions,A1828670J,52742.0
+Import,2025,34,sub,"Gas, natural and manufactured",$ Millions,A1828671K,317.0
+Import,2025,4,main,"Animal and vegetable oils, fats and waxes",$ Millions,A1828672L,1282.0
+Import,2025,41,sub,Animal oils and fats,$ Millions,A1828673R,135.0
+Import,2025,42,sub,"Fixed vegetable fats and oils, crude, refined or fractionated",$ Millions,A1828674T,1052.0
+Import,2025,43,sub,"Animal or vegetable fats and oils, processed; waxes of animal or vegetable origin; inedible mixtures or preparations of animal or vegetable fats or oils, nes",$ Millions,A1828675V,94.0
+Import,2025,5,main,"Chemicals and related products, nes",$ Millions,A1828676W,47675.0
+Import,2025,51,sub,Organic chemicals,$ Millions,A1828677X,2807.0
+Import,2025,52,sub,Inorganic chemicals,$ Millions,A1828678A,2888.0
+Import,2025,53,sub,"Dyeing, tanning and colouring materials",$ Millions,A1828679C,1234.0
+Import,2025,54,sub,Medicinal and pharmaceutical products,$ Millions,A1828680L,18490.0
+Import,2025,55,sub,"Essential oils and resinoids and perfume materials; toilet, polishing and cleansing preparations",$ Millions,A1828681R,5842.0
+Import,2025,56,sub,Fertilisers (excl. those of group 272),$ Millions,A1828682T,5109.0
+Import,2025,57,sub,Plastics in primary forms,$ Millions,A1828683V,2795.0
+Import,2025,58,sub,Plastics in non-primary forms,$ Millions,A1828684W,3004.0
+Import,2025,59,sub,"Chemical materials and products, nes",$ Millions,A1828685X,5504.0
+Import,2025,6,main,Manufactured goods classified chiefly by material,$ Millions,A1828686A,45872.0
+Import,2025,61,sub,"Leather, leather manufactures, nes, and dressed furskins",$ Millions,A1828687C,150.0
+Import,2025,62,sub,"Rubber manufactures, nes",$ Millions,A1828688F,5746.0
+Import,2025,63,sub,Cork and wood manufactures (excl. furniture),$ Millions,A1828689J,1879.0
+Import,2025,64,sub,"Paper, paperboard and articles of paper pulp, of paper or of paperboard",$ Millions,A1828690T,4117.0
+Import,2025,65,sub,"Textile yarn, fabrics, made-up articles nes, and related products",$ Millions,A1828691V,4729.0
+Import,2025,66,sub,"Non-metallic mineral manufactures, nes",$ Millions,A1828692W,4671.0
+Import,2025,67,sub,Iron and steel,$ Millions,A1828693X,5364.0
+Import,2025,68,sub,Non-ferrous metals,$ Millions,A1828694A,5583.0
+Import,2025,69,sub,"Manufactures of metals, nes",$ Millions,A1828695C,13641.0
+Import,2025,7,main,Machinery and transport equipment,$ Millions,A1828696F,190956.0
+Import,2025,71,sub,Power generating machinery and equipment,$ Millions,A1828697J,8883.0
+Import,2025,72,sub,Machinery specialized for particular industries,$ Millions,A1828698K,14643.0
+Import,2025,73,sub,Metalworking machinery,$ Millions,A1828699L,1058.0
+Import,2025,74,sub,"General industrial machinery and equipment, nes, and machine parts, nes",$ Millions,A1828700K,23637.0
+Import,2025,75,sub,Office machines and automatic data processing machines,$ Millions,A1828701L,19183.0
+Import,2025,76,sub,Telecommunications and sound recording and reproducing apparatus and equipment,$ Millions,A1828702R,21727.0
+Import,2025,77,sub,"Electrical machinery, apparatus and appliances, nes, and electrical parts thereof (incl. non electrical counterparts, nes, of electrical household type equipment)",$ Millions,A1828703T,32803.0
+Import,2025,78,sub,Road vehicles (incl. air-cushion vehicles),$ Millions,A1828704V,59473.0
+Import,2025,79,sub,Transport equipment (excl. road vehicles),$ Millions,A1828705W,9546.0
+Import,2025,8,main,Miscellaneous manufactured articles,$ Millions,A1828706X,63028.0
+Import,2025,81,sub,"Prefabricated buildings and sanitary, plumbing, heating and lighting fixtures and fittings, nes",$ Millions,A1828707A,2011.0
+Import,2025,82,sub,"Furniture and parts thereof; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings",$ Millions,A1828708C,6346.0
+Import,2025,83,sub,"Travel goods, handbags and similar containers",$ Millions,A1828709F,2225.0
+Import,2025,84,sub,Articles of apparel and clothing accessories,$ Millions,A1828710R,13100.0
+Import,2025,85,sub,Footwear,$ Millions,A1828711T,3120.0
+Import,2025,87,sub,"Professional, scientific and controlling instruments and apparatus, nes",$ Millions,A1828712V,10829.0
+Import,2025,88,sub,"Photographic apparatus, equipment and supplies and optical goods, nes; watches and clocks",$ Millions,A1828713W,2808.0
+Import,2025,89,sub,"Miscellaneous manufactured articles, nes",$ Millions,A1828714X,22590.0
+Import,2025,9,main,Commodities and transactions not classified elsewhere in the SITC,$ Millions,A1828715A,25622.0
+Import,2025,93,sub,Special transactions and commodities not classified according to kind,$ Millions,A1828716C,6.0
+Import,2025,95,sub,"Gold coin whether or not legal tender, and other coin being legal tender",$ Millions,A1828717F,71.0
+Import,2025,96,sub,Coin (excl. gold coin) not being legal tender,$ Millions,A1828718J,22.0
+Import,2025,97,sub,"Gold, non-monetary (excl. gold ores and concentrates)",$ Millions,A1828719K,20614.0
+Import,2025,98,sub,Combined confidential items excluding some of SITC 28099 (exports only) and some of SITC 51099 (imports only),$ Millions,A1828720V,4904.0
+Import,2025,-1,total,TOTAL,$ Millions,A1828721W,460866.0
